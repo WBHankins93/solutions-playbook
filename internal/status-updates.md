@@ -1,10 +1,10 @@
 ## Status Updates / Trip Reports
 
-### Context
+## 📝 Context
 
 After on-site visits, major milestones, or weekly on long engagements.
 
-### Template
+## 🎯 Template
 
 ## [Customer Name] - Status Update - [Date]
 
@@ -35,7 +35,7 @@ One to two sentences. Where are we?
 - Need introduction to [team/person]
 - Need answer on [question]
 
-### Links
+## 🔗 Links
 
 - [Post-call debrief](post-call-debrief.md)
 - [Requesting help](requesting-help.md)

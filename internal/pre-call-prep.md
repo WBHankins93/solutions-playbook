@@ -1,11 +1,11 @@
 ## Pre-Call Prep with Sales
 
-### Context
+## 📝 Context
 
 Before any significant customer call (discovery, demo, POC kickoff). Align on
 roles and context so you're not walking in blind.
 
-### Quick Sync Agenda (15 min max)
+## 🎯 Quick Sync Agenda ⏱️ 15 min max
 
 1. **Customer context**
    - What's the deal status? What stage?
@@ -31,7 +31,7 @@ roles and context so you're not walking in blind.
    - Competitor mentions?
    - Pricing concerns?
 
-### Links
+## 🔗 Links
 
 - [Discovery Call](../pre-sales/discovery.md)
 - [Demo](../pre-sales/demo.md)

@@ -1,10 +1,10 @@
 ## Handing Off to Another SE
 
-### Context
+## 📝 Context
 
 You're rolling off and someone else is taking over. Set them up for success.
 
-### Handoff Document Template
+## 🎯 Handoff Document Template
 
 ## [Customer Name] Handoff
 
@@ -44,9 +44,9 @@ You're rolling off and someone else is taking over. Set them up for success.
 
 ---
 
-Schedule a 30-minute call to walk through it. Don't just throw the doc over the wall.
+💡 Schedule a 30-minute call to walk through it. Don't just throw the doc over the wall.
 
-### Links
+## 🔗 Links
 
 - [Status updates](status-updates.md)
 - [Handoff to customer](../implementation/handoff.md)
