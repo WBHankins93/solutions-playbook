@@ -1,12 +1,12 @@
 ## POC Scoping
 
-### Context
+## 📝 Context
 
 You've done discovery and technical deep-dive. Now you need to define what the POC
 will cover, what success looks like, and how long it will take. This is where you
 set expectations and avoid scope creep.
 
-### Pre-Scoping Checklist
+## 📋 Pre-Scoping Checklist
 
 - [ ] Review discovery and technical deep-dive notes
 - [ ] Understand their success criteria
@@ -15,7 +15,7 @@ set expectations and avoid scope creep.
 - [ ] Understand environment constraints
 - [ ] Check with engineering on feasibility
 
-### Scoping Framework
+## 🎯 Scoping Framework
 
 **Define Success Criteria**
 
@@ -46,12 +46,12 @@ set expectations and avoid scope creep.
 - How long do they need? (Be realistic)
 - What's their decision timeline?
 - Account for environment setup time
-- Buffer for troubleshooting (add 20-30%)
+- Buffer for troubleshooting ⏱️ add 20-30%
 - Include validation and sign-off time
 
 **Resources Required**
 
-- Customer: Who needs to be involved? How much time?
+- Customer 👥 Who needs to be involved? How much time?
 - Environment: Do they have it ready? Access granted?
 - Artifacts: Container images, charts, documentation
 - Support: Who's available for questions?
@@ -95,7 +95,7 @@ set expectations and avoid scope creep.
 - [ ] Environment access granted
 - [ ] Kickoff call scheduled
 
-### Gotchas
+## ⚠️ Gotchas
 
 - Scope creep - "just one more thing" adds up fast
 - Unrealistic timelines - customer pressure vs. reality
@@ -104,7 +104,7 @@ set expectations and avoid scope creep.
 - Assuming environment is ready - it rarely is
 - Not documenting out-of-scope - leads to expectations issues
 
-### Links
+## 🔗 Links
 
 - [Discovery Call](discovery.md)
 - [POC Execution](poc-execution.md)

@@ -1,21 +1,21 @@
 ## Technical Deep-Dive / Architecture Review
 
-### Context
+## 📝 Context
 
 You're past the initial discovery call and need to understand their technical architecture,
 integration points, and constraints in detail. This happens before scoping a POC or
 implementation - you're mapping their world to ours.
 
-### Pre-Call Checklist
+## 📋 Pre-Call Checklist
 
 - [ ] Review discovery notes and identify gaps
 - [ ] Understand what they're trying to solve (the "why")
-- [ ] Know who's attending - architects, engineers, security?
+- [ ] Know who's attending 👥 architects, engineers, security?
 - [ ] Prepare architecture diagrams or reference materials
 - [ ] Have integration questions ready
 - [ ] Block time after for notes and follow-up
 
-### Architecture Review Framework
+## 🎯 Architecture Review Framework
 
 **Current State**
 
@@ -65,7 +65,7 @@ implementation - you're mapping their world to ours.
 - Ask "what happens if..." questions to understand failure modes
 - Note any red flags or concerns they raise
 
-### Post-Call Checklist
+## 📋 Post-Call Checklist
 
 - [ ] Document architecture and integration points
 - [ ] Identify technical risks or blockers
@@ -73,7 +73,7 @@ implementation - you're mapping their world to ours.
 - [ ] Share findings with sales and engineering
 - [ ] Determine if POC is feasible and what it should cover
 
-### Gotchas
+## ⚠️ Gotchas
 
 - "It's standard Kubernetes" - dig deeper, distributions differ significantly
 - Missing integration requirements - ask explicitly about every system that touches this
@@ -81,7 +81,7 @@ implementation - you're mapping their world to ours.
 - Security theater vs. real requirements - understand what's policy vs. actual need
 - Architecture diagrams are outdated - verify what's actually running
 
-### Links
+## 🔗 Links
 
 - [Discovery Call](discovery.md)
 - [POC Scoping](poc-scoping.md)

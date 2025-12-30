@@ -1,12 +1,12 @@
 ## Discovery Call
 
-### Context
+## 📝 Context
 
 You have a call scheduled with a prospect or new customer. The goal is to understand
 their environment, constraints, timeline, and what success looks like to them -
 before you scope or promise anything.
 
-### Pre-Call Checklist
+## 📋 Pre-Call Checklist
 
 - [ ] Review any notes from sales (CRM, Slack, email threads)
 - [ ] Understand what product/solution they're evaluating
@@ -14,9 +14,9 @@ before you scope or promise anything.
 - [ ] Know who's on the call and their roles
 - [ ] Have your discovery questions ready (don't wing it)
 - [ ] Test your screen share and demo environment if applicable
-- [ ] Block 15 minutes after the call for notes
+- [ ] Block time after the call for notes ⏱️ 15 min
 
-### Discovery Question Framework
+## 🎯 Discovery Question Framework
 
 **Environment & Infrastructure**
 
@@ -63,7 +63,9 @@ before you scope or promise anything.
 - Don't commit to scope or timeline on the call
 - Ask "what did I not ask that I should have?"
 
-### Post-Call Checklist
+💡 Tip: Ask "what did I not ask that I should have?" before ending the call.
+
+## 📋 Post-Call Checklist
 
 - [ ] Write up notes within 24 hours
 - [ ] Share summary with sales and internal team
@@ -71,14 +73,14 @@ before you scope or promise anything.
 - [ ] Draft next steps and send follow-up email to customer
 - [ ] Update CRM/tracking system
 
-### Gotchas
+## ⚠️ Gotchas
 
 - The "we're cloud-native" trap - often means constraints exist anyway
 - Talking to the wrong person - know who decides vs. who evaluates
 - Assuming environment access - always ask explicitly
 - Skipping the "why now" - urgency helps you prioritize
 
-### Links
+## 🔗 Links
 
 - [POC Scoping](poc-scoping.md)
 - [Environment Guides](../environments/)
