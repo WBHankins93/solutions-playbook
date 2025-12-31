@@ -46,3 +46,7 @@
 - Requesting help from engineering → [internal/requesting-help.md](internal/requesting-help.md)
 - Handing off to another SE → [internal/handoff-to-se.md](internal/handoff-to-se.md)
 
+## Skill development and learning
+
+- I'm new to SE work or want to level up → [LEARNING-PATHS.md](LEARNING-PATHS.md)
+

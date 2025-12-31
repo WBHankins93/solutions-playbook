@@ -10,6 +10,12 @@ and collection of practical frameworks for getting things done.
 
 Open [START-HERE.md](START-HERE.md) and find your situation.
 
+## Skill Development
+
+New to SE work or looking to level up? Check out [LEARNING-PATHS.md](LEARNING-PATHS.md) for
+structured learning paths from Foundations to Advanced, with self-assessment and
+progress tracking.
+
 ## Structure
 
 - `engagements/` - New customer assignments
