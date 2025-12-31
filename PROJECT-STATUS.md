@@ -34,6 +34,7 @@
 - ✅ `internal/status-updates.md` - Status update template
 - ✅ `internal/requesting-help.md` - Framework for requesting engineering help
 - ✅ `internal/handoff-to-se.md` - SE-to-SE handoff template
+- ✅ `internal/tracking-impact.md` - How to measure and communicate SE impact
 
 ### Engagements
 - ✅ `engagements/new-customer.md` - New customer engagement guide
@@ -68,15 +69,15 @@
 - ✅ `templates/technical/environment-validation.md` - Environment validation template
 - ✅ `templates/technical/common-commands.md` - Common Kubernetes/Helm commands
 
-**Total Complete: 40 files**  
-**Enhancements In Progress: 7 files**
+**Total Complete: 41 files**  
+**Enhancements In Progress: 2 files**
 
 ---
 
 ## Additional Enhancements (In Progress)
 
-### A. Metrics/ROI Section
-- 🟡 `internal/tracking-impact.md` - How to measure and communicate SE impact
+### A. Metrics/ROI Section ✅
+- ✅ `internal/tracking-impact.md` - How to measure and communicate SE impact
 
 ### B. Customer Communication Templates ✅
 - ✅ `templates/customer/poc-status-update-email.md` - POC status update email template
@@ -104,7 +105,7 @@ se-playbook/
 ├── implementation/ (4 files - all complete ✅)
 ├── environments/ (5 files - all complete ✅)
 ├── recovery/ (5 files - all complete ✅)
-├── internal/ (5 files - all complete ✅)
+├── internal/ (6 files - all complete ✅)
 ├── templates/ (9 files - all complete ✅)
 └── lessons/ (1 file - complete ✅)
 ```
