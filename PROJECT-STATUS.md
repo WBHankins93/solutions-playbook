@@ -88,8 +88,8 @@
 ### C. Career Development
 - 🟡 `LEARNING-PATHS.md` - How to skill up as an SE
 
-### D. Enhanced Air-Gapped Guide
-- 🟡 `environments/air-gapped.md` - Needs expansion (currently minimal)
+### D. Enhanced Air-Gapped Guide ✅
+- ✅ `environments/air-gapped.md` - Comprehensive air-gapped deployment guide
 
 ---
 
