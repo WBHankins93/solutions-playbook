@@ -6,6 +6,20 @@ An operational skill development guide for Solutions Engineers. This focuses on 
 
 ---
 
+## Quick Overview
+
+This guide provides structured learning paths for SE operational skills—the "when" and "how" of applying technical knowledge in customer engagements.
+
+**If you're new to SE:** Start with Foundations (8 weeks). Learn discovery, demos, and basic engagement management.
+
+**If you have 6-12 months experience:** Jump to Practitioner. Master POC execution, implementation, and environment specialization.
+
+**If you have 18+ months:** Focus on Advanced. Develop recovery expertise, strategic engagement, and team leadership.
+
+Each path includes playbook resources to read, implementation-studio labs to practice, self-check questions, and time estimates. The full guide is comprehensive (~20 min read), but use it as a reference. Jump to your level using the Table of Contents below.
+
+---
+
 ## Table of Contents
 
 - [How This Works](#how-this-works)
@@ -29,6 +43,15 @@ An operational skill development guide for Solutions Engineers. This focuses on 
 - [Additional Resources](#additional-resources)
 - [Progress Tracking](#progress-tracking)
 - [Tips for Effective Learning](#tips-for-effective-learning)
+
+---
+
+**Quick Start:**
+
+- [I'm new to SE → Foundations](#learning-path-1-foundations)
+- [I have 6-12 months experience → Practitioner](#learning-path-2-practitioner)
+- [I have 18+ months experience → Advanced](#learning-path-3-advanced)
+- [Show me how playbook + studio work together → Integration Table](#integration-operational--technical-skills)
 
 ---
 
@@ -244,114 +267,43 @@ Rate yourself honestly (1-5) in each area:
 
 ### Phase 1: POC Mastery (Month 1-2)
 
-**Learn:**
+**Focus:** POC scoping and execution without scope creep
 
-- POC scoping that prevents scope creep
-- Execution in constrained environments
-- Success criteria definition
-- When to say no or push back
+**Resources:** [POC Scoping](pre-sales/poc-scoping.md) | [POC Execution](pre-sales/poc-execution.md) | [Scope Creep](recovery/scope-creep.md) | [POC Recovery](recovery/poc-recovery.md)
 
-**Read:**
+**Practice:** Lead 2-3 POCs end-to-end, document learnings using [Retrospective Template](templates/retrospective.md), handle scope changes, present results to stakeholders
 
-- [POC Scoping](pre-sales/poc-scoping.md)
-- [POC Execution](pre-sales/poc-execution.md)
-- [Scope Creep Management](recovery/scope-creep.md)
-- [POC Recovery](recovery/poc-recovery.md)
+**Technical Bridge:** [Implementation-studio labs](https://github.com/WBHankins93/implementation-studio) matching your POC environments
 
-**Practice:**
-
-- Lead 2-3 POCs end-to-end (scoping to validation)
-- Document lessons learned using [Retrospective Template](templates/retrospective.md)
-- Handle scope change requests
-- Present POC results to stakeholders
-
-**Technical Bridge:**
-
-- Complete [implementation-studio labs](https://github.com/WBHankins93/implementation-studio) that match your POC environments
-- Practice deployment patterns you'll use in POCs
-
-**Self-Check:**
-
-- [ ] Can you scope a POC realistically?
-- [ ] Do you prevent or manage scope creep effectively?
-- [ ] Can you validate success criteria objectively?
-- [ ] Do you document learnings for future POCs?
+**Self-Check:** Can you scope realistically, prevent scope creep, and validate success criteria?
 
 ---
 
 ### Phase 2: Implementation Excellence (Month 3-4)
 
-**Learn:**
+**Focus:** Implementation planning, troubleshooting, and customer handoff
 
-- Implementation planning and kickoff
-- Troubleshooting systematically
-- Customer handoff and enablement
-- Creating production-ready documentation
+**Resources:** [Implementation Kickoff](implementation/kickoff.md) | [Mid-Implementation Checkpoint](implementation/mid-implementation.md) | [Troubleshooting](implementation/troubleshooting.md) | [Customer Handoff](implementation/handoff.md)
 
-**Read:**
+**Practice:** Lead implementation from kickoff to handoff, use [Kickoff Agenda Template](templates/kickoff-agenda.md), create [Handoff Documentation](templates/handoff-document.md)
 
-- [Implementation Kickoff](implementation/kickoff.md)
-- [Mid-Implementation Checkpoint](implementation/mid-implementation.md)
-- [Troubleshooting](implementation/troubleshooting.md)
-- [Customer Handoff](implementation/handoff.md)
+**Technical Bridge:** Work through all [implementation-studio labs](https://github.com/WBHankins93/implementation-studio) matching your deployment environments
 
-**Practice:**
-
-- Lead implementation from kickoff to handoff
-- Use [Kickoff Agenda Template](templates/kickoff-agenda.md)
-- Create handoff documentation using [Handoff Template](templates/handoff-document.md)
-- Practice troubleshooting under time pressure
-
-**Technical Bridge:**
-
-- Work through all [implementation-studio labs](https://github.com/WBHankins93/implementation-studio)
-- Focus on labs that match environments you deploy to most
-
-**Self-Check:**
-
-- [ ] Can you plan implementation phases effectively?
-- [ ] Do you troubleshoot systematically (not randomly)?
-- [ ] Can you enable customers for day-2 operations?
-- [ ] Do you create clear, usable documentation?
+**Self-Check:** Can you plan phases effectively, troubleshoot systematically, enable customers for day-2 operations, and create clear documentation?
 
 ---
 
 ### Phase 3: Environment Specialization (Month 5-6)
 
-**Learn:**
+**Focus:** Deep expertise in 2-3 environment types, recognizing constraints early, best practices per scenario
 
-- Deep expertise in 2-3 environment types
-- Unique constraints and patterns for each
-- How to recognize environment type early in discovery
-- Best practices for each scenario
+**Resources:** [Air-Gapped](environments/air-gapped.md) | [Private Cluster](environments/private-cluster.md) | [Firewall-Restricted](environments/firewall-restricted.md) | [Multi-Tenant](environments/multi-tenant.md) | [Hybrid Cloud](environments/hybrid.md)
 
-**Read:**
+**Practice:** Choose 2-3 environments to specialize in, lead deployments in each, document patterns and gotchas
 
-- [Air-Gapped Deployment](environments/air-gapped.md)
-- [Private Cluster](environments/private-cluster.md)
-- [Firewall-Restricted](environments/firewall-restricted.md)
-- [Multi-Tenant](environments/multi-tenant.md)
-- [Hybrid Cloud + On-Prem](environments/hybrid.md)
+**Technical Bridge:** Deep-dive on relevant [implementation-studio labs](https://github.com/WBHankins93/implementation-studio), complete multiple times, experiment with edge cases
 
-**Practice:**
-
-- Choose 2-3 environments to specialize in
-- Lead deployments in each environment type
-- Document your own patterns and gotchas
-- Build reference implementations
-
-**Technical Bridge:**
-
-- Deep-dive on relevant [implementation-studio labs](https://github.com/WBHankins93/implementation-studio)
-- Complete labs multiple times to build muscle memory
-- Experiment with variations and edge cases
-
-**Self-Check:**
-
-- [ ] Can you identify environment type quickly in discovery?
-- [ ] Do you know the unique constraints for your specializations?
-- [ ] Can you adjust your approach based on environment?
-- [ ] Have you documented patterns for your specialized environments?
+**Self-Check:** Can you identify environment type quickly in discovery, know unique constraints, adjust approach, and document patterns?
 
 ---
 
@@ -362,97 +314,37 @@ Rate yourself honestly (1-5) in each area:
 
 ### Phase 1: Recovery & Escalation Mastery
 
-**Learn:**
+**Focus:** De-escalation techniques, when to escalate vs. resolve, maintaining customer trust under pressure, strategic crisis communication
 
-- De-escalation techniques
-- When to escalate vs. resolve independently
-- Maintaining customer trust under pressure
-- Strategic communication during crises
+**Resources:** [Demo Recovery](recovery/demo-recovery.md) | [POC Recovery](recovery/poc-recovery.md) | [Escalation Management](recovery/escalation.md) | [Getting Unstuck](recovery/stuck.md)
 
-**Read:**
+**Practice:** Review past escalations, role-play difficult scenarios, lead recovery efforts on troubled engagements, document recovery patterns
 
-- [Demo Recovery](recovery/demo-recovery.md)
-- [POC Recovery](recovery/poc-recovery.md)
-- [Escalation Management](recovery/escalation.md)
-- [Getting Unstuck](recovery/stuck.md)
-
-**Practice:**
-
-- Review past escalations (yours or team's)
-- Role-play difficult scenarios
-- Lead recovery efforts on troubled engagements
-- Document recovery patterns
-
-**Self-Check:**
-
-- [ ] Can you recover from major demo/POC failures?
-- [ ] Do you handle escalations professionally?
-- [ ] Can you maintain relationships through difficulty?
-- [ ] Do you know when to escalate vs. resolve?
+**Self-Check:** Can you recover from major failures, handle escalations professionally, maintain relationships through difficulty, and know when to escalate vs. resolve?
 
 ---
 
 ### Phase 2: Strategic Customer Engagement
 
-**Learn:**
+**Focus:** Understanding business drivers, navigating stakeholder landscapes, aligning solutions with outcomes, building strategic relationships
 
-- Understanding business drivers beyond technical needs
-- Navigating complex stakeholder landscapes
-- Aligning technical solutions with business outcomes
-- Building long-term strategic relationships
+**Key Areas:** Reading between the lines in discovery, identifying political dynamics, influencing without authority, executive-level communication
 
-**Focus Areas:**
+**Practice:** Lead enterprise engagements, present to C-level, drive multi-quarter relationships, identify business outcomes beyond technical requirements
 
-- Reading between the lines in discovery
-- Identifying political dynamics
-- Influencing without authority
-- Executive-level communication
-
-**Practice:**
-
-- Lead enterprise-level engagements
-- Present to C-level stakeholders
-- Drive multi-quarter customer relationships
-- Identify business outcomes, not just technical requirements
-
-**Self-Check:**
-
-- [ ] Do you understand customer's business beyond tech?
-- [ ] Can you navigate complex political situations?
-- [ ] Can you influence without authority?
-- [ ] Do you build strategic relationships?
+**Self-Check:** Do you understand customer's business beyond tech, navigate complex politics, influence without authority, and build strategic relationships?
 
 ---
 
 ### Phase 3: Process & Team Building
 
-**Learn:**
+**Focus:** Documenting and systemizing SE work, mentoring junior SEs, building processes for growing teams, implementing improvements
 
-- How to document and systemize SE work
-- Mentoring and training junior SEs
-- Building SE processes for growing teams
-- Identifying and implementing improvements
+**Key Areas:** Creating reusable frameworks, building team knowledge base, effective mentoring, process improvement methodologies
 
-**Focus Areas:**
+**Practice:** Mentor 1-2 junior SEs, contribute to team playbooks, lead process improvements, document lessons systematically
 
-- Creating reusable frameworks
-- Building team knowledge base
-- Effective mentoring techniques
-- Process improvement methodologies
-
-**Practice:**
-
-- Mentor 1-2 junior SEs
-- Contribute to team playbooks
-- Lead process improvement initiatives
-- Document lessons learned systematically
-
-**Self-Check:**
-
-- [ ] Can you mentor effectively?
-- [ ] Do you document learnings for the team?
-- [ ] Have you improved SE processes?
-- [ ] Do you contribute to team knowledge base?
+**Self-Check:** Can you mentor effectively, document learnings for the team, improve SE processes, and contribute to team knowledge base?
 
 ---
 
