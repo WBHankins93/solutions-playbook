@@ -101,19 +101,6 @@ se-playbook/
 
 ---
 
-## Git Commit History
-
-1. `3a32c04` - Initial commit: project structure and routing
-2. `471353f` - Add complete draft content for core workflows
-3. `34316ac` - Add placeholder structure for engagement and pre-sales workflows
-4. `246bbbb` - Add environment-specific guides and recovery workflows
-5. `1d8fa2e` - Add template files for reusable artifacts
-
-**Repository**: https://github.com/WBHankins93/solutions-playbook.git  
-**Branch**: main (pushed to remote)
-
----
-
 ## Next Steps
 
 ### Priority 1: Technical Templates
