@@ -159,7 +159,7 @@ Rate yourself honestly (1-5) in each area:
 **Technical Bridge:**
 
 - Complete [DevOps-Studio: Kubernetes Fundamentals](https://github.com/WBHankins93/devops-studio) to understand concepts you'll discuss
-- Review [implementation-studio Lab 01](https://github.com/WBHankins93/implementation-studio) for deployment basics
+- Review [implementation-studio Lab 01](https://github.com/WBHankins93/implementation-studio/tree/main/labs/01-basics) for deployment basics
 
 **Self-Check:**
 
@@ -194,9 +194,9 @@ Rate yourself honestly (1-5) in each area:
 **Technical Bridge:**
 
 - Deep-dive on [implementation-studio](https://github.com/WBHankins93/implementation-studio) for environment types you'll encounter:
-  - Lab 02: Air-Gapped Deployment
-  - Lab 03: Private Cluster
-  - Lab 04: Firewall-Restricted
+  - [Lab 02: Air-Gapped Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment)
+  - [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster)
+  - [Lab 04: Firewall-Restricted](https://github.com/WBHankins93/implementation-studio/tree/main/labs/04-firewall-restricted)
 
 **Self-Check:**
 
@@ -462,10 +462,10 @@ This table shows how to combine SE Playbook (operational) with implementation-st
 
 | SE Scenario | Playbook Resource | Implementation-Studio Lab |
 |-------------|-------------------|---------------------------|
-| Discovery reveals air-gapped environment | [Air-Gapped Guide](environments/air-gapped.md) | Lab 02: Air-Gapped Deployment |
-| Need to scope POC for private cluster | [POC Scoping](pre-sales/poc-scoping.md) + [Private Cluster](environments/private-cluster.md) | Lab 03: Private Cluster |
-| Customer has firewall restrictions | [Firewall-Restricted Guide](environments/firewall-restricted.md) | Lab 04: Firewall-Restricted Environment |
-| Planning hybrid cloud + on-prem deployment | [Hybrid Guide](environments/hybrid.md) | Lab 05: Hybrid Cloud Deployment |
+| Discovery reveals air-gapped environment | [Air-Gapped Guide](environments/air-gapped.md) | [Lab 02: Air-Gapped Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment) |
+| Need to scope POC for private cluster | [POC Scoping](pre-sales/poc-scoping.md) + [Private Cluster](environments/private-cluster.md) | [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster) |
+| Customer has firewall restrictions | [Firewall-Restricted Guide](environments/firewall-restricted.md) | [Lab 04: Firewall-Restricted Environment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/04-firewall-restricted) |
+| Planning hybrid cloud + on-prem deployment | [Hybrid Guide](environments/hybrid.md) | [Lab 05: Hybrid Cloud Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/05-hybrid-cloud) |
 | Troubleshooting during implementation | [Troubleshooting Framework](implementation/troubleshooting.md) | Relevant lab for environment type |
 | Demo breaks during customer call | [Demo Recovery](recovery/demo-recovery.md) | Practice demo in lab environment |
 
@@ -488,7 +488,7 @@ This table shows how to combine SE Playbook (operational) with implementation-st
 
 **Technical:**
 - DevOps-Studio: Kubernetes basics
-- implementation-studio: Lab 01
+- [implementation-studio: Lab 01](https://github.com/WBHankins93/implementation-studio/tree/main/labs/01-basics)
 
 **Practice:**
 - Shadow 5+ customer calls
@@ -504,7 +504,7 @@ This table shows how to combine SE Playbook (operational) with implementation-st
 - Scope Creep Management
 
 **Technical:**
-- implementation-studio: Labs 02-03
+- [implementation-studio: Labs 02-03](https://github.com/WBHankins93/implementation-studio) ([Lab 02: Air-Gapped](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment), [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster))
 - Focus on constrained environments
 
 **Practice:**
@@ -521,7 +521,7 @@ This table shows how to combine SE Playbook (operational) with implementation-st
 - Customer Handoff
 
 **Technical:**
-- implementation-studio: Labs 04-05
+- [implementation-studio: Labs 04-05](https://github.com/WBHankins93/implementation-studio) ([Lab 04: Firewall-Restricted](https://github.com/WBHankins93/implementation-studio/tree/main/labs/04-firewall-restricted), [Lab 05: Hybrid Cloud](https://github.com/WBHankins93/implementation-studio/tree/main/labs/05-hybrid-cloud))
 - Complex deployment scenarios
 
 **Practice:**
