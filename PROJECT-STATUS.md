@@ -78,11 +78,11 @@
 ### A. Metrics/ROI Section
 - 🟡 `internal/tracking-impact.md` - How to measure and communicate SE impact
 
-### B. Customer Communication Templates
-- 🟡 `templates/customer/poc-status-update-email.md` - POC status update email template
-- 🟡 `templates/customer/deployment-schedule-communication.md` - Deployment schedule template
-- 🟡 `templates/customer/escalation-response.md` - Escalation response template
-- 🟡 `templates/customer/post-implementation-follow-up.md` - Post-implementation follow-up template
+### B. Customer Communication Templates ✅
+- ✅ `templates/customer/poc-status-update-email.md` - POC status update email template
+- ✅ `templates/customer/deployment-schedule-communication.md` - Deployment schedule template
+- ✅ `templates/customer/escalation-response.md` - Escalation response template
+- ✅ `templates/customer/post-implementation-follow-up.md` - Post-implementation follow-up template
 
 ### C. Career Development
 - 🟡 `LEARNING-PATHS.md` - How to skill up as an SE
