@@ -6,6 +6,18 @@ This is your "what to do right now" playbook. Open it when you get assigned a cu
 
 ---
 
+## 🗺️ Quick Navigation
+
+> **🚨 Need help right now?** → **[START-HERE.md](START-HERE.md)** - Find your situation and get routed to the exact guide you need in seconds.
+
+**New to a situation?** → [START-HERE.md](START-HERE.md) - Find your scenario and get routed to the right guide
+
+**Want to level up?** → [LEARNING-PATHS.md](LEARNING-PATHS.md) - Structured skill development from Foundations to Advanced
+
+**Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
+
+---
+
 ## 🎯 Who This Is For
 
 **If you're a Solutions Engineer, Technical Sales Engineer, or Customer Success Engineer**, this repo helps you:
@@ -18,6 +30,8 @@ This is your "what to do right now" playbook. Open it when you get assigned a cu
 - **Level up your skills** with structured learning paths from Foundations to Advanced
 
 **This is not a training manual or product documentation.** It's a routing system and collection of practical frameworks for getting things done.
+
+**This playbook scales with you, from first-year SE to technical lead.**
 
 ---
 
@@ -52,16 +66,6 @@ This is your "what to do right now" playbook. Open it when you get assigned a cu
 - **[POC Recovery](recovery/poc-recovery.md)** - 5-step framework for salvaging failing POCs
 - **[Scope Creep Management](recovery/scope-creep.md)** - Early warning signs and how to say no gracefully
 - **[Getting Unstuck](recovery/stuck.md)** - Self-assessment and escalation framework
-
----
-
-## 🗺️ Quick Navigation
-
-**New to a situation?** → [START-HERE.md](START-HERE.md) - Find your scenario and get routed to the right guide
-
-**Want to level up?** → [LEARNING-PATHS.md](LEARNING-PATHS.md) - Structured skill development from Foundations to Advanced
-
-**Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
 
 ---
 

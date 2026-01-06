@@ -1,4 +1,6 @@
-# What's happening?
+# 🚨 What's happening?
+
+> **This is your emergency routing system.** Find your situation below and jump directly to the guide you need. No scrolling. No searching. Just click and go.
 
 ## I just got assigned something new
 
