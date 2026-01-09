@@ -6,6 +6,24 @@ This is your "what to do right now" playbook. Open it when you get assigned a cu
 
 ---
 
+## 🔨 Why I Built This
+
+I spent the first half of my SE career with frameworks scattered everywhere—Slack messages, Google Drive docs, local OneNote files—and I wasted hours searching for the right framework when I needed it most.
+
+**The real problem:** Scope creep was killing POCs because I didn't have a consistent framework in place. Discovery calls fell flat because I wasn't prepared with the right questions. And when something broke, I didn't have a structured way to recover—I just improvised.
+
+**The worst part:** Every client taught me something new, but the lessons were buried in emails and Slack threads. I wasn't scaling; I was just repeating mistakes in different ways.
+
+**What changed:** I realized the frameworks I'd developed across healthcare, energy, and enterprise clients weren't just useful for me—they could help any SE deliver results faster. So I organized 10+ years of client work into a single, accessible playbook: discovery calls, POC scoping, environment-specific guides, recovery strategies, and templates you can actually use tomorrow.
+
+**Who this is for:** SEs at any level—whether you're in your first year feeling lost or an experienced engineer who wants to scale consistently. I built it with my experience in mind, but I've intentionally written it so a 1st-year SE can start with the solutions-playbook, then graduate to implementation-studio when they're ready to understand the technical depth.
+
+**What's inside:** 42 frameworks, checklists, and templates covering the full customer lifecycle. No theory. Just what works when you're staring at a customer on a call in 30 minutes or your POC hits a blocker.
+
+This repo exists because I got tired of reinventing solutions. Now you don't have to.
+
+---
+
 ## 🗺️ Quick Navigation
 
 > **🚨 Need help right now?** → **[START-HERE.md](START-HERE.md)** - Find your situation and get routed to the exact guide you need in seconds.
