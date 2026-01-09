@@ -8,7 +8,7 @@ This is your "what to do right now" playbook. Open it when you get assigned a cu
 
 ## 🔨 Why I Built This
 
-After 10+ years of SE work across healthcare, energy, and enterprise clients, I was repeating the same patterns but documenting them differently each time.
+After years of SE work across healthcare, energy, telecom, tech and enterprise clients, I was repeating the same patterns but documenting them differently each time.
 
 **The problem:** Frameworks scattered across Slack messages, Google Drive docs, and local notes. Discovery questions improvised on every call. POC scope creep because I didn't have consistent frameworks. Recovery strategies reinvented when things broke.
 
