@@ -182,7 +182,7 @@ Rate yourself honestly (1-5) in each area:
 **Technical Bridge:**
 
 - Complete [DevOps-Studio: Kubernetes Fundamentals](https://github.com/WBHankins93/devops-studio) to understand concepts you'll discuss
-- Review [implementation-studio Lab 01](https://github.com/WBHankins93/implementation-studio/tree/main/labs/01-basics) for deployment basics
+- Review [implementation-studio Lab 01: Basics](https://github.com/WBHankins93/implementation-studio/tree/main/labs/01-basics) for deployment basics and common patterns you'll reference in discovery
 
 **Self-Check:**
 
@@ -217,9 +217,9 @@ Rate yourself honestly (1-5) in each area:
 **Technical Bridge:**
 
 - Deep-dive on [implementation-studio](https://github.com/WBHankins93/implementation-studio) for environment types you'll encounter:
-  - [Lab 02: Air-Gapped Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment)
-  - [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster)
-  - [Lab 04: Firewall-Restricted](https://github.com/WBHankins93/implementation-studio/tree/main/labs/04-firewall-restricted)
+  - [Lab 02: Air-Gapped Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment) - Understand artifact bundling and offline deployment patterns
+  - [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster) - Learn private registry and network isolation patterns
+  - [Lab 04: Firewall-Restricted](https://github.com/WBHankins93/implementation-studio/tree/main/labs/04-firewall-restricted) - Master egress proxy and whitelist strategies
 
 **Self-Check:**
 
@@ -250,6 +250,7 @@ Rate yourself honestly (1-5) in each area:
 - Record yourself, review critically
 - Prepare backup plans (recorded demo, screenshots)
 - Practice with different audience types (technical, executive, mixed)
+- Use [implementation-studio demo environment](https://github.com/WBHankins93/implementation-studio) to practice deployments before customer demos
 
 **Self-Check:**
 
@@ -273,7 +274,9 @@ Rate yourself honestly (1-5) in each area:
 
 **Practice:** Lead 2-3 POCs end-to-end, document learnings using [Retrospective Template](templates/retrospective.md), handle scope changes, present results to stakeholders
 
-**Technical Bridge:** [Implementation-studio labs](https://github.com/WBHankins93/implementation-studio) matching your POC environments
+**Technical Bridge:** 
+- Use [implementation-studio POC Sprint lab](https://github.com/WBHankins93/implementation-studio/tree/main/labs/poc-sprint) to estimate technical effort and validate deployment patterns before scoping
+- Complete [implementation-studio labs](https://github.com/WBHankins93/implementation-studio) matching your POC environments to build confidence in deployment scenarios
 
 **Self-Check:** Can you scope realistically, prevent scope creep, and validate success criteria?
 
@@ -287,7 +290,9 @@ Rate yourself honestly (1-5) in each area:
 
 **Practice:** Lead implementation from kickoff to handoff, use [Kickoff Agenda Template](templates/kickoff-agenda.md), create [Handoff Documentation](templates/handoff-document.md)
 
-**Technical Bridge:** Work through all [implementation-studio labs](https://github.com/WBHankins93/implementation-studio) matching your deployment environments
+**Technical Bridge:** 
+- Work through all [implementation-studio labs](https://github.com/WBHankins93/implementation-studio) matching your deployment environments
+- Reference [implementation-studio troubleshooting patterns](https://github.com/WBHankins93/implementation-studio) when planning implementation phases and estimating effort
 
 **Self-Check:** Can you plan phases effectively, troubleshoot systematically, enable customers for day-2 operations, and create clear documentation?
 
@@ -355,11 +360,12 @@ This table shows how to combine SE Playbook (operational) with implementation-st
 | SE Scenario | Playbook Resource | Implementation-Studio Lab |
 |-------------|-------------------|---------------------------|
 | Discovery reveals air-gapped environment | [Air-Gapped Guide](environments/air-gapped.md) | [Lab 02: Air-Gapped Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment) |
-| Need to scope POC for private cluster | [POC Scoping](pre-sales/poc-scoping.md) + [Private Cluster](environments/private-cluster.md) | [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster) |
+| Need to scope POC for private cluster | [POC Scoping](pre-sales/poc-scoping.md) + [Private Cluster](environments/private-cluster.md) | [POC Sprint Lab](https://github.com/WBHankins93/implementation-studio/tree/main/labs/poc-sprint) for effort estimation + [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster) |
 | Customer has firewall restrictions | [Firewall-Restricted Guide](environments/firewall-restricted.md) | [Lab 04: Firewall-Restricted Environment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/04-firewall-restricted) |
 | Planning hybrid cloud + on-prem deployment | [Hybrid Guide](environments/hybrid.md) | [Lab 05: Hybrid Cloud Deployment](https://github.com/WBHankins93/implementation-studio/tree/main/labs/05-hybrid-cloud) |
-| Troubleshooting during implementation | [Troubleshooting Framework](implementation/troubleshooting.md) | Relevant lab for environment type |
-| Demo breaks during customer call | [Demo Recovery](recovery/demo-recovery.md) | Practice demo in lab environment |
+| Troubleshooting during implementation | [Troubleshooting Framework](implementation/troubleshooting.md) | Relevant [implementation-studio lab](https://github.com/WBHankins93/implementation-studio) for environment type |
+| Demo breaks during customer call | [Demo Recovery](recovery/demo-recovery.md) | Practice demo in [implementation-studio lab environment](https://github.com/WBHankins93/implementation-studio) |
+| Scoping POC timeline and effort | [POC Scoping](pre-sales/poc-scoping.md) | [POC Sprint Lab](https://github.com/WBHankins93/implementation-studio/tree/main/labs/poc-sprint) for technical effort estimation |
 
 **The Pattern:**
 
@@ -396,6 +402,7 @@ This table shows how to combine SE Playbook (operational) with implementation-st
 - Scope Creep Management
 
 **Technical:**
+- [POC Sprint Lab](https://github.com/WBHankins93/implementation-studio/tree/main/labs/poc-sprint) - Use this to estimate technical effort before scoping POCs
 - [implementation-studio: Labs 02-03](https://github.com/WBHankins93/implementation-studio) ([Lab 02: Air-Gapped](https://github.com/WBHankins93/implementation-studio/tree/main/labs/02-airgapped-deployment), [Lab 03: Private Cluster](https://github.com/WBHankins93/implementation-studio/tree/main/labs/03-private-cluster))
 - Focus on constrained environments
 

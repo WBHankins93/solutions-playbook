@@ -48,6 +48,7 @@ set expectations and avoid scope creep.
 - Account for environment setup time
 - Buffer for troubleshooting ⏱️ add 20-30%
 - Include validation and sign-off time
+- 💡 **Technical Effort Estimation:** Use [implementation-studio POC Sprint lab](https://github.com/WBHankins93/implementation-studio/tree/main/labs/poc-sprint) to validate deployment patterns and estimate technical effort before committing to timelines
 
 **Resources Required**
 
@@ -110,4 +111,5 @@ set expectations and avoid scope creep.
 - [POC Execution](poc-execution.md)
 - [POC Recovery](../recovery/poc-recovery.md)
 - [Scope Creep](../recovery/scope-creep.md)
+- [implementation-studio: POC Sprint Lab](https://github.com/WBHankins93/implementation-studio/tree/main/labs/poc-sprint) - Technical effort estimation and deployment pattern validation
 
