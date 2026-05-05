@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - customer-facing
+---
+
 ## Firewall-Restricted Environment
 
 ## 📝 Context

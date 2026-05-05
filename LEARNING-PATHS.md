@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - customer-facing
+---
+
 # SE Operational Learning Paths
 
 An operational skill development guide for Solutions Engineers. This focuses on customer engagement, scoping, communication, and SE processes.

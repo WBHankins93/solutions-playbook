@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - poc
+---
+
 ## POC Scoping
 
 ## 📝 Context

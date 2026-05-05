@@ -1,3 +1,8 @@
+---
+tags:
+  - internal
+---
+
 # SE Playbook - Project Status
 
 > Last Updated: 2025-12-30

@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 # SE Playbook
 
 **Battle-tested operational frameworks for Solutions Engineers who need to deliver results, not just read docs.**
@@ -29,6 +34,17 @@ After years of SE work across healthcare, energy, telecom, tech and enterprise c
 **Want to level up?** → [LEARNING-PATHS.md](LEARNING-PATHS.md) - Structured skill development from Foundations to Advanced
 
 **Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
+
+---
+
+**Prefer a docs site?** → Run the VitePress site locally while keeping these Markdown files as the canonical source:
+
+```bash
+npm install
+npm run docs:dev
+```
+
+The site adds top-level navigation, local search, and a [tag index](TAGS.md) without duplicating the existing guide content.
 
 ---
 

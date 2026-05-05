@@ -1,6 +1,46 @@
+---
+tags:
+  - customer-facing
+---
+
 # 🚨 What's happening?
 
 > **This is your emergency routing system.** Find your situation below and jump directly to the guide you need. No scrolling. No searching. Just click and go.
+
+## Common SE situations
+
+<div class="situation-grid">
+  <a class="situation-card" href="./pre-sales/discovery.md">
+    <h3>Prep a discovery call</h3>
+    <p>Use the discovery framework when you need customer context, pain, decision process, and success criteria fast.</p>
+    <strong>Open discovery →</strong>
+  </a>
+  <a class="situation-card" href="./pre-sales/poc-scoping.md">
+    <h3>Scope a POC</h3>
+    <p>Turn ambiguity into clear POC goals, measurable success criteria, owners, timeline, and exit conditions.</p>
+    <strong>Open POC scoping →</strong>
+  </a>
+  <a class="situation-card" href="./implementation/kickoff.md">
+    <h3>Start implementation</h3>
+    <p>Run kickoff with the right stakeholders, responsibilities, prerequisites, risks, and working cadence.</p>
+    <strong>Open kickoff →</strong>
+  </a>
+  <a class="situation-card" href="./environments/air-gapped.md">
+    <h3>Handle air-gapped work</h3>
+    <p>Plan artifacts, transfer, validation, and troubleshooting before environment constraints slow the team down.</p>
+    <strong>Open air-gapped guide →</strong>
+  </a>
+  <a class="situation-card" href="./recovery/escalation.md">
+    <h3>Recover an escalation</h3>
+    <p>Stabilize a frustrated customer, align internal owners, and move from emotion to an executable recovery plan.</p>
+    <strong>Open escalation guide →</strong>
+  </a>
+  <a class="situation-card" href="./internal/requesting-help.md">
+    <h3>Ask engineering for help</h3>
+    <p>Package the problem, impact, evidence, urgency, and requested decision so internal teams can respond quickly.</p>
+    <strong>Open help request →</strong>
+  </a>
+</div>
 
 ## I just got assigned something new
 

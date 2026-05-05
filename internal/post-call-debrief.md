@@ -1,3 +1,8 @@
+---
+tags:
+  - internal
+---
+
 ## Post-Call Debrief
 
 ## 📝 Context
