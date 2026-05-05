@@ -1,3 +1,8 @@
+---
+tags:
+  - internal
+---
+
 # Engagement Retrospective: [Customer Name]
 
 > Date: YYYY-MM-DD

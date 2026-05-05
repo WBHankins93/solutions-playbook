@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 # SE Playbook
 
 **Battle-tested operational frameworks for Solutions Engineers who need to deliver results, not just read docs.**
@@ -37,6 +42,17 @@ After years of SE work across healthcare, energy, telecom, tech and enterprise c
 - **Demo recovery** → [START-HERE route](START-HERE.md#5-my-demo-went-wrong-or-is-about-to-go-wrong) → [Demo recovery](recovery/demo-recovery.md)
 - **Air-gapped deployment** → [START-HERE route](START-HERE.md#6-the-customer-has-an-environment-constraint) → [Air-gapped deployment](environments/air-gapped.md)
 - **Internal escalation / requesting help** → [Leadership update route](START-HERE.md#7-i-need-to-update-leadership) or [internal help route](START-HERE.md#8-im-stuck-and-need-internal-help) → [Requesting help from engineering](internal/requesting-help.md)
+
+---
+
+**Prefer a docs site?** → Run the VitePress site locally while keeping these Markdown files as the canonical source:
+
+```bash
+npm install
+npm run docs:dev
+```
+
+The site adds top-level navigation, local search, and a [tag index](TAGS.md) without duplicating the existing guide content.
 
 ---
 

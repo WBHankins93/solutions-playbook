@@ -1,3 +1,8 @@
+---
+tags:
+  - internal
+---
+
 ## Pre-Call Prep with Sales
 
 ## 📝 Context

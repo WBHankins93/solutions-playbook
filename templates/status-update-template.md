@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 > Full context: [internal/status-updates.md](../internal/status-updates.md)
 
 ## [Customer Name] - Status Update - [Date]
