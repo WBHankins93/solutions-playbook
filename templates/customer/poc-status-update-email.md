@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - poc
+---
+
 ## POC Status Update Email Template
 
 > Use this template for regular POC status updates to customers

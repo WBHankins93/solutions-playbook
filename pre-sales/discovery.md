@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - discovery
+---
+
 ## Discovery Call
 
 ## 📝 Context

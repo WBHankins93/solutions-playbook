@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - air-gapped
+---
+
 ## Air-Gapped Transfer Mechanism Decision Matrix
 
 > Full context: [environments/air-gapped.md](../../environments/air-gapped.md)

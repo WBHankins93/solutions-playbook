@@ -1,6 +1,11 @@
+---
+tags:
+  - implementation
+---
+
 ## Environment Validation
 
-> Full context: [implementation/kickoff.md](../implementation/kickoff.md)
+> Full context: [implementation/kickoff.md](../../implementation/kickoff.md)
 
 ### Cluster Access
 
