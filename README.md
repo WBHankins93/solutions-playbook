@@ -35,6 +35,14 @@ After years of SE work across healthcare, energy, telecom, tech and enterprise c
 
 **Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
 
+### 🔥 Top 5 Urgent Workflows
+
+- **Discovery call prep** → [START-HERE route](START-HERE.md#2-i-need-to-prepare-for-a-discovery-call) → [Discovery call framework](pre-sales/discovery.md)
+- **POC scoping** → [START-HERE route](START-HERE.md#3-i-need-to-scope-a-poc) → [POC scoping framework](pre-sales/poc-scoping.md)
+- **Demo recovery** → [START-HERE route](START-HERE.md#5-my-demo-went-wrong-or-is-about-to-go-wrong) → [Demo recovery](recovery/demo-recovery.md)
+- **Air-gapped deployment** → [START-HERE route](START-HERE.md#6-the-customer-has-an-environment-constraint) → [Air-gapped deployment](environments/air-gapped.md)
+- **Internal escalation / requesting help** → [Leadership update route](START-HERE.md#7-i-need-to-update-leadership) or [internal help route](START-HERE.md#8-im-stuck-and-need-internal-help) → [Requesting help from engineering](internal/requesting-help.md)
+
 ---
 
 **Prefer a docs site?** → Run the VitePress site locally while keeping these Markdown files as the canonical source:
