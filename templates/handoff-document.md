@@ -4,6 +4,7 @@ tags:
 ---
 
 > Full context: [internal/handoff-to-se.md](../internal/handoff-to-se.md)
+> Example: [Financial services private cluster handoff](../examples/handoff-document-financial-private-cluster.md)
 
 ## [Customer Name] Handoff
 

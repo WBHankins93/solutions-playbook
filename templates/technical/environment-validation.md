@@ -6,6 +6,7 @@ tags:
 ## Environment Validation
 
 > Full context: [implementation/kickoff.md](../../implementation/kickoff.md)
+> Example: [Healthcare air-gapped environment validation](../../examples/technical/environment-validation-healthcare-air-gapped.md)
 
 ### Cluster Access
 
