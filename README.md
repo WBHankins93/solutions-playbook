@@ -5,102 +5,98 @@ tags:
 
 # SE Playbook
 
-**Battle-tested operational frameworks for Solutions Engineers who need to deliver results, not just read docs.**
+> **Find the right SE framework in under 60 seconds.**
 
-This is your "what to do right now" playbook. Open it when you get assigned a customer, need to prep for a call in 30 minutes, or hit a blocker during implementation. No theory. Just frameworks, checklists, and templates you can use immediately.
+A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and Customer Success Engineers who need the next best action—not another theory document. Use it to prep a discovery call, scope a POC, recover a demo, handle constrained environments, or send a clean internal update.
 
----
-
-## 🔨 Why I Built This
-
-After years of SE work across healthcare, energy, telecom, tech and enterprise clients, I was repeating the same patterns but documenting them differently each time.
-
-**The problem:** Frameworks scattered across Slack messages, Google Drive docs, and local notes. Discovery questions improvised on every call. POC scope creep because I didn't have consistent frameworks. Recovery strategies reinvented when things broke.
-
-**Without this repo:** Searching old Slack threads for "what questions did I ask?" Re-learning POC scoping patterns between clients. Improvising recovery strategies when demos crash or POCs fail.
-
-**With this repo:** Run better discovery calls with battle-tested question frameworks. Scope POCs that actually win with clear success criteria. Recover from failures with proven strategies. Handle complex environments (air-gapped, private clusters) without reinventing the wheel.
-
-**What you get:** 50+ frameworks, checklists, and templates covering the full SE lifecycle—from first discovery call to customer handoff. Copy-paste ready discovery questions, POC scoping templates, environment-specific guides, and recovery strategies tested in enterprise implementations where mistakes are expensive.
+[Start with the router](START-HERE.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](templates/) · [Contribute a pattern](CONTRIBUTING.md)
 
 ---
 
-## 🗺️ Quick Navigation
+## Quick-start workflows
 
-> **🚨 Need help right now?** → **[START-HERE.md](START-HERE.md)** - Find your situation and get routed to the exact guide you need in seconds.
-
-**New to a situation?** → [START-HERE.md](START-HERE.md) - Find your scenario and get routed to the right guide
-
-**Want to level up?** → [LEARNING-PATHS.md](LEARNING-PATHS.md) - Structured skill development from Foundations to Advanced
-
-**Maintaining the playbook?** → [MAINTENANCE.md](MAINTENANCE.md) - Convert retrospectives into reusable guide, template, example, and battle card updates
-
-**Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
+<table>
+  <tr>
+    <td width="33%">
+      <h3>👋 New customer</h3>
+      <p>Get oriented fast, identify stakeholders, and build your first engagement plan.</p>
+      <p><a href="engagements/new-customer.md"><strong>Open the workflow →</strong></a></p>
+    </td>
+    <td width="33%">
+      <h3>🔎 Discovery call</h3>
+      <p>Prepare the right questions, capture technical context, and turn answers into next steps.</p>
+      <p><a href="pre-sales/discovery.md"><strong>Open the workflow →</strong></a></p>
+    </td>
+    <td width="33%">
+      <h3>🎯 POC scoping</h3>
+      <p>Define success criteria, boundaries, timeline, owners, and proof points before work starts.</p>
+      <p><a href="pre-sales/poc-scoping.md"><strong>Open the workflow →</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%">
+      <h3>🧯 Demo recovery</h3>
+      <p>Stabilize the room, preserve credibility, and convert a failure into a follow-up plan.</p>
+      <p><a href="recovery/demo-recovery.md"><strong>Open the workflow →</strong></a></p>
+    </td>
+    <td width="33%">
+      <h3>🔒 Air-gapped deployment</h3>
+      <p>Plan artifacts, transfer paths, offline validation, and operational constraints.</p>
+      <p><a href="environments/air-gapped.md"><strong>Open the workflow →</strong></a></p>
+    </td>
+    <td width="33%">
+      <h3>📣 Status update / escalation</h3>
+      <p>Send crisp updates, ask for help clearly, and escalate without creating noise.</p>
+      <p><a href="internal/status-updates.md"><strong>Status updates →</strong></a><br><a href="recovery/escalation.md"><strong>Escalation →</strong></a></p>
+    </td>
+  </tr>
+</table>
 
 **Need to explain business impact?** → Use the [`business-value/`](business-value/) guides to translate technical progress into executive outcomes
 
 ---
 
-## 🎯 Who This Is For
+## How to use this in a real week
 
-**If you're a Solutions Engineer, Technical Sales Engineer, or Customer Success Engineer**, this repo helps you:
+### Monday: You get assigned a new enterprise account
 
-- **Run better discovery calls** with battle-tested question frameworks
-- **Scope POCs that actually win** with clear success criteria and scope management
-- **Handle complex environments** (air-gapped, private clusters, firewall-restricted) without reinventing the wheel
-- **Recover from failures** (demo crashes, POC blockers, scope creep) with proven strategies
-- **Coordinate internally** with templates for handoffs, status updates, and escalation
-- **Level up your skills** with structured learning paths from Foundations to Advanced
+1. Start with [New Customer](engagements/new-customer.md) to build your account brief and identify what you still need to learn.
+2. Use [Pre-call Prep](internal/pre-call-prep.md) to align internally before the first customer touchpoint.
+3. Pull from [Discovery Questions](templates/discovery-questions.md) so your first call is specific instead of generic.
 
-**This is not a training manual or product documentation.** It's a routing system and collection of practical frameworks for getting things done.
+### Tuesday: Discovery reveals a high-stakes POC
 
-**This playbook scales with you, from first-year SE to technical lead.**
+1. Run the [Discovery Call Framework](pre-sales/discovery.md) to turn notes into technical requirements and decision criteria.
+2. Move into [POC Scoping](pre-sales/poc-scoping.md) to lock success criteria, timeline, risks, and owner responsibilities.
+3. Send a customer-ready update with the [POC Status Update Email](templates/customer/poc-status-update-email.md).
 
----
+### Wednesday: The environment is more constrained than expected
 
-## ⚡ Immediate Payoff: What You Can Steal Right Now
+1. Route the architecture through [Air-Gapped Deployments](environments/air-gapped.md), [Private Clusters](environments/private-cluster.md), or [Firewall-Restricted Environments](environments/firewall-restricted.md).
+2. Validate prerequisites with the [Pre-implementation Checklist](templates/technical/pre-implementation-checklist.md).
+3. Keep implementation risk visible with the [Status Update Format](templates/status-update-template.md).
 
-### 📋 Copy-Paste Ready Templates
+### Thursday: Something breaks in front of stakeholders
 
-- **[Discovery Questions](templates/discovery-questions.md)** - 50+ questions organized by category (infrastructure, security, compliance, operations)
-- **[Kickoff Agenda](templates/kickoff-agenda.md)** - Complete implementation kickoff call structure
-- **[POC Status Update Email](templates/customer/poc-status-update-email.md)** - Customer-facing communication template
-- **[Handoff Document](templates/handoff-document.md)** - SE-to-SE or SE-to-Customer Success handoff template
-- **[Status Update Format](templates/status-update-template.md)** - Internal status reporting template
+1. Use [Demo Recovery](recovery/demo-recovery.md) if the issue happened live.
+2. Use [Troubleshooting](implementation/troubleshooting.md) if the issue is technical and unresolved.
+3. Escalate with [Requesting Help](internal/requesting-help.md) and [Escalation](recovery/escalation.md) when you need executive, product, or engineering support.
 
-### 🎯 Decision Frameworks
+### Friday: You need to hand off cleanly
 
-- **[Discovery Call Framework](pre-sales/discovery.md)** - Pre-call checklist, question framework, post-call actions
-- **[POC Scoping Framework](pre-sales/poc-scoping.md)** - Define success criteria, in/out of scope, timeline, resources
-- **[Troubleshooting Framework](implementation/troubleshooting.md)** - 5-step process for getting unstuck
-- **[Escalation Framework](recovery/escalation.md)** - When and how to escalate strategically
-- **[Technical to Business Translation](business-value/technical-to-business-translation.md)** - Convert technical progress into executive outcomes
-- **[Executive Summary Template](business-value/executive-summary-template.md)** - Customer-safe value summaries for sponsors and leadership
-
-### 🚀 Environment-Specific Guides
-
-- **[Air-Gapped Deployments](environments/air-gapped.md)** - Artifact bundling, transfer mechanisms, offline validation
-- **[Private Clusters](environments/private-cluster.md)** - Network isolation, access patterns, security considerations
-- **[Firewall-Restricted](environments/firewall-restricted.md)** - Port requirements, proxy configurations, egress controls
-- **[Multi-Tenant](environments/multi-tenant.md)** - Isolation strategies, resource quotas, tenant management
-- **[Hybrid Cloud](environments/hybrid.md)** - Cloud + on-prem integration patterns
-
-### 🔧 Recovery Strategies
-
-- **[Demo Recovery](recovery/demo-recovery.md)** - What to do when your demo crashes
-- **[POC Recovery](recovery/poc-recovery.md)** - 5-step framework for salvaging failing POCs
-- **[Scope Creep Management](recovery/scope-creep.md)** - Early warning signs and how to say no gracefully
-- **[Getting Unstuck](recovery/stuck.md)** - Self-assessment and escalation framework
+1. Capture decisions, owners, and open risks in the [Handoff Document](templates/handoff-document.md).
+2. Use [Implementation Handoff](implementation/handoff.md) for customer-facing transition planning.
+3. Run a quick retro with the [Retrospective Template](templates/retrospective.md) so the next engagement starts smarter.
 
 ---
 
-## 📚 What's Inside
+## What's inside
 
 ```
 se-playbook/
 ├── engagements/          # New customer, joining existing, inherited handoffs
 ├── pre-sales/           # Discovery, demos, POCs, technical deep-dives
-├── implementation/      # Kickoff, mid-point checkpoints, troubleshooting, handoff
+├── implementation/      # Kickoff, checkpoints, troubleshooting, handoff
 ├── environments/        # Air-gapped, private, restricted, multi-tenant, hybrid
 ├── recovery/            # Demo failures, POC recovery, escalation, scope creep
 ├── internal/            # Team coordination, status updates, requesting help
@@ -109,49 +105,85 @@ se-playbook/
 └── lessons/             # Retrospective templates for continuous improvement
 ```
 
-**50+ complete guides and templates** covering the full SE lifecycle from first discovery call to customer handoff.
+Dozens of frameworks, checklists, and templates cover the full SE lifecycle from first discovery call to customer handoff.
 
 ---
 
-## 🏆 Social Proof
+## Immediate payoff: copy what you need
 
-**Built from real enterprise implementations** - These frameworks have been battle-tested in:
-- Complex air-gapped environments with strict security requirements
-- Multi-tenant SaaS deployments with resource constraints
-- Enterprise POCs with tight timelines and high stakes
-- Hybrid cloud integrations spanning on-prem and public cloud
+### Copy-paste templates
 
-**Patterns used in production** - Every framework here has been refined through actual customer engagements, not theoretical exercises.
+- [Discovery Questions](templates/discovery-questions.md) - Question bank organized by infrastructure, security, compliance, and operations
+- [Kickoff Agenda](templates/kickoff-agenda.md) - Implementation kickoff call structure
+- [POC Status Update Email](templates/customer/poc-status-update-email.md) - Customer-facing communication template
+- [Handoff Document](templates/handoff-document.md) - SE-to-SE or SE-to-Customer Success handoff template
+- [Status Update Format](templates/status-update-template.md) - Internal status reporting template
+
+### Decision frameworks
+
+- [Discovery Call Framework](pre-sales/discovery.md) - Pre-call checklist, question framework, post-call actions
+- [POC Scoping Framework](pre-sales/poc-scoping.md) - Success criteria, in/out of scope, timeline, resources
+- [Troubleshooting Framework](implementation/troubleshooting.md) - Structured process for getting unstuck
+- [Escalation Framework](recovery/escalation.md) - When and how to escalate strategically
+
+### Environment guides
+
+- [Air-Gapped Deployments](environments/air-gapped.md) - Artifact bundling, transfer mechanisms, offline validation
+- [Private Clusters](environments/private-cluster.md) - Network isolation, access patterns, security considerations
+- [Firewall-Restricted](environments/firewall-restricted.md) - Port requirements, proxy configurations, egress controls
+- [Multi-Tenant](environments/multi-tenant.md) - Isolation strategies, resource quotas, tenant management
+- [Hybrid Cloud](environments/hybrid.md) - Cloud and on-prem integration patterns
+
+### Recovery playbooks
+
+- [Demo Recovery](recovery/demo-recovery.md) - What to do when your demo crashes
+- [POC Recovery](recovery/poc-recovery.md) - Salvage a failing POC without hiding the risk
+- [Scope Creep Management](recovery/scope-creep.md) - Spot expansion early and reset expectations
+- [Getting Unstuck](recovery/stuck.md) - Self-assessment and escalation framework
+
+---
+
+## Who this is for
+
+Use this playbook when you are responsible for making a technical customer engagement move forward:
+
+- **Solutions Engineers** who need repeatable discovery, demo, POC, and recovery motions
+- **Technical Sales Engineers** who want stronger qualification, scoping, and stakeholder alignment
+- **Customer Success Engineers** who inherit complex deployments and need clean handoffs
+- **SE leads** who want shared operating patterns for coaching, reviews, and escalations
+
+This is not product documentation or a training manual. It is a routing system and field kit for practical execution.
 
 ---
 
-## 🚀 Get Started
+## Why this exists
 
-1. **New customer assignment?** → [START-HERE.md](START-HERE.md) → `engagements/new-customer.md`
-2. **Discovery call tomorrow?** → [pre-sales/discovery.md](pre-sales/discovery.md)
-3. **POC starting next week?** → [pre-sales/poc-scoping.md](pre-sales/poc-scoping.md)
-4. **Something broke?** → [START-HERE.md](START-HERE.md) → Find your recovery scenario
+SE work often gets documented in scattered Slack threads, one-off notes, and old project folders. That makes every new account feel like starting from scratch: rediscovering questions, rebuilding POC plans, improvising escalations, and re-learning environment constraints.
 
----
+This repo turns those repeated motions into reusable frameworks so you can:
 
-## 🤝 Engage & Contribute
-
-**This playbook gets better with real-world feedback.**
-
-- ⭐ **Star this repo** if you find it useful
-- 🐛 **Open an issue** if you want a pattern added or have feedback
-- 🔧 **PRs welcome** for real-world additions from your own engagements
-- 💬 **Share your experience** - What worked? What didn't? What's missing?
-
-**Looking for technical implementation patterns?** Check out [implementation-studio](https://github.com/WBHankins93/implementation-studio) for hands-on deployment labs and technical reference implementations.
+- Run better discovery calls with prepared question sets
+- Scope POCs with clear success criteria and guardrails
+- Recover from demo failures, blockers, and scope creep with a plan
+- Navigate air-gapped, private, restricted, multi-tenant, and hybrid environments
+- Coordinate internal teams with reusable updates, handoffs, and escalation formats
 
 ---
 
-## 📖 Related Resources
+## Related resources
 
-- **[implementation-studio](https://github.com/WBHankins93/implementation-studio)** - Technical deployment patterns and hands-on labs (Kubernetes, Helm, air-gapped, private clusters)
-- **[LEARNING-PATHS.md](LEARNING-PATHS.md)** - Structured skill development with self-assessment and progress tracking
+- [implementation-studio](https://github.com/WBHankins93/implementation-studio) - Technical deployment patterns and hands-on labs for Kubernetes, Helm, air-gapped, and private-cluster scenarios
+- [Learning Paths](LEARNING-PATHS.md) - Structured skill development with self-assessment and progress tracking
 
 ---
+
+## Engage and contribute
+
+This playbook gets better with real-world feedback.
+
+- Star the repo if it saves you time
+- Open an issue for a missing scenario, unclear guide, or template request
+- Submit a PR with patterns that have survived real customer work
+- Share what worked, what failed, and what should be sharper
 
 **Ready to deliver better results?** Start with [START-HERE.md](START-HERE.md) and find your situation.
