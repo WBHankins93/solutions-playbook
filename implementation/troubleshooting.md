@@ -1,3 +1,10 @@
+---
+tags:
+  - implementation
+  - customer-facing
+  - escalation
+---
+
 ## Troubleshooting a Blocker
 
 ## 📝 Context

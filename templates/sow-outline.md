@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 ## SOW Outline
 
 > Template for creating Statement of Work documents

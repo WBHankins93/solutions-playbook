@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - air-gapped
+---
+
 ## Air-Gapped Validation Workflow
 
 > Full context: [environments/air-gapped.md](../../environments/air-gapped.md)

@@ -1,3 +1,8 @@
+---
+tags:
+  - internal
+---
+
 ## Tracking Impact and ROI
 
 ## 📝 Context
@@ -57,6 +62,32 @@ on business outcomes.
 - Strategic account value
 - Reference customer potential
 - Expansion opportunity
+
+
+## 🎯 Translating Technical Progress Into Executive Outcomes
+
+Use the business-value guides when your tracked activity needs to become a customer-facing recap, sponsor update, or leadership summary. Start with the technical fact, attach evidence, then explain the business outcome it supports.
+
+**Translation Flow**
+
+- **Technical fact:** What changed?
+- **Evidence:** How do we know it worked?
+- **Business outcome:** What decision, risk, timeline, or adoption path improved?
+- **Executive message:** What should leadership understand or approve next?
+
+**Common Examples**
+
+- Technical blocker resolved → deal or POC timeline unblocked.
+- POC success criteria achieved → customer has evidence for a decision.
+- Implementation risk reduced → rollout plan is based on validated assumptions.
+- Time-to-value accelerated → customer reaches the first meaningful outcome sooner.
+
+**Use These Guides**
+
+- [Executive Summary Template](../business-value/executive-summary-template.md) — turn engagement progress into an executive-ready update.
+- [Technical to Business Translation](../business-value/technical-to-business-translation.md) — map technical work to outcomes like risk reduction, adoption, and time-to-value.
+- [POC Value Recap](../business-value/poc-value-recap.md) — summarize POC evidence, success criteria, business value, and next steps.
+- [Risk Reduction Narratives](../business-value/risk-reduction-narratives.md) — explain how validation work reduces customer and implementation uncertainty.
 
 ## 🎯 Communicating Value to Leadership
 
@@ -178,4 +209,8 @@ on business outcomes.
 - [Post-call debrief](post-call-debrief.md)
 - [POC Execution](../pre-sales/poc-execution.md)
 - [Retrospective template](../lessons/TEMPLATE.md)
+- [Executive Summary Template](../business-value/executive-summary-template.md)
+- [Technical to Business Translation](../business-value/technical-to-business-translation.md)
+- [POC Value Recap](../business-value/poc-value-recap.md)
+- [Risk Reduction Narratives](../business-value/risk-reduction-narratives.md)
 
