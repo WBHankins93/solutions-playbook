@@ -1,4 +1,10 @@
+---
+tags:
+  - customer-facing
+---
+
 > Full context: [internal/status-updates.md](../internal/status-updates.md)
+> Example: [SaaS multi-tenant status update](../examples/status-update-template-saas-multi-tenant.md)
 
 ## [Customer Name] - Status Update - [Date]
 

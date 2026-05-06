@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - customer-facing
+---
+
 ## Mid-Implementation Checkpoint
 
 ## 📝 Context

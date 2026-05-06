@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 > Full context: [implementation/kickoff.md](../implementation/kickoff.md)
 
 ## Kickoff Call Agenda

@@ -1,3 +1,10 @@
+---
+tags:
+  - implementation
+  - customer-facing
+  - air-gapped
+---
+
 ## Air-Gapped Deployment
 
 ## 📝 Context

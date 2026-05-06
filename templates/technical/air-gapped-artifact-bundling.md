@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - air-gapped
+---
+
 ## Air-Gapped Artifact Bundling Checklist
 
 > Full context: [environments/air-gapped.md](../../environments/air-gapped.md)

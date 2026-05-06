@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - escalation
+---
+
 ## Escalation Response Template
 
 > Use this template when responding to customer escalations or concerns
