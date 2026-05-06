@@ -211,7 +211,7 @@ Rate yourself honestly (1-5) in each area:
 **Read:**
 
 - [Technical Deep-Dive](pre-sales/technical-deep-dive.md)
-- [Environment Guides](environments/) (all of them)
+- [Environment Guides](CONTENT-INDEX.md#environment-guides) (all of them)
 
 **Practice:**
 

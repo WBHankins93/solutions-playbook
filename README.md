@@ -9,7 +9,7 @@ tags:
 
 A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and Customer Success Engineers who need the next best action—not another theory document. Use it to prep a discovery call, scope a POC, recover a demo, handle constrained environments, or send a clean internal update.
 
-[Start with the router](START-HERE.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](templates/) · [Contribute a pattern](CONTRIBUTING.md)
+[Start with the router](START-HERE.md) · [Open the content index](CONTENT-INDEX.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](CONTENT-INDEX.md#templates) · [Contribute a pattern](CONTRIBUTING.md)
 
 ---
 
@@ -52,7 +52,7 @@ A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and C
   </tr>
 </table>
 
-**Need to explain business impact?** → Use the [`business-value/`](business-value/) guides to translate technical progress into executive outcomes
+**Need to explain business impact?** → Use the [business-value guides](CONTENT-INDEX.md#business-value) to translate technical progress into executive outcomes
 
 ---
 
@@ -92,6 +92,8 @@ A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and C
 
 ## What's inside
 
+Need a complete map? Use the [Content Index](CONTENT-INDEX.md) to browse every workflow, template, battle card, example, and reference page by job to be done.
+
 ```
 se-playbook/
 ├── engagements/          # New customer, joining existing, inherited handoffs
@@ -101,7 +103,9 @@ se-playbook/
 ├── recovery/            # Demo failures, POC recovery, escalation, scope creep
 ├── internal/            # Team coordination, status updates, requesting help
 ├── business-value/      # Executive summaries, value recaps, risk narratives
+├── battle-cards/        # Customer-safe responses to common pressure moments
 ├── templates/           # Customer emails, technical checklists, handoff docs
+├── examples/            # Filled-in artifacts that show templates in practice
 └── lessons/             # Retrospective templates for continuous improvement
 ```
 

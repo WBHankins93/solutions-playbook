@@ -127,5 +127,5 @@ know when to ask for help.
 
 - [Requesting help](../internal/requesting-help.md)
 - [Stuck](../recovery/stuck.md)
-- [Environment Guides](../environments/)
+- [Environment Guides](../CONTENT-INDEX.md#environment-guides)
 

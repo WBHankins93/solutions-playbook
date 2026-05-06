@@ -10,7 +10,7 @@ Run a maintenance review **monthly** if the team is actively adding retrospectiv
 
 Before the review, gather:
 
-- New or updated retrospectives in [`lessons/`](lessons/)
+- New or updated retrospectives in [lesson retrospectives](CONTENT-INDEX.md#lessons)
 - Recent issues, PR feedback, or field notes that mention playbook gaps
 - Any templates, scripts, customer-facing examples, or internal artifacts referenced by retrospectives
 
