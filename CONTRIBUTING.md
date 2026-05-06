@@ -20,6 +20,7 @@ tags:
 - Reference any related issues
 - Ensure all validation scripts pass
 - Update documentation if needed
+- If your change adds or updates a retrospective in `lessons/`, use the [maintenance process](MAINTENANCE.md) to decide whether guides, templates, examples, or battle cards should also change
 
 ## Code of Conduct
 
