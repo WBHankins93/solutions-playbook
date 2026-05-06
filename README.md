@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 # SE Playbook
 
 **Battle-tested operational frameworks for Solutions Engineers who need to deliver results, not just read docs.**

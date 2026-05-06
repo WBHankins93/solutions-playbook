@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - discovery
+---
+
 ## Joining an Existing Engagement
 
 ## 📝 Context

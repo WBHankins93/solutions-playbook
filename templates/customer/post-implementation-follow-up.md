@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 ## Post-Implementation Follow-Up Template
 
 > Use this template for follow-up communication after implementation handoff

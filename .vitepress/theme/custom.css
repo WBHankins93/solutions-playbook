@@ -1,0 +1,51 @@
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+}
+
+.situation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.situation-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  padding: 1rem;
+  background: var(--vp-c-bg-soft);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.situation-card:hover {
+  border-color: var(--vp-c-brand-2);
+  transform: translateY(-2px);
+}
+
+.situation-card h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.situation-card p {
+  color: var(--vp-c-text-2);
+  margin-bottom: 0.75rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.tag-pill {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 0.85rem;
+}

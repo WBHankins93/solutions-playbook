@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - customer-facing
+---
+
 ## Hybrid (Cloud + On-Prem) Environment
 
 ## 📝 Context

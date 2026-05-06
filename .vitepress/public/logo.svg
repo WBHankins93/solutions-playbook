@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">SE Playbook logo</title>
+  <desc id="desc">A teal compass mark for the Solutions Engineer playbook documentation site.</desc>
+  <rect width="64" height="64" rx="16" fill="#0f766e"/>
+  <path d="M32 10 48 54 32 46 16 54 32 10Z" fill="#f8fafc"/>
+  <path d="M32 20 39 43 32 39 25 43 32 20Z" fill="#14b8a6"/>
+</svg>

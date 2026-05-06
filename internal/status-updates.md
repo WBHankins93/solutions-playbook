@@ -1,3 +1,8 @@
+---
+tags:
+  - internal
+---
+
 ## Status Updates / Trip Reports
 
 ## 📝 Context

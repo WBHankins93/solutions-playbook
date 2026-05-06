@@ -1,3 +1,9 @@
+---
+tags:
+  - escalation
+  - customer-facing
+---
+
 ## Demo Recovery
 
 ## 📝 Context
@@ -109,4 +115,5 @@ isn't engaged. Don't panic. Recover gracefully and salvage the situation.
 - [Demo](../pre-sales/demo.md)
 - [Escalation](escalation.md)
 - [Pre-call prep](../internal/pre-call-prep.md)
+- [Battle Card: Demo Failure Response](../battle-cards/demo-failure-response.md)
 

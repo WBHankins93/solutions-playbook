@@ -1,4 +1,11 @@
+---
+tags:
+  - internal
+---
+
 # Engagement Retrospective: [Customer Name]
+
+> Example: [Telecom hybrid POC retrospective](../examples/lessons/retrospective-telecom-hybrid-poc.md)
 
 > Date: YYYY-MM-DD
 > Duration: [Start date] to [End date]

@@ -1,3 +1,9 @@
+---
+tags:
+  - implementation
+  - customer-facing
+---
+
 ## Handoff to Customer / Success Team
 
 ## 📝 Context
