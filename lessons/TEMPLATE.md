@@ -55,6 +55,16 @@ Any scripts, configs, or documents worth keeping?
 
 ---
 
+## Playbook Update Check
+
+Use this section to decide whether the retrospective should become a reusable playbook improvement.
+
+- Does this lesson require a playbook update? [Yes / No / Unsure]
+- Which file should change? [Path or section]
+- Should this become an example or battle card? [Example / Battle card / Neither / Unsure]
+
+---
+
 ## Notes
 
 Anything else worth remembering.

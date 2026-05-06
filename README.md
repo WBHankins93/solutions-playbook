@@ -28,6 +28,8 @@ After years of SE work across healthcare, energy, telecom, tech and enterprise c
 
 **Want to level up?** → [LEARNING-PATHS.md](LEARNING-PATHS.md) - Structured skill development from Foundations to Advanced
 
+**Maintaining the playbook?** → [MAINTENANCE.md](MAINTENANCE.md) - Convert retrospectives into reusable guide, template, example, and battle card updates
+
 **Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
 
 ---
