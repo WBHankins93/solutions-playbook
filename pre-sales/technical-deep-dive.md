@@ -86,4 +86,5 @@ implementation - you're mapping their world to ours.
 - [Discovery Call](discovery.md)
 - [POC Scoping](poc-scoping.md)
 - [Environment Guides](../environments/)
+- [Battle Card: Security Review Pushback](../battle-cards/security-review-pushback.md)
 
