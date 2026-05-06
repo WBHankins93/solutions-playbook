@@ -21,7 +21,7 @@ After years of SE work across healthcare, energy, telecom, tech and enterprise c
 
 **With this repo:** Run better discovery calls with battle-tested question frameworks. Scope POCs that actually win with clear success criteria. Recover from failures with proven strategies. Handle complex environments (air-gapped, private clusters) without reinventing the wheel.
 
-**What you get:** 42 frameworks, checklists, and templates covering the full SE lifecycle—from first discovery call to customer handoff. Copy-paste ready discovery questions, POC scoping templates, environment-specific guides, and recovery strategies tested in enterprise implementations where mistakes are expensive.
+**What you get:** 50+ frameworks, checklists, and templates covering the full SE lifecycle—from first discovery call to customer handoff. Copy-paste ready discovery questions, POC scoping templates, environment-specific guides, and recovery strategies tested in enterprise implementations where mistakes are expensive.
 
 ---
 
@@ -35,24 +35,7 @@ After years of SE work across healthcare, energy, telecom, tech and enterprise c
 
 **Need a template?** → Browse the [`templates/`](templates/) directory for copy-paste ready artifacts
 
-### 🔥 Top 5 Urgent Workflows
-
-- **Discovery call prep** → [START-HERE route](START-HERE.md#2-i-need-to-prepare-for-a-discovery-call) → [Discovery call framework](pre-sales/discovery.md)
-- **POC scoping** → [START-HERE route](START-HERE.md#3-i-need-to-scope-a-poc) → [POC scoping framework](pre-sales/poc-scoping.md)
-- **Demo recovery** → [START-HERE route](START-HERE.md#5-my-demo-went-wrong-or-is-about-to-go-wrong) → [Demo recovery](recovery/demo-recovery.md)
-- **Air-gapped deployment** → [START-HERE route](START-HERE.md#6-the-customer-has-an-environment-constraint) → [Air-gapped deployment](environments/air-gapped.md)
-- **Internal escalation / requesting help** → [Leadership update route](START-HERE.md#7-i-need-to-update-leadership) or [internal help route](START-HERE.md#8-im-stuck-and-need-internal-help) → [Requesting help from engineering](internal/requesting-help.md)
-
----
-
-**Prefer a docs site?** → Run the VitePress site locally while keeping these Markdown files as the canonical source:
-
-```bash
-npm install
-npm run docs:dev
-```
-
-The site adds top-level navigation, local search, and a [tag index](TAGS.md) without duplicating the existing guide content.
+**Need to explain business impact?** → Use the [`business-value/`](business-value/) guides to translate technical progress into executive outcomes
 
 ---
 
@@ -89,6 +72,8 @@ The site adds top-level navigation, local search, and a [tag index](TAGS.md) wit
 - **[POC Scoping Framework](pre-sales/poc-scoping.md)** - Define success criteria, in/out of scope, timeline, resources
 - **[Troubleshooting Framework](implementation/troubleshooting.md)** - 5-step process for getting unstuck
 - **[Escalation Framework](recovery/escalation.md)** - When and how to escalate strategically
+- **[Technical to Business Translation](business-value/technical-to-business-translation.md)** - Convert technical progress into executive outcomes
+- **[Executive Summary Template](business-value/executive-summary-template.md)** - Customer-safe value summaries for sponsors and leadership
 
 ### 🚀 Environment-Specific Guides
 
@@ -117,11 +102,12 @@ se-playbook/
 ├── environments/        # Air-gapped, private, restricted, multi-tenant, hybrid
 ├── recovery/            # Demo failures, POC recovery, escalation, scope creep
 ├── internal/            # Team coordination, status updates, requesting help
+├── business-value/      # Executive summaries, value recaps, risk narratives
 ├── templates/           # Customer emails, technical checklists, handoff docs
 └── lessons/             # Retrospective templates for continuous improvement
 ```
 
-**42 complete guides and templates** covering the full SE lifecycle from first discovery call to customer handoff.
+**50+ complete guides and templates** covering the full SE lifecycle from first discovery call to customer handoff.
 
 ---
 
