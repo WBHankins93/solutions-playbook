@@ -1,6 +1,13 @@
+---
+tags:
+  - customer-facing
+  - poc
+---
+
 ## POC Status Update Email Template
 
 > Use this template for regular POC status updates to customers
+> Example: [Telecom hybrid deployment POC update](../../examples/customer/poc-status-update-email-telecom-hybrid.md)
 
 **Subject:** POC Status Update - [Customer Name] - [Date]
 

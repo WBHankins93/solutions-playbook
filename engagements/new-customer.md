@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - discovery
+---
+
 ## New Customer Engagement
 
 ## 📝 Context

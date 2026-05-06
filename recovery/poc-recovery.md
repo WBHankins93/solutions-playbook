@@ -1,3 +1,10 @@
+---
+tags:
+  - escalation
+  - customer-facing
+  - poc
+---
+
 ## POC Recovery
 
 ## 📝 Context
@@ -157,4 +164,6 @@ whether you win the deal. Recover systematically.
 - [Escalation](escalation.md)
 - [Scope Creep](scope-creep.md)
 - [Requesting help](../internal/requesting-help.md)
+- [Battle Card: POC Success Criteria](../battle-cards/poc-success-criteria.md)
+- [Battle Card: Timeline Pressure](../battle-cards/timeline-pressure.md)
 

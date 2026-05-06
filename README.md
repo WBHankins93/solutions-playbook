@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 # SE Playbook
 
 > **Find the right SE framework in under 60 seconds.**
@@ -47,6 +52,8 @@ A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and C
   </tr>
 </table>
 
+**Need to explain business impact?** → Use the [`business-value/`](business-value/) guides to translate technical progress into executive outcomes
+
 ---
 
 ## How to use this in a real week
@@ -93,6 +100,7 @@ se-playbook/
 ├── environments/        # Air-gapped, private, restricted, multi-tenant, hybrid
 ├── recovery/            # Demo failures, POC recovery, escalation, scope creep
 ├── internal/            # Team coordination, status updates, requesting help
+├── business-value/      # Executive summaries, value recaps, risk narratives
 ├── templates/           # Customer emails, technical checklists, handoff docs
 └── lessons/             # Retrospective templates for continuous improvement
 ```

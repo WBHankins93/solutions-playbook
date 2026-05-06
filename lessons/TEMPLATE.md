@@ -1,4 +1,11 @@
+---
+tags:
+  - internal
+---
+
 # Engagement Retrospective: [Customer Name]
+
+> Example: [Telecom hybrid POC retrospective](../examples/lessons/retrospective-telecom-hybrid-poc.md)
 
 > Date: YYYY-MM-DD
 > Duration: [Start date] to [End date]
@@ -52,6 +59,16 @@ What will you do differently next time?
 Any scripts, configs, or documents worth keeping?
 
 -
+
+---
+
+## Playbook Update Check
+
+Use this section to decide whether the retrospective should become a reusable playbook improvement.
+
+- Does this lesson require a playbook update? [Yes / No / Unsure]
+- Which file should change? [Path or section]
+- Should this become an example or battle card? [Example / Battle card / Neither / Unsure]
 
 ---
 
