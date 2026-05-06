@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 > Full context: [lessons/TEMPLATE.md](../lessons/TEMPLATE.md)
 
 # Engagement Retrospective: [Customer Name]

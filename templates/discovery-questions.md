@@ -1,3 +1,9 @@
+---
+tags:
+  - customer-facing
+  - discovery
+---
+
 > Full context: [pre-sales/discovery.md](../pre-sales/discovery.md)
 > Example: [Healthcare air-gapped POC discovery](../examples/discovery-questions-healthcare-air-gapped-poc.md)
 

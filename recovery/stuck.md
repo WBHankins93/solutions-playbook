@@ -1,3 +1,9 @@
+---
+tags:
+  - escalation
+  - customer-facing
+---
+
 ## Stuck - Don't Know the Path Forward
 
 ## 📝 Context

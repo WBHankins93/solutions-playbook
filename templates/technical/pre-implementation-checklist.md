@@ -1,6 +1,11 @@
+---
+tags:
+  - implementation
+---
+
 ## Pre-Implementation Checklist
 
-> Full context: [implementation/kickoff.md](../implementation/kickoff.md)
+> Full context: [implementation/kickoff.md](../../implementation/kickoff.md)
 
 ### Environment Access
 

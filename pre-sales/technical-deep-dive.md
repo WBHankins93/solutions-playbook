@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 ## Technical Deep-Dive / Architecture Review
 
 ## 📝 Context

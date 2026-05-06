@@ -1,3 +1,8 @@
+---
+tags:
+  - customer-facing
+---
+
 ## Deployment Schedule Communication Template
 
 > Use this template to communicate deployment schedules and timelines to customers
