@@ -67,4 +67,5 @@ able to Google errors or pull images on-demand.
 - [Air-Gapped Transfer Decision Matrix](../templates/technical/air-gapped-transfer-matrix.md)
 - [Air-Gapped Validation Workflow](../templates/technical/air-gapped-validation.md)
 - [Troubleshooting](../implementation/troubleshooting.md)
+- [Battle Card: Air-Gapped Expectation Setting](../battle-cards/air-gapped-expectation-setting.md)
 

@@ -96,4 +96,5 @@ demonstrate that.
 - [Discovery Call](discovery.md)
 - [Pre-call prep](../internal/pre-call-prep.md)
 - [Demo Recovery](../recovery/demo-recovery.md)
+- [Battle Card: Demo Failure Response](../battle-cards/demo-failure-response.md)
 

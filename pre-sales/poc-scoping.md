@@ -116,4 +116,7 @@ set expectations and avoid scope creep.
 - [POC Execution](poc-execution.md)
 - [POC Recovery](../recovery/poc-recovery.md)
 - [Scope Creep](../recovery/scope-creep.md)
+- [Battle Card: POC Success Criteria](../battle-cards/poc-success-criteria.md)
+- [Battle Card: Scope Creep Objection](../battle-cards/scope-creep-objection.md)
+- [Battle Card: Timeline Pressure](../battle-cards/timeline-pressure.md)
 

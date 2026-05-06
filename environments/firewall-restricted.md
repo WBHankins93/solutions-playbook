@@ -55,4 +55,5 @@ regulated industries or security-conscious organizations.
 ## 🔗 Technical Resources
 
 - [implementation-studio](https://github.com/WBHankins93/implementation-studio)
+- [Battle Card: Security Review Pushback](../battle-cards/security-review-pushback.md)
 

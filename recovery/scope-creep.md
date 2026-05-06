@@ -162,4 +162,5 @@ forward with confidence."
 - [Kickoff](../implementation/kickoff.md)
 - [POC Recovery](poc-recovery.md)
 - [Status updates](../internal/status-updates.md)
+- [Battle Card: Scope Creep Objection](../battle-cards/scope-creep-objection.md)
 

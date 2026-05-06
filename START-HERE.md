@@ -129,7 +129,17 @@
 - Scope is creeping → [recovery/scope-creep.md](recovery/scope-creep.md)
 - I’m stuck and don't know the path forward → [recovery/stuck.md](recovery/stuck.md)
 
-### “I need internal team coordination.”
+## I need a quick customer-safe response
+
+- Browse all battle cards → [battle-cards/README.md](battle-cards/README.md)
+- Scope creep objection → [battle-cards/scope-creep-objection.md](battle-cards/scope-creep-objection.md)
+- Security review pushback → [battle-cards/security-review-pushback.md](battle-cards/security-review-pushback.md)
+- POC success criteria → [battle-cards/poc-success-criteria.md](battle-cards/poc-success-criteria.md)
+- Demo failure response → [battle-cards/demo-failure-response.md](battle-cards/demo-failure-response.md)
+- Timeline pressure → [battle-cards/timeline-pressure.md](battle-cards/timeline-pressure.md)
+- Air-gapped expectation setting → [battle-cards/air-gapped-expectation-setting.md](battle-cards/air-gapped-expectation-setting.md)
+
+## Internal team coordination
 
 - Pre-call prep with sales/team → [internal/pre-call-prep.md](internal/pre-call-prep.md)
 - Post-call debrief → [internal/post-call-debrief.md](internal/post-call-debrief.md)
