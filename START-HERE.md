@@ -9,6 +9,8 @@
 3. **Create the `Next artifact`.** The artifact makes the route actionable and gives the team something to review.
 4. **Avoid the common mistake.** Each route calls out the failure mode that usually makes the situation worse.
 
+> Looking for a complete inventory instead of situational routing? Open the [Content Index](CONTENT-INDEX.md).
+>
 > Want to add a new route? Copy [`templates/routing-card.md`](templates/routing-card.md) and keep the same field names: `Situation`, `Use when`, `Start here`, `Next artifact`, and `Common mistake`.
 
 ---

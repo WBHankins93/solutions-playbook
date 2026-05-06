@@ -88,7 +88,7 @@ clear starting point, confirm assumptions from discovery, and set up for success
 
 ## 🔗 Links
 
-- [Environment Guides](../environments/)
+- [Environment Guides](../CONTENT-INDEX.md#environment-guides)
 - [Troubleshooting](troubleshooting.md)
 - [Handoff](handoff.md)
 - [implementation-studio Labs](https://github.com/WBHankins93/implementation-studio)
