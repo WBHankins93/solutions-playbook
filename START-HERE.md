@@ -150,3 +150,46 @@
 ### “I want to level up.”
 
 - Structured skill development → [LEARNING-PATHS.md](LEARNING-PATHS.md)
+
+---
+
+## 🏗️ Solutions Architect Routes
+
+### “I need to review or design an architecture.”
+
+- Conducting a design review → [architecture/design-review.md](architecture/design-review.md)
+- Building a reference architecture → [architecture/reference-architectures.md](architecture/reference-architectures.md)
+- Running a Well-Architected review → [architecture/well-architected.md](architecture/well-architected.md)
+- Documenting an architecture decision → [architecture/adr-template.md](architecture/adr-template.md)
+
+### “I need to plan or execute a migration.”
+
+- Assessing what needs to move → [migration/assessment.md](migration/assessment.md)
+- Building the migration strategy → [migration/strategy.md](migration/strategy.md)
+- Planning the cutover → [migration/cutover-planning.md](migration/cutover-planning.md)
+- Managing migration risks → [migration/risk-framework.md](migration/risk-framework.md)
+
+### “I need to model or reduce costs.”
+
+- Building a TCO analysis → [cost-modeling/tco-framework.md](cost-modeling/tco-framework.md)
+- Comparing cloud providers → [cost-modeling/cloud-cost-comparison.md](cost-modeling/cloud-cost-comparison.md)
+- Optimizing existing cloud spend → [cost-modeling/optimization.md](cost-modeling/optimization.md)
+
+### “I need to address compliance or security concerns.”
+
+- Mapping regulations to architecture → [compliance/regulatory-mapping.md](compliance/regulatory-mapping.md)
+- Reviewing security architecture → [compliance/security-architecture.md](compliance/security-architecture.md)
+- Handling data residency requirements → [compliance/data-residency.md](compliance/data-residency.md)
+
+### “I need an architecture pattern reference.”
+
+- Microservices → [patterns/microservices.md](patterns/microservices.md)
+- Event-driven architecture → [patterns/event-driven.md](patterns/event-driven.md)
+- Data mesh → [patterns/data-mesh.md](patterns/data-mesh.md)
+- API gateway → [patterns/api-gateway.md](patterns/api-gateway.md)
+
+### “I need to align stakeholders or present to leadership.”
+
+- Executive alignment → [stakeholder-management/executive-alignment.md](stakeholder-management/executive-alignment.md)
+- Cross-team coordination → [stakeholder-management/cross-team-coordination.md](stakeholder-management/cross-team-coordination.md)
+- CTO-level conversations → [stakeholder-management/cto-conversations.md](stakeholder-management/cto-conversations.md)

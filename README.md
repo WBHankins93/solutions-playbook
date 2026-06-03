@@ -3,11 +3,11 @@ tags:
   - customer-facing
 ---
 
-# SE Playbook
+# Solutions Playbook
 
-> **Find the right SE framework in under 60 seconds.**
+> **Find the right framework in under 60 seconds.**
 
-A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and Customer Success Engineers who need the next best action—not another theory document. Use it to prep a discovery call, scope a POC, recover a demo, handle constrained environments, or send a clean internal update.
+A field-ready playbook for **Solutions Engineers** and **Solutions Architects** who need the next best action — not another theory document. SE track covers discovery, demos, POCs, implementation, and recovery. SA track covers architecture design, migration strategy, cost modeling, compliance, and stakeholder management. Shared sections cover environments, coordination, and templates both roles use daily.
 
 [Start with the router](START-HERE.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](templates/) · [Contribute a pattern](CONTRIBUTING.md)
 
@@ -93,19 +93,32 @@ A field-ready playbook for Solutions Engineers, Technical Sales Engineers, and C
 ## What's inside
 
 ```
-se-playbook/
+solutions-playbook/
+│
+│── SE Track
 ├── engagements/          # New customer, joining existing, inherited handoffs
-├── pre-sales/           # Discovery, demos, POCs, technical deep-dives
-├── implementation/      # Kickoff, checkpoints, troubleshooting, handoff
-├── environments/        # Air-gapped, private, restricted, multi-tenant, hybrid
-├── recovery/            # Demo failures, POC recovery, escalation, scope creep
-├── internal/            # Team coordination, status updates, requesting help
-├── business-value/      # Executive summaries, value recaps, risk narratives
-├── templates/           # Customer emails, technical checklists, handoff docs
-└── lessons/             # Retrospective templates for continuous improvement
+├── pre-sales/            # Discovery, demos, POCs, technical deep-dives
+├── implementation/       # Kickoff, checkpoints, troubleshooting, handoff
+├── recovery/             # Demo failures, POC recovery, escalation, scope creep
+├── battle-cards/         # Quick customer-safe responses for common objections
+│
+│── SA Track
+├── architecture/         # Design reviews, reference architectures, Well-Architected, ADRs
+├── migration/            # Assessment, strategy, cutover planning, risk framework
+├── cost-modeling/        # TCO analysis, cloud cost comparison, optimization
+├── compliance/           # Regulatory mapping, security architecture, data residency
+├── patterns/             # Microservices, event-driven, data mesh, API gateway
+├── stakeholder-management/ # Executive alignment, cross-team coordination, CTO conversations
+│
+│── Shared
+├── environments/         # Air-gapped, private, restricted, multi-tenant, hybrid
+├── internal/             # Team coordination, status updates, requesting help
+├── business-value/       # Executive summaries, value recaps, risk narratives
+├── templates/            # Customer emails, technical checklists, handoff docs
+└── lessons/              # Retrospective templates for continuous improvement
 ```
 
-Dozens of frameworks, checklists, and templates cover the full SE lifecycle from first discovery call to customer handoff.
+70+ frameworks, checklists, and templates covering the full SE and SA lifecycle.
 
 ---
 
@@ -145,12 +158,13 @@ Dozens of frameworks, checklists, and templates cover the full SE lifecycle from
 
 ## Who this is for
 
-Use this playbook when you are responsible for making a technical customer engagement move forward:
+Use this playbook when you are responsible for making a technical customer engagement or architecture initiative move forward:
 
 - **Solutions Engineers** who need repeatable discovery, demo, POC, and recovery motions
+- **Solutions Architects** who need design review frameworks, migration strategies, cost models, and stakeholder management playbooks
 - **Technical Sales Engineers** who want stronger qualification, scoping, and stakeholder alignment
 - **Customer Success Engineers** who inherit complex deployments and need clean handoffs
-- **SE leads** who want shared operating patterns for coaching, reviews, and escalations
+- **SE/SA leads** who want shared operating patterns for coaching, reviews, and escalations
 
 This is not product documentation or a training manual. It is a routing system and field kit for practical execution.
 
