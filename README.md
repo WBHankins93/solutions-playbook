@@ -9,7 +9,7 @@ tags:
 
 A field-ready playbook for **Solutions Engineers** and **Solutions Architects** who need the next best action — not another theory document. SE track covers discovery, demos, POCs, implementation, and recovery. SA track covers architecture design, migration strategy, cost modeling, compliance, and stakeholder management. Shared sections cover environments, coordination, and templates both roles use daily.
 
-[Start with the router](START-HERE.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](templates/) · [Contribute a pattern](CONTRIBUTING.md)
+[Start with the router](START-HERE.md) · [Open the content index](CONTENT-INDEX.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](CONTENT-INDEX.md#templates) · [Contribute a pattern](CONTRIBUTING.md)
 
 ---
 
@@ -52,7 +52,7 @@ A field-ready playbook for **Solutions Engineers** and **Solutions Architects** 
   </tr>
 </table>
 
-**Need to explain business impact?** → Use the [`business-value/`](business-value/) guides to translate technical progress into executive outcomes
+**Need to explain business impact?** → Use the [business-value guides](CONTENT-INDEX.md#business-value) to translate technical progress into executive outcomes
 
 ---
 
@@ -92,30 +92,23 @@ A field-ready playbook for **Solutions Engineers** and **Solutions Architects** 
 
 ## What's inside
 
+Need a complete map? Use the [Content Index](CONTENT-INDEX.md) to browse every workflow, template, battle card, example, and reference page by job to be done.
+
 ```
 solutions-playbook/
 │
 │── SE Track
 ├── engagements/          # New customer, joining existing, inherited handoffs
-├── pre-sales/            # Discovery, demos, POCs, technical deep-dives
-├── implementation/       # Kickoff, checkpoints, troubleshooting, handoff
-├── recovery/             # Demo failures, POC recovery, escalation, scope creep
-├── battle-cards/         # Quick customer-safe responses for common objections
-│
-│── SA Track
-├── architecture/         # Design reviews, reference architectures, Well-Architected, ADRs
-├── migration/            # Assessment, strategy, cutover planning, risk framework
-├── cost-modeling/        # TCO analysis, cloud cost comparison, optimization
-├── compliance/           # Regulatory mapping, security architecture, data residency
-├── patterns/             # Microservices, event-driven, data mesh, API gateway
-├── stakeholder-management/ # Executive alignment, cross-team coordination, CTO conversations
-│
-│── Shared
-├── environments/         # Air-gapped, private, restricted, multi-tenant, hybrid
-├── internal/             # Team coordination, status updates, requesting help
-├── business-value/       # Executive summaries, value recaps, risk narratives
-├── templates/            # Customer emails, technical checklists, handoff docs
-└── lessons/              # Retrospective templates for continuous improvement
+├── pre-sales/           # Discovery, demos, POCs, technical deep-dives
+├── implementation/      # Kickoff, checkpoints, troubleshooting, handoff
+├── environments/        # Air-gapped, private, restricted, multi-tenant, hybrid
+├── recovery/            # Demo failures, POC recovery, escalation, scope creep
+├── internal/            # Team coordination, status updates, requesting help
+├── business-value/      # Executive summaries, value recaps, risk narratives
+├── battle-cards/        # Customer-safe responses to common pressure moments
+├── templates/           # Customer emails, technical checklists, handoff docs
+├── examples/            # Filled-in artifacts that show templates in practice
+└── lessons/             # Retrospective templates for continuous improvement
 ```
 
 70+ frameworks, checklists, and templates covering the full SE and SA lifecycle.

@@ -89,6 +89,6 @@ before you scope or promise anything.
 ## 🔗 Links
 
 - [POC Scoping](poc-scoping.md)
-- [Environment Guides](../environments/)
+- [Environment Guides](../CONTENT-INDEX.md#environment-guides)
 - [Pre-call prep with sales](../internal/pre-call-prep.md)
 
