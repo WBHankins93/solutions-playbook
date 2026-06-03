@@ -74,6 +74,45 @@ const internalCoordination = [
   { text: 'Tracking Impact', link: '/internal/tracking-impact' },
 ]
 
+const architecture = [
+  { text: 'Design Review', link: '/architecture/design-review' },
+  { text: 'Reference Architectures', link: '/architecture/reference-architectures' },
+  { text: 'Well-Architected Review', link: '/architecture/well-architected' },
+  { text: 'ADR Template', link: '/architecture/adr-template' },
+]
+
+const migration = [
+  { text: 'Assessment', link: '/migration/assessment' },
+  { text: 'Strategy', link: '/migration/strategy' },
+  { text: 'Cutover Planning', link: '/migration/cutover-planning' },
+  { text: 'Risk Framework', link: '/migration/risk-framework' },
+]
+
+const costModeling = [
+  { text: 'TCO Framework', link: '/cost-modeling/tco-framework' },
+  { text: 'Cloud Cost Comparison', link: '/cost-modeling/cloud-cost-comparison' },
+  { text: 'Cost Optimization', link: '/cost-modeling/optimization' },
+]
+
+const compliance = [
+  { text: 'Regulatory Mapping', link: '/compliance/regulatory-mapping' },
+  { text: 'Security Architecture', link: '/compliance/security-architecture' },
+  { text: 'Data Residency', link: '/compliance/data-residency' },
+]
+
+const patterns = [
+  { text: 'Microservices', link: '/patterns/microservices' },
+  { text: 'Event-Driven', link: '/patterns/event-driven' },
+  { text: 'Data Mesh', link: '/patterns/data-mesh' },
+  { text: 'API Gateway', link: '/patterns/api-gateway' },
+]
+
+const stakeholderMgmt = [
+  { text: 'Executive Alignment', link: '/stakeholder-management/executive-alignment' },
+  { text: 'Cross-Team Coordination', link: '/stakeholder-management/cross-team-coordination' },
+  { text: 'CTO Conversations', link: '/stakeholder-management/cto-conversations' },
+]
+
 const templates = [
   { text: 'Discovery Questions', link: '/templates/discovery-questions' },
   { text: 'Kickoff Agenda', link: '/templates/kickoff-agenda' },
@@ -103,8 +142,8 @@ const templates = [
 ]
 
 export default defineConfig({
-  title: 'SE Playbook',
-  description: 'Operational frameworks, checklists, and templates for Solutions Engineers.',
+  title: 'Solutions Playbook',
+  description: 'Operational frameworks, checklists, and templates for Solutions Engineers and Solutions Architects.',
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
@@ -153,8 +192,16 @@ export default defineConfig({
       ] },
       { text: 'Pre-Sales', collapsed: false, items: preSales },
       { text: 'Implementation', collapsed: false, items: implementation },
-      { text: 'Environments', collapsed: false, items: environments },
       { text: 'Recovery', collapsed: false, items: recovery },
+      { text: '— SA Track —', collapsed: false, items: [] },
+      { text: 'Architecture', collapsed: false, items: architecture },
+      { text: 'Migration', collapsed: false, items: migration },
+      { text: 'Cost Modeling', collapsed: false, items: costModeling },
+      { text: 'Compliance', collapsed: false, items: compliance },
+      { text: 'Patterns', collapsed: false, items: patterns },
+      { text: 'Stakeholder Management', collapsed: false, items: stakeholderMgmt },
+      { text: '— Shared —', collapsed: false, items: [] },
+      { text: 'Environments', collapsed: false, items: environments },
       { text: 'Internal Coordination', collapsed: false, items: internalCoordination },
       { text: 'Business Value', collapsed: false, items: businessValue },
       { text: 'Battle Cards', collapsed: true, items: battleCards },
