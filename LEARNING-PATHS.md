@@ -4,9 +4,9 @@ tags:
   - customer-facing
 ---
 
-# SE Operational Learning Paths
+# Solutions Playbook Learning Paths
 
-An operational skill development guide for Solutions Engineers. This focuses on customer engagement, scoping, communication, and SE processes.
+An operational skill development guide for Solutions Engineers and Solutions Architects. SE paths focus on customer engagement, scoping, communication, and SE processes. The SA path covers architecture design, migration strategy, cost modeling, compliance, and stakeholder management.
 
 > **Technical Skills:** For hands-on deployment labs and technical patterns, see [implementation-studio](https://github.com/WBHankins93/implementation-studio) and [DevOps-Studio](https://github.com/WBHankins93/devops-studio).
 
@@ -43,6 +43,11 @@ Each path includes playbook resources to read, implementation-studio labs to pra
   - [Phase 1: Recovery & Escalation Mastery](#phase-1-recovery--escalation-mastery)
   - [Phase 2: Strategic Customer Engagement](#phase-2-strategic-customer-engagement)
   - [Phase 3: Process & Team Building](#phase-3-process--team-building)
+- [Learning Path 4: Solutions Architect](#learning-path-4-solutions-architect)
+  - [Phase 1: Architecture Fundamentals](#phase-1-architecture-fundamentals-month-1-2)
+  - [Phase 2: Migration & Cost Strategy](#phase-2-migration--cost-strategy-month-3-4)
+  - [Phase 3: Compliance & Patterns](#phase-3-compliance--patterns-month-5-6)
+  - [Phase 4: Stakeholder Leadership](#phase-4-stakeholder-leadership-month-7-8)
 - [Integration: Operational + Technical Skills](#integration-operational--technical-skills)
 - [Recommended Learning Sequence](#recommended-learning-sequence)
 - [Skill Progression Indicators](#skill-progression-indicators)
@@ -57,6 +62,7 @@ Each path includes playbook resources to read, implementation-studio labs to pra
 - [I'm new to SE → Foundations](#learning-path-1-foundations)
 - [I have 6-12 months experience → Practitioner](#learning-path-2-practitioner)
 - [I have 18+ months experience → Advanced](#learning-path-3-advanced)
+- [I'm targeting Solutions Architect roles → SA Path](#learning-path-4-solutions-architect)
 - [Show me how playbook + studio work together → Integration Table](#integration-operational--technical-skills)
 
 ---
@@ -354,6 +360,149 @@ Rate yourself honestly (1-5) in each area:
 
 ---
 
+## Learning Path 4: Solutions Architect
+
+**Target:** SE practitioners transitioning to SA, or engineers moving into architecture roles
+**Goal:** Lead architecture design, migration strategy, cost optimization, and stakeholder alignment at the executive level
+
+**Prerequisites:** Solid foundation in SE skills (Paths 1-2 minimum), or equivalent engineering experience with customer-facing work.
+
+### Phase 1: Architecture Fundamentals (Month 1-2)
+
+**Focus:** Design reviews, reference architectures, Well-Architected Framework, architecture decision records
+
+**Resources:**
+
+- [Design Review](architecture/design-review.md) — How to evaluate architecture across reliability, security, scalability, cost, and operability
+- [Reference Architectures](architecture/reference-architectures.md) — Building opinionated starting points for common patterns
+- [Well-Architected Review](architecture/well-architected.md) — Structured assessment across the six pillars
+- [ADR Template](architecture/adr-template.md) — Documenting decisions so they don't get relitigated
+
+**Practice:**
+
+- Conduct 2-3 architecture reviews (start with internal systems or open-source projects)
+- Write ADRs for 3 non-trivial technology decisions
+- Run a Well-Architected review on a system you know well
+- Present findings to peers and iterate on your review approach
+
+**Self-Check:**
+
+- [ ] Can you evaluate an architecture across multiple dimensions without fixating on one?
+- [ ] Do your recommendations include tradeoffs, not just "best practices"?
+- [ ] Can you prioritize findings by business impact, not just technical severity?
+- [ ] Do you document decisions with alternatives and rationale?
+
+---
+
+### Phase 2: Migration & Cost Strategy (Month 3-4)
+
+**Focus:** Migration assessment, wave planning, cutover execution, TCO analysis, cloud cost comparison
+
+**Resources:**
+
+- [Migration Assessment](migration/assessment.md) — Inventory, dependency mapping, and the 7 R's
+- [Migration Strategy](migration/strategy.md) — Wave planning, data migration, testing
+- [Cutover Planning](migration/cutover-planning.md) — Runbooks, go/no-go criteria, rollback
+- [Migration Risk Framework](migration/risk-framework.md) — Identifying and mitigating migration risks
+- [TCO Framework](cost-modeling/tco-framework.md) — Full cost modeling with sensitivity analysis
+- [Cloud Cost Comparison](cost-modeling/cloud-cost-comparison.md) — Apples-to-apples provider comparison
+- [Cost Optimization](cost-modeling/optimization.md) — The optimization hierarchy from waste elimination to architecture changes
+
+**Practice:**
+
+- Build a TCO model for a real or hypothetical migration (3-year horizon with sensitivity analysis)
+- Create a migration assessment for a multi-workload environment
+- Design a wave plan with dependency-based sequencing
+- Write a cutover runbook with rollback procedures
+
+**Technical Bridge:**
+
+- AWS Solutions Architect Associate (SAA-C03) — migration, cost optimization, and Well-Architected content aligns directly
+- [implementation-studio labs](https://github.com/WBHankins93/implementation-studio) for hands-on environment migration practice
+
+**Self-Check:**
+
+- [ ] Can you build a credible TCO model that executives would use to make a decision?
+- [ ] Do you understand the 7 R's and when each migration strategy applies?
+- [ ] Can you plan a cutover that has a tested rollback path?
+- [ ] Do you present cost analysis with ranges and assumptions, not single numbers?
+
+---
+
+### Phase 3: Compliance & Patterns (Month 5-6)
+
+**Focus:** Regulatory mapping, security architecture, data residency, and core architecture patterns
+
+**Resources:**
+
+- [Regulatory Mapping](compliance/regulatory-mapping.md) — Translating HIPAA, FedRAMP, SOC 2, GDPR, PCI DSS into architecture decisions
+- [Security Architecture](compliance/security-architecture.md) — Defense in depth across identity, network, data, application, and detection layers
+- [Data Residency](compliance/data-residency.md) — Geographic constraints and their architectural implications
+- [Microservices](patterns/microservices.md) — When to decompose, communication patterns, resilience, observability
+- [Event-Driven](patterns/event-driven.md) — Messaging patterns, delivery guarantees, technology selection
+- [Data Mesh](patterns/data-mesh.md) — Decentralized data ownership and self-serve infrastructure
+- [API Gateway](patterns/api-gateway.md) — Routing, aggregation, BFF, versioning, technology selection
+
+**Practice:**
+
+- Map a regulatory requirement (pick one: HIPAA, SOC 2, or GDPR) to concrete architecture controls
+- Design a security architecture for a multi-tier application using defense-in-depth
+- Evaluate a microservices architecture for distributed monolith smells
+- Select and justify a messaging technology for a specific use case
+
+**Self-Check:**
+
+- [ ] Can you translate a regulatory requirement into an architectural decision without over-engineering?
+- [ ] Do you understand defense-in-depth well enough to review a customer's security posture?
+- [ ] Can you recommend when microservices are NOT the right choice?
+- [ ] Do you choose architecture patterns based on constraints, not trends?
+
+---
+
+### Phase 4: Stakeholder Leadership (Month 7-8)
+
+**Focus:** Executive communication, cross-team coordination, CTO-level conversations
+
+**Resources:**
+
+- [Executive Alignment](stakeholder-management/executive-alignment.md) — Framing technical decisions as business decisions
+- [Cross-Team Coordination](stakeholder-management/cross-team-coordination.md) — RACI, conflict resolution, meeting facilitation
+- [CTO Conversations](stakeholder-management/cto-conversations.md) — Strategic questions, company-stage awareness, building advisory relationships
+
+**Practice:**
+
+- Prepare and deliver an executive brief for an architecture recommendation (use the template)
+- Facilitate a cross-team design decision with competing priorities
+- Conduct a CTO-level conversation where you lead with strategic questions, not technical details
+- Build a stakeholder map for a multi-team initiative and define the RACI
+
+**Self-Check:**
+
+- [ ] Can you present architecture recommendations in business terms (revenue, cost, risk, speed)?
+- [ ] Do you lead with a recommendation, not just options?
+- [ ] Can you facilitate cross-team alignment without having authority over any team?
+- [ ] Do CTOs and VPs treat you as a thinking partner, not just a technical resource?
+
+---
+
+## Skill Progression: SE to SA
+
+You're ready to start the SA path when you can:
+
+- Lead customer engagements end-to-end (SE Practitioner level)
+- Think beyond "does our product solve this?" to "what's the right architecture?"
+- Translate technical decisions into business impact
+- Influence without authority across teams
+
+You've completed the SA path when you can:
+
+- Conduct design reviews that executives act on
+- Build migration strategies with credible cost models
+- Navigate compliance requirements without over-engineering
+- Hold your own in a CTO conversation about technical strategy
+
+---
+
 ## Integration: Operational + Technical Skills
 
 This table shows how to combine SE Playbook (operational) with implementation-studio (technical) for common scenarios:
@@ -477,9 +626,16 @@ You're ready to move from Practitioner to Advanced when you can:
 
 ### Books (Optional)
 
+**SE Focus:**
 - "SPIN Selling" by Neil Rackham - Discovery and consultative selling
 - "The Challenger Sale" - Understanding customer engagement
 - "The Sales Engineer's Handbook" - SE fundamentals (if available)
+
+**SA Focus:**
+- "Fundamentals of Software Architecture" by Richards & Ford - Architecture thinking, patterns, and trade-off analysis
+- "Designing Data-Intensive Applications" by Martin Kleppmann - Data systems architecture and distributed systems
+- "The Art of Leadership" by Michael Lopp - Influencing without authority, technical leadership
+- "Software Architecture: The Hard Parts" by Ford, Richards, Sadalage, Dehghani - Decomposition, integration, and decision-making
 
 ### Communities
 
@@ -531,15 +687,16 @@ Create a simple tracker to monitor your development:
 
 ## Remember
 
-SE work is both art and science. The frameworks in this playbook provide structure, but you'll develop your own style through experience. What matters most is:
+Solutions work — whether SE or SA — is both art and science. The frameworks in this playbook provide structure, but you'll develop your own style through experience. What matters most is:
 
 - **Listen more than you talk** in discovery
-- **Practice more than you think you need** for demos
-- **Document more than feels necessary** during implementation
-- **Communicate more than seems required** with customers and team
-- **Learn from every engagement** - especially the difficult ones
+- **Practice more than you think you need** for demos and design reviews
+- **Document more than feels necessary** during implementation and architecture decisions
+- **Communicate more than seems required** with customers, team, and executives
+- **Learn from every engagement** — especially the difficult ones
+- **Name the tradeoffs** — the best SAs don't just recommend, they explain what the recommendation costs
 
-The best SEs combine deep technical knowledge with strong operational skills and excellent communication. This playbook helps you develop the operational side. Keep building the technical side with [implementation-studio](https://github.com/WBHankins93/implementation-studio) and [DevOps-Studio](https://github.com/WBHankins93/devops-studio).
+The best solutions professionals combine deep technical knowledge with strong operational skills, excellent communication, and the ability to translate technology into business outcomes. This playbook helps you develop all of those dimensions. Keep building the technical side with [implementation-studio](https://github.com/WBHankins93/implementation-studio) and [DevOps-Studio](https://github.com/WBHankins93/devops-studio).
 
 Now go use this stuff.
 
