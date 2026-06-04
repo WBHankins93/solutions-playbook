@@ -34,6 +34,21 @@ creating so much friction that teams bypass controls.
 Security architecture operates across layers. A failure at any single layer should not
 result in a complete breach.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TB
+    A[Identity and Access] --> B[Network Security]
+    B --> C[Data Protection]
+    C --> D[Application Security]
+    D --> E[Detection and Response]
+
+    A -. verifies .-> U[Users and services]
+    B -. limits .-> T[Trust boundaries]
+    C -. protects .-> X[Sensitive data]
+    D -. hardens .-> W[Workloads]
+    E -. reveals .-> I[Incidents]
+```
+
 **Layer 1: Identity & Access**
 
 The foundation. If you get this wrong, nothing else matters.
