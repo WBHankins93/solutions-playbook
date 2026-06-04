@@ -28,6 +28,18 @@ keep the migration from going sideways.
 
 ### Wave Planning
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart LR
+    A[Wave 1: Foundation and quick wins] --> B[Wave 2: Core services]
+    B --> C[Wave 3: Complex and critical]
+    C --> D[Wave 4: Cleanup and optimization]
+
+    A -. validates .-> T[Tooling and patterns]
+    B -. proves .-> T
+    C -. applies .-> T
+```
+
 Organize workloads into migration waves based on:
 
 **Wave 1: Foundation & Quick Wins**
@@ -74,6 +86,20 @@ Organize workloads into migration waves based on:
 ### Data Migration Strategy
 
 Data migration is usually the hardest part. Choose the right approach per workload:
+
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Can the workload tolerate downtime?] -->|Yes| B[Is the data set small enough for the window?]
+    A -->|No| C[Is continuous replication available?]
+    B -->|Yes| D[Offline migration]
+    B -->|No| C
+    C -->|Yes| E[Online migration]
+    C -->|No| F[Dual-write or phased strangler]
+    D --> G[Validate and cut over]
+    E --> G
+    F --> G
+```
 
 | Approach | Description | When to Use |
 | --- | --- | --- |

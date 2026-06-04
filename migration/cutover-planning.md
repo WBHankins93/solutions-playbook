@@ -29,6 +29,28 @@ a rollback. There is no room for improvisation here.
 
 ## 🎯 Cutover Framework
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+sequenceDiagram
+    participant Team as Cutover Team
+    participant Source as Source Environment
+    participant Target as Target Environment
+    participant Users as User Traffic
+
+    Team->>Source: Freeze deployments and validate final sync
+    Team->>Target: Run health checks and smoke tests
+    Team->>Team: Go/no-go decision
+    alt Go
+        Team->>Users: Shift DNS or load balancer to target
+        Users->>Target: Send production traffic
+        Team->>Target: Validate app, data, and monitoring
+    else No-go or rollback trigger
+        Team->>Users: Keep or return traffic to source
+        Users->>Source: Resume source traffic
+        Team->>Team: Assess issue and reschedule
+    end
+```
+
 ### Cutover Patterns
 
 Choose the pattern that matches the workload's downtime tolerance:

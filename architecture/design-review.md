@@ -26,6 +26,20 @@ on honest assessment, including recommending against your own product when warra
 
 ## 🎯 Design Review Framework
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Understand intent] --> B[Evaluate dimensions]
+    B --> C[Prioritize findings]
+    C --> D[Present recommendations]
+    D --> E[Document next steps]
+
+    B --> B1[Reliability]
+    B --> B2[Security]
+    B --> B3[Operability]
+    B --> B4[Cost]
+```
+
 ### Step 1: Understand Intent Before Critiquing Design
 
 Before evaluating the architecture, understand what it's trying to achieve:

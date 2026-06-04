@@ -28,6 +28,20 @@ complexity mid-flight.
 
 ## 🎯 Assessment Framework
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Business context] --> B[Workload inventory]
+    B --> C[Dependency mapping]
+    C --> D[7 R disposition]
+    D --> E[Readiness assessment]
+    E --> F[Migration groups and sequence]
+
+    C --> C1[Application dependencies]
+    C --> C2[Data dependencies]
+    C --> C3[External dependencies]
+```
+
 ### Step 1: Business Context
 
 Before touching anything technical, understand the motivation:

@@ -28,6 +28,19 @@ Before recommending microservices, validate these prerequisites:
 the better choice. Microservices are an organizational scaling pattern, not a technical
 improvement for small teams.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Do multiple teams need independent deployment?] -->|No| B[Prefer modular monolith]
+    A -->|Yes| C[Are domain boundaries well understood?]
+    C -->|No| D[Stabilize domain model first]
+    C -->|Yes| E[Can the team operate distributed systems?]
+    E -->|No| F[Invest in CI/CD, tracing, and ownership]
+    E -->|Yes| G[Do services scale or change independently?]
+    G -->|No| B
+    G -->|Yes| H[Microservices may be justified]
+```
+
 ## 🎯 Core Patterns
 
 ### Service Decomposition

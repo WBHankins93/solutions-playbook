@@ -25,6 +25,21 @@ in debugging, ordering, and consistency that must be deliberately managed.
 **If most of these are no:** Synchronous request-response is simpler and easier to debug.
 Don't add event infrastructure for a system that's fundamentally request-response.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Do multiple consumers need the same event?] -->|Yes| B[Publish-subscribe]
+    A -->|No| C[Is this work processed by one worker?]
+    C -->|Yes| D[Point-to-point queue]
+    C -->|No| E[Is replay or audit trail required?]
+    E -->|Yes| F[Event streaming]
+    E -->|No| G[Prefer synchronous request-response]
+
+    B --> H[Check ordering and idempotency]
+    D --> H
+    F --> H
+```
+
 ## 🎯 Core Patterns
 
 ### Event Types
