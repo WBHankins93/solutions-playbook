@@ -157,4 +157,4 @@ How this architecture is run day-to-day:
 - [ADR Template](adr-template.md)
 - [Microservices Patterns](../patterns/microservices.md)
 - [Event-Driven Patterns](../patterns/event-driven.md)
-- [Environment Guides](../environments/)
+- [Environment Guides](../START-HERE.md)
