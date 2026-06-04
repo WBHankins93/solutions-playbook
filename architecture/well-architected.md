@@ -29,6 +29,22 @@ The Well-Architected Framework evaluates workloads across six pillars. Not every
 pillar carries equal weight for every workload — prioritize based on the customer's
 business context.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TB
+    W[Well-Architected workload] --> OE[Operational Excellence]
+    W --> S[Security]
+    W --> R[Reliability]
+    W --> P[Performance Efficiency]
+    W --> C[Cost Optimization]
+    W --> SU[Sustainability]
+
+    OE -. enables .-> R
+    S -. protects .-> R
+    P -. shapes .-> C
+    C -. constrains .-> SU
+```
+
 ### 1. Operational Excellence
 
 **Core question:** Can you run this in production without heroics?
@@ -154,6 +170,16 @@ See also: [TCO Framework](../cost-modeling/tco-framework.md) and [Cost Optimizat
 - Over-provisioned infrastructure "just in case"
 
 ## 🎯 Conducting the Review
+
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Scope workload and pillars] --> B[Gather diagrams and evidence]
+    B --> C[Facilitate pillar discussion]
+    C --> D[Document prioritized findings]
+    D --> E[Build improvement plan]
+    E --> F[Schedule follow-up review]
+```
 
 **Step 1: Scope the review** — Pick the workload and agree on which pillars to prioritize.
 A full six-pillar review takes 4-8 hours of conversation. Start with the 2-3 pillars
