@@ -35,6 +35,19 @@ A reference architecture should be:
 
 ### Structure
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A[Context and constraints] --> B[Logical architecture]
+    B --> C[Physical architecture]
+    C --> D[Key decisions]
+    D --> E[Operational model]
+
+    B -. explains .-> Flow[Data flow and trust boundaries]
+    C -. maps to .-> Infra[Regions, networks, clusters, stores]
+    D -. records .-> ADR[Architecture decision records]
+```
+
 **1. Context & Constraints**
 
 Start with what shaped the architecture:
@@ -157,4 +170,4 @@ How this architecture is run day-to-day:
 - [ADR Template](adr-template.md)
 - [Microservices Patterns](../patterns/microservices.md)
 - [Event-Driven Patterns](../patterns/event-driven.md)
-- [Environment Guides](../START-HERE.md)
+- [Environment Guides](../CONTENT-INDEX.md#environment-guides)

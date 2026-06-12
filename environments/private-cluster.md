@@ -13,6 +13,21 @@ EKS, GKE, or AKS). This could be on-premises, in a private cloud, or self-manage
 Expect different access, networking, storage, security, upgrade, and support models than
 managed services. Confirm what the customer means by "private" before scoping.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TB
+    User[Users and support team] --> Access[VPN or bastion]
+    Automation[CI/CD automation] --> Access
+    Access --> API[Kubernetes API]
+    API --> Control[Control plane]
+    Control --> Workers[Worker nodes]
+    Workers --> Pods[Application workloads]
+    Pods --> Storage[Private storage]
+    Pods --> Ingress[Ingress or load balancer]
+    Pods --> Registry[Private registry]
+    Pods --> DNS[Internal DNS]
+```
+
 ## 🎯 Discovery Questions
 
 - What Kubernetes distribution are you running? (OpenShift, Rancher, kubeadm, etc.)

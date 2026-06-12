@@ -6,7 +6,7 @@ tags:
 
 # Content Index
 
-Use this index when you know what you need to produce, but not where it lives. For situation-based routing, start with [Start Here](START-HERE.md). For skill development, use [Learning Paths](LEARNING-PATHS.md). For tag-based browsing, use [Tags](TAGS.md).
+Use this index when you know what you need to produce, but not where it lives. For situation-based routing, start with [Start Here](START-HERE.md). For visual learning and interview practice, use [Visual Diagrams](VISUAL-DIAGRAMS.md). For skill development, use [Learning Paths](LEARNING-PATHS.md). For tag-based browsing, use [Tags](TAGS.md).
 
 ## Fast routes by job to be done
 
@@ -19,6 +19,7 @@ Use this index when you know what you need to produce, but not where it lives. F
 | Run a demo or recover from one | [Demo](pre-sales/demo.md) | [Demo Recovery](recovery/demo-recovery.md), [Demo Failure Response Battle Card](battle-cards/demo-failure-response.md) |
 | Plan implementation | [Kickoff](implementation/kickoff.md) | [Kickoff Agenda](templates/kickoff-agenda.md), [Pre-Implementation Checklist](templates/technical/pre-implementation-checklist.md) |
 | Validate a constrained environment | [Environment Guides](#environment-guides) | [Environment Validation](templates/technical/environment-validation.md), [Common Commands](templates/technical/common-commands.md) |
+| Explain a concept visually | [Visual Diagrams](VISUAL-DIAGRAMS.md) | [Architecture](#architecture), [Migration](#migration), [Environment Guides](#environment-guides), [Patterns](#patterns) |
 | Communicate status or escalation | [Status Updates](internal/status-updates.md) or [Escalation](recovery/escalation.md) | [Status Update Template](templates/status-update-template.md), [Escalation Response](templates/customer/escalation-response.md) |
 | Translate technical work to value | [Technical to Business Translation](business-value/technical-to-business-translation.md) | [POC Value Recap](business-value/poc-value-recap.md), [Executive Summary Template](business-value/executive-summary-template.md) |
 | Capture lessons learned | [Retrospective Template](templates/retrospective.md) | [Lessons Template](lessons/TEMPLATE.md), [Telecom Hybrid Retrospective Example](examples/lessons/retrospective-telecom-hybrid-poc.md) |
@@ -140,6 +141,7 @@ Use this index when you know what you need to produce, but not where it lives. F
 
 ## Reference and maintenance
 
+- [Visual Diagrams](VISUAL-DIAGRAMS.md) - Simple Mermaid diagrams for architecture reviews, migrations, patterns, and environments.
 - [Tags](TAGS.md) - Browse content by topic.
 - [Learning Paths](LEARNING-PATHS.md) - Follow a structured skill-building path.
 - [Contributing](CONTRIBUTING.md) - Add new patterns consistently.

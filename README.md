@@ -1,196 +1,143 @@
 ---
+layout: home
+title: Solutions Playbook
+titleTemplate: Field guides for Solutions Engineers and Architects
 tags:
   - customer-facing
 ---
 
-# Solutions Playbook
+<section class="home-hero">
+  <div class="home-hero__content">
+    <p class="eyebrow">Field-tested systems for technical customer work</p>
+    <h1>Solutions Playbook</h1>
+    <p class="hero-copy">A searchable operating manual for Solutions Engineers and Solutions Architects: discovery, POCs, implementation, recovery, architecture reviews, migrations, compliance, and the handoffs that keep real work moving.</p>
+    <div class="hero-actions" aria-label="Primary routes">
+      <a class="button primary" href="/START-HERE">Start with the router</a>
+      <a class="button secondary" href="/VISUAL-DIAGRAMS">Browse diagrams</a>
+    </div>
+  </div>
+  <div class="field-map" aria-label="Playbook map preview">
+    <div class="field-map__bar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="field-map__grid">
+      <a href="/pre-sales/discovery" class="map-node active">Discovery</a>
+      <a href="/pre-sales/poc-scoping" class="map-node">POC scope</a>
+      <a href="/implementation/kickoff" class="map-node">Kickoff</a>
+      <a href="/environments/air-gapped" class="map-node accent">Air-gapped</a>
+      <a href="/architecture/design-review" class="map-node">Design review</a>
+      <a href="/migration/strategy" class="map-node">Migration waves</a>
+      <a href="/compliance/security-architecture" class="map-node">Security</a>
+      <a href="/recovery/escalation" class="map-node warn">Escalation</a>
+    </div>
+  </div>
+</section>
 
-> **Find the right framework in under 60 seconds.**
+<section class="route-section">
+  <div class="section-heading">
+    <p class="eyebrow">Choose your path</p>
+    <h2>Built for the moments where clarity matters</h2>
+  </div>
+  <div class="route-grid">
+    <a class="route-card" href="/CONTENT-INDEX#core-workflows">
+      <span class="route-card__label">SE track</span>
+      <h3>Run the engagement</h3>
+      <p>Discovery, demos, POCs, implementation checkpoints, customer updates, and recovery playbooks.</p>
+    </a>
+    <a class="route-card" href="/CONTENT-INDEX#architecture">
+      <span class="route-card__label">SA track</span>
+      <h3>Lead the architecture conversation</h3>
+      <p>Design reviews, reference architectures, Well-Architected checks, migrations, compliance, and tradeoffs.</p>
+    </a>
+    <a class="route-card" href="/VISUAL-DIAGRAMS">
+      <span class="route-card__label">Visual learning</span>
+      <h3>Explain it on a whiteboard</h3>
+      <p>Simple diagrams for interviews, customer conversations, and learning concepts by seeing the system.</p>
+    </a>
+    <a class="route-card" href="/CONTENT-INDEX#templates">
+      <span class="route-card__label">Copy-ready</span>
+      <h3>Turn intent into artifacts</h3>
+      <p>Status updates, handoffs, discovery questions, kickoff agendas, validation checklists, and customer emails.</p>
+    </a>
+  </div>
+</section>
 
-A field-ready playbook for **Solutions Engineers** and **Solutions Architects** who need the next best action — not another theory document. SE track covers discovery, demos, POCs, implementation, and recovery. SA track covers architecture design, migration strategy, cost modeling, compliance, and stakeholder management. Shared sections cover environments, coordination, and templates both roles use daily.
+<section class="proof-strip" aria-label="Playbook coverage">
+  <div>
+    <strong>70+</strong>
+    <span>frameworks and templates</span>
+  </div>
+  <div>
+    <strong>18</strong>
+    <span>editable Mermaid diagrams</span>
+  </div>
+  <div>
+    <strong>2</strong>
+    <span>career tracks: SE and SA</span>
+  </div>
+</section>
 
-[Start with the router](START-HERE.md) · [Open the content index](CONTENT-INDEX.md) · [Browse learning paths](LEARNING-PATHS.md) · [Copy a template](CONTENT-INDEX.md#templates) · [Contribute a pattern](CONTRIBUTING.md)
+<section class="spotlight-section">
+  <div class="diagram-preview">
+    <div class="diagram-preview__header">
+      <span>visual system</span>
+      <span>interview-ready</span>
+    </div>
+    <div class="diagram-preview__body">
+      <div class="diagram-box">Intent</div>
+      <div class="diagram-line"></div>
+      <div class="diagram-box">Design</div>
+      <div class="diagram-line"></div>
+      <div class="diagram-box">Tradeoffs</div>
+      <div class="diagram-line"></div>
+      <div class="diagram-box highlight">Recommendation</div>
+    </div>
+  </div>
+  <div>
+    <p class="eyebrow">Signature feature</p>
+    <h2>Make the invisible parts of architecture teachable.</h2>
+    <p>Every serious guide should help someone explain the system, not just memorize a checklist. The diagram library gives you simple visuals for customer conversations, study sessions, and interviews where you need to show how you think.</p>
+    <a class="text-link" href="/VISUAL-DIAGRAMS">Open the visual diagram library</a>
+  </div>
+</section>
 
----
+<section class="workflow-section">
+  <div class="section-heading">
+    <p class="eyebrow">A real week</p>
+    <h2>Use it when the work gets concrete</h2>
+  </div>
+  <div class="workflow-list">
+    <a href="/engagements/new-customer">
+      <span>01</span>
+      <strong>Get assigned a new enterprise account</strong>
+      <em>Build context, identify stakeholders, and shape the first engagement plan.</em>
+    </a>
+    <a href="/pre-sales/poc-scoping">
+      <span>02</span>
+      <strong>Discovery turns into a high-stakes POC</strong>
+      <em>Lock success criteria, boundaries, proof points, timeline, and owners.</em>
+    </a>
+    <a href="/environments/firewall-restricted">
+      <span>03</span>
+      <strong>The environment is constrained</strong>
+      <em>Route through air-gapped, private-cluster, firewall-restricted, hybrid, or multi-tenant guidance.</em>
+    </a>
+    <a href="/recovery/demo-recovery">
+      <span>04</span>
+      <strong>Something breaks in front of stakeholders</strong>
+      <em>Stabilize the room, protect trust, and convert the failure into a useful next step.</em>
+    </a>
+  </div>
+</section>
 
-## Quick-start workflows
-
-<table>
-  <tr>
-    <td width="33%">
-      <h3>👋 New customer</h3>
-      <p>Get oriented fast, identify stakeholders, and build your first engagement plan.</p>
-      <p><a href="engagements/new-customer.md"><strong>Open the workflow →</strong></a></p>
-    </td>
-    <td width="33%">
-      <h3>🔎 Discovery call</h3>
-      <p>Prepare the right questions, capture technical context, and turn answers into next steps.</p>
-      <p><a href="pre-sales/discovery.md"><strong>Open the workflow →</strong></a></p>
-    </td>
-    <td width="33%">
-      <h3>🎯 POC scoping</h3>
-      <p>Define success criteria, boundaries, timeline, owners, and proof points before work starts.</p>
-      <p><a href="pre-sales/poc-scoping.md"><strong>Open the workflow →</strong></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%">
-      <h3>🧯 Demo recovery</h3>
-      <p>Stabilize the room, preserve credibility, and convert a failure into a follow-up plan.</p>
-      <p><a href="recovery/demo-recovery.md"><strong>Open the workflow →</strong></a></p>
-    </td>
-    <td width="33%">
-      <h3>🔒 Air-gapped deployment</h3>
-      <p>Plan artifacts, transfer paths, offline validation, and operational constraints.</p>
-      <p><a href="environments/air-gapped.md"><strong>Open the workflow →</strong></a></p>
-    </td>
-    <td width="33%">
-      <h3>📣 Status update / escalation</h3>
-      <p>Send crisp updates, ask for help clearly, and escalate without creating noise.</p>
-      <p><a href="internal/status-updates.md"><strong>Status updates →</strong></a><br><a href="recovery/escalation.md"><strong>Escalation →</strong></a></p>
-    </td>
-  </tr>
-</table>
-
-**Need to explain business impact?** → Use the [business-value guides](CONTENT-INDEX.md#business-value) to translate technical progress into executive outcomes
-
----
-
-## How to use this in a real week
-
-### Monday: You get assigned a new enterprise account
-
-1. Start with [New Customer](engagements/new-customer.md) to build your account brief and identify what you still need to learn.
-2. Use [Pre-call Prep](internal/pre-call-prep.md) to align internally before the first customer touchpoint.
-3. Pull from [Discovery Questions](templates/discovery-questions.md) so your first call is specific instead of generic.
-
-### Tuesday: Discovery reveals a high-stakes POC
-
-1. Run the [Discovery Call Framework](pre-sales/discovery.md) to turn notes into technical requirements and decision criteria.
-2. Move into [POC Scoping](pre-sales/poc-scoping.md) to lock success criteria, timeline, risks, and owner responsibilities.
-3. Send a customer-ready update with the [POC Status Update Email](templates/customer/poc-status-update-email.md).
-
-### Wednesday: The environment is more constrained than expected
-
-1. Route the architecture through [Air-Gapped Deployments](environments/air-gapped.md), [Private Clusters](environments/private-cluster.md), or [Firewall-Restricted Environments](environments/firewall-restricted.md).
-2. Validate prerequisites with the [Pre-implementation Checklist](templates/technical/pre-implementation-checklist.md).
-3. Keep implementation risk visible with the [Status Update Format](templates/status-update-template.md).
-
-### Thursday: Something breaks in front of stakeholders
-
-1. Use [Demo Recovery](recovery/demo-recovery.md) if the issue happened live.
-2. Use [Troubleshooting](implementation/troubleshooting.md) if the issue is technical and unresolved.
-3. Escalate with [Requesting Help](internal/requesting-help.md) and [Escalation](recovery/escalation.md) when you need executive, product, or engineering support.
-
-### Friday: You need to hand off cleanly
-
-1. Capture decisions, owners, and open risks in the [Handoff Document](templates/handoff-document.md).
-2. Use [Implementation Handoff](implementation/handoff.md) for customer-facing transition planning.
-3. Run a quick retro with the [Retrospective Template](templates/retrospective.md) so the next engagement starts smarter.
-
----
-
-## What's inside
-
-Need a complete map? Use the [Content Index](CONTENT-INDEX.md) to browse every workflow, template, battle card, example, and reference page by job to be done.
-
-```
-solutions-playbook/
-│
-│── SE Track
-├── engagements/          # New customer, joining existing, inherited handoffs
-├── pre-sales/           # Discovery, demos, POCs, technical deep-dives
-├── implementation/      # Kickoff, checkpoints, troubleshooting, handoff
-├── environments/        # Air-gapped, private, restricted, multi-tenant, hybrid
-├── recovery/            # Demo failures, POC recovery, escalation, scope creep
-├── internal/            # Team coordination, status updates, requesting help
-├── business-value/      # Executive summaries, value recaps, risk narratives
-├── battle-cards/        # Customer-safe responses to common pressure moments
-├── templates/           # Customer emails, technical checklists, handoff docs
-├── examples/            # Filled-in artifacts that show templates in practice
-└── lessons/             # Retrospective templates for continuous improvement
-```
-
-70+ frameworks, checklists, and templates covering the full SE and SA lifecycle.
-
----
-
-## Immediate payoff: copy what you need
-
-### Copy-paste templates
-
-- [Discovery Questions](templates/discovery-questions.md) - Question bank organized by infrastructure, security, compliance, and operations
-- [Kickoff Agenda](templates/kickoff-agenda.md) - Implementation kickoff call structure
-- [POC Status Update Email](templates/customer/poc-status-update-email.md) - Customer-facing communication template
-- [Handoff Document](templates/handoff-document.md) - SE-to-SE or SE-to-Customer Success handoff template
-- [Status Update Format](templates/status-update-template.md) - Internal status reporting template
-
-### Decision frameworks
-
-- [Discovery Call Framework](pre-sales/discovery.md) - Pre-call checklist, question framework, post-call actions
-- [POC Scoping Framework](pre-sales/poc-scoping.md) - Success criteria, in/out of scope, timeline, resources
-- [Troubleshooting Framework](implementation/troubleshooting.md) - Structured process for getting unstuck
-- [Escalation Framework](recovery/escalation.md) - When and how to escalate strategically
-
-### Environment guides
-
-- [Air-Gapped Deployments](environments/air-gapped.md) - Artifact bundling, transfer mechanisms, offline validation
-- [Private Clusters](environments/private-cluster.md) - Network isolation, access patterns, security considerations
-- [Firewall-Restricted](environments/firewall-restricted.md) - Port requirements, proxy configurations, egress controls
-- [Multi-Tenant](environments/multi-tenant.md) - Isolation strategies, resource quotas, tenant management
-- [Hybrid Cloud](environments/hybrid.md) - Cloud and on-prem integration patterns
-
-### Recovery playbooks
-
-- [Demo Recovery](recovery/demo-recovery.md) - What to do when your demo crashes
-- [POC Recovery](recovery/poc-recovery.md) - Salvage a failing POC without hiding the risk
-- [Scope Creep Management](recovery/scope-creep.md) - Spot expansion early and reset expectations
-- [Getting Unstuck](recovery/stuck.md) - Self-assessment and escalation framework
-
----
-
-## Who this is for
-
-Use this playbook when you are responsible for making a technical customer engagement or architecture initiative move forward:
-
-- **Solutions Engineers** who need repeatable discovery, demo, POC, and recovery motions
-- **Solutions Architects** who need design review frameworks, migration strategies, cost models, and stakeholder management playbooks
-- **Technical Sales Engineers** who want stronger qualification, scoping, and stakeholder alignment
-- **Customer Success Engineers** who inherit complex deployments and need clean handoffs
-- **SE/SA leads** who want shared operating patterns for coaching, reviews, and escalations
-
-This is not product documentation or a training manual. It is a routing system and field kit for practical execution.
-
----
-
-## Why this exists
-
-SE work often gets documented in scattered Slack threads, one-off notes, and old project folders. That makes every new account feel like starting from scratch: rediscovering questions, rebuilding POC plans, improvising escalations, and re-learning environment constraints.
-
-This repo turns those repeated motions into reusable frameworks so you can:
-
-- Run better discovery calls with prepared question sets
-- Scope POCs with clear success criteria and guardrails
-- Recover from demo failures, blockers, and scope creep with a plan
-- Navigate air-gapped, private, restricted, multi-tenant, and hybrid environments
-- Coordinate internal teams with reusable updates, handoffs, and escalation formats
-
----
-
-## Related resources
-
-- [implementation-studio](https://github.com/WBHankins93/implementation-studio) - Technical deployment patterns and hands-on labs for Kubernetes, Helm, air-gapped, and private-cluster scenarios
-- [Learning Paths](LEARNING-PATHS.md) - Structured skill development with self-assessment and progress tracking
-
----
-
-## Engage and contribute
-
-This playbook gets better with real-world feedback.
-
-- Star the repo if it saves you time
-- Open an issue for a missing scenario, unclear guide, or template request
-- Submit a PR with patterns that have survived real customer work
-- Share what worked, what failed, and what should be sharper
-
-**Ready to deliver better results?** Start with [START-HERE.md](START-HERE.md) and find your situation.
+<section class="closing-band">
+  <p class="eyebrow">Why it exists</p>
+  <h2>Shared field knowledge should not live in scattered messages and old project folders.</h2>
+  <p>This playbook turns repeated customer motions into reusable frameworks, so every engagement starts with better questions, clearer ownership, stronger tradeoff language, and a visible path to value.</p>
+  <div class="hero-actions">
+    <a class="button primary" href="/CONTENT-INDEX">Explore the index</a>
+    <a class="button secondary" href="/LEARNING-PATHS">Follow a learning path</a>
+  </div>
+</section>
