@@ -26,6 +26,25 @@ through standards and self-serve infrastructure.
 **If most of these are no:** A well-run centralized data platform is simpler and more
 appropriate for smaller organizations or early-stage data maturity.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TB
+    Platform[Self-serve data platform] --> Catalog[Catalog and discovery]
+    Platform --> Governance[Automated governance]
+    Platform --> Infra[Storage, pipelines, quality]
+
+    Customer[Customer domain] --> CustomerProduct[Customer data product]
+    Orders[Orders domain] --> OrdersProduct[Orders data product]
+    Payments[Payments domain] --> PaymentsProduct[Payments data product]
+
+    CustomerProduct --> Catalog
+    OrdersProduct --> Catalog
+    PaymentsProduct --> Catalog
+    Governance -. standards .-> CustomerProduct
+    Governance -. standards .-> OrdersProduct
+    Governance -. standards .-> PaymentsProduct
+```
+
 ## 🎯 Core Principles
 
 Data mesh is built on four principles. All four must be present — implementing one

@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 const startHere = [
   { text: 'Start Here', link: '/START-HERE' },
+  { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
   { text: 'New Customer Engagement', link: '/engagements/new-customer' },
   { text: 'Joining Existing Engagement', link: '/engagements/joining-existing' },
   { text: 'Inherited Customer', link: '/engagements/inherited-customer' },
@@ -153,6 +154,22 @@ export default defineConfig({
       light: 'github-light',
       dark: 'github-dark',
     },
+    config(md) {
+      const defaultFence = md.renderer.rules.fence
+
+      md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const language = token.info.trim().split(/\s+/)[0]
+
+        if (language === 'mermaid') {
+          return `<pre class="mermaid">${md.utils.escapeHtml(token.content)}</pre>`
+        }
+
+        return defaultFence
+          ? defaultFence(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+      }
+    },
   },
   themeConfig: {
     logo: { light: '/logo.svg', dark: '/logo.svg' },
@@ -212,6 +229,7 @@ export default defineConfig({
       ] },
       { text: 'Reference', collapsed: true, items: [
         { text: 'Content Index', link: '/CONTENT-INDEX' },
+        { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
         { text: 'Tags', link: '/TAGS' },
         { text: 'Contributing', link: '/CONTRIBUTING' },
         { text: 'Project Status', link: '/PROJECT-STATUS' },

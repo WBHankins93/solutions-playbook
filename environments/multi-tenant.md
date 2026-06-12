@@ -13,6 +13,24 @@ share the same cluster. This introduces isolation, resource management, governan
 security considerations beyond single-tenant deployments. Validate both the technical
 controls and the operational process for requesting exceptions or additional capacity.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TB
+    Cluster[Shared Kubernetes cluster] --> TenantA[Tenant namespace]
+    Cluster --> TenantB[Other tenant namespace]
+    Cluster --> Shared[Shared platform services]
+
+    TenantA --> Workloads[Application workloads]
+    TenantA --> Quota[Resource quota and limits]
+    TenantA --> RBAC[RBAC and service accounts]
+    TenantA --> NetPol[Network policies]
+    TenantA --> Admission[Admission policies]
+
+    Shared --> Ingress[Ingress and certificates]
+    Shared --> Observability[Logs and metrics]
+    Shared --> Registry[Registry and image policy]
+```
+
 ## 🎯 Discovery Questions
 
 - How is multi-tenancy implemented? (Namespaces, virtual clusters, other?)

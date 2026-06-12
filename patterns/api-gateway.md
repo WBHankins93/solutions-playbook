@@ -24,6 +24,20 @@ rate limiting, routing, and observability so individual services don't have to.
 **If this is a single service with one consumer type:** A gateway adds unnecessary
 infrastructure. Handle auth and rate limiting in the service directly.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart LR
+    Web[Web app] --> Gateway[API gateway]
+    Mobile[Mobile app] --> Gateway
+    Partner[Partner API] --> Gateway
+
+    Gateway --> Auth[Auth and rate limits]
+    Gateway --> Users[User service]
+    Gateway --> Orders[Order service]
+    Gateway --> Products[Product service]
+    Gateway --> Logs[Access logs and metrics]
+```
+
 ## 🎯 Core Patterns
 
 ### Gateway Routing

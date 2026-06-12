@@ -14,6 +14,35 @@ operational complexity beyond single-environment deployments. Treat the cloud an
 on-prem sides as separate failure domains that must be validated independently and
 then together.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart LR
+    subgraph Cloud[Cloud environment]
+        CloudApp[Cloud services]
+        CloudObs[Cloud observability]
+    end
+
+    subgraph Boundary[Boundary]
+        DNS[Split DNS]
+        Link[VPN or dedicated link]
+        Trust[Identity and certificate trust]
+    end
+
+    subgraph OnPrem[On-prem environment]
+        OnPremApp[On-prem services]
+        OnPremData[System of record]
+    end
+
+    CloudApp <--> Link
+    Link <--> OnPremApp
+    CloudApp --> DNS
+    OnPremApp --> DNS
+    CloudApp <--> Trust
+    OnPremApp <--> Trust
+    OnPremApp --> OnPremData
+    CloudApp --> CloudObs
+```
+
 ## 🎯 Discovery Questions
 
 - What components run in cloud vs. on-premises?
