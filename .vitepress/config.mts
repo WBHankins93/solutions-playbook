@@ -144,11 +144,17 @@ const templates = [
 
 export default defineConfig({
   title: 'Solutions Playbook',
-  description: 'Operational frameworks, checklists, and templates for Solutions Engineers and Solutions Architects.',
+  description: 'A searchable field guide for Solutions Engineers and Solutions Architects.',
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
   srcExclude: ['node_modules', 'dist'],
+  head: [
+    ['meta', { name: 'theme-color', content: '#14342f' }],
+    ['meta', { property: 'og:title', content: 'Solutions Playbook' }],
+    ['meta', { property: 'og:description', content: 'Field-tested systems for technical customer work.' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+  ],
   markdown: {
     theme: {
       light: 'github-light',
@@ -191,16 +197,21 @@ export default defineConfig({
         { text: 'Content Index', link: '/CONTENT-INDEX' },
         ...startHere,
       ] },
-      { text: 'Pre-Sales', items: preSales },
-      { text: 'Implementation', items: implementation },
+      { text: 'SE Track', items: [
+        { text: 'Pre-Sales', items: preSales },
+        { text: 'Implementation', items: implementation },
+        { text: 'Recovery', items: recovery },
+      ] },
+      { text: 'SA Track', items: [
+        { text: 'Architecture', items: architecture },
+        { text: 'Migration', items: migration },
+        { text: 'Compliance', items: compliance },
+        { text: 'Patterns', items: patterns },
+      ] },
+      { text: 'Diagrams', link: '/VISUAL-DIAGRAMS' },
       { text: 'Environments', items: environments },
-      { text: 'Recovery', items: recovery },
-      { text: 'Internal Coordination', items: internalCoordination },
-      { text: 'Business Value', items: businessValue },
-      { text: 'Battle Cards', items: battleCards },
       { text: 'Templates', items: templates },
       { text: 'Learning Paths', link: '/LEARNING-PATHS' },
-      { text: 'Tags', link: '/TAGS' },
     ],
     sidebar: [
       { text: 'Start Here', collapsed: false, items: [
@@ -238,5 +249,9 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WBHankins93/solutions-playbook' },
     ],
+    footer: {
+      message: 'Built as a public field guide for practical Solutions Engineering and Architecture work.',
+      copyright: 'Solutions Playbook',
+    },
   },
 })
