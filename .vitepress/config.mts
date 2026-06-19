@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 const startHere = [
   { text: 'Start Here', link: '/START-HERE' },
@@ -149,6 +151,17 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: false,
   srcExclude: ['node_modules', 'dist'],
+  // Embed each page's raw Markdown so the in-page "Download Markdown" button
+  // can hand back the original source. Runs in both dev and build.
+  transformPageData(pageData) {
+    if (pageData.frontmatter.layout === 'home') return
+    try {
+      const file = resolve(process.cwd(), pageData.relativePath)
+      pageData.frontmatter.rawMarkdown = readFileSync(file, 'utf-8')
+    } catch {
+      // Source not readable (e.g. virtual page) — button stays hidden.
+    }
+  },
   markdown: {
     theme: {
       light: 'github-light',
