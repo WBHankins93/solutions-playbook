@@ -13,6 +13,20 @@ Customer has disclosed they're air-gapped or network-isolated. This fundamentall
 changes how you deliver, deploy, and troubleshoot. Plan extensively - you won't be
 able to Google errors or pull images on-demand.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart LR
+    Build[Connected build environment] --> Bundle[Artifact bundle]
+    Bundle --> Approve[Customer approval and transfer]
+    Approve --> Registry[Internal registry and package repo]
+    Registry --> Deploy[Offline deployment]
+    Deploy --> Validate[Offline validation]
+
+    Bundle --> Docs[Offline docs and runbooks]
+    Bundle --> Tools[kubectl, Helm, scripts]
+    Validate --> Evidence[Checksums and test evidence]
+```
+
 ## 🎯 Discovery Questions
 
 - What's the artifact delivery mechanism? (USB, secure file transfer, physical media?)
@@ -68,4 +82,3 @@ able to Google errors or pull images on-demand.
 - [Air-Gapped Validation Workflow](../templates/technical/air-gapped-validation.md)
 - [Troubleshooting](../implementation/troubleshooting.md)
 - [Battle Card: Air-Gapped Expectation Setting](../battle-cards/air-gapped-expectation-setting.md)
-

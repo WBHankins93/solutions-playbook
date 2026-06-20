@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress'
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 const startHere = [
   { text: 'Start Here', link: '/START-HERE' },
+  { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
   { text: 'New Customer Engagement', link: '/engagements/new-customer' },
   { text: 'Joining Existing Engagement', link: '/engagements/joining-existing' },
   { text: 'Inherited Customer', link: '/engagements/inherited-customer' },
@@ -148,10 +151,37 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: false,
   srcExclude: ['node_modules', 'dist'],
+  // Embed each page's raw Markdown so the in-page "Download Markdown" button
+  // can hand back the original source. Runs in both dev and build.
+  transformPageData(pageData) {
+    if (pageData.frontmatter.layout === 'home') return
+    try {
+      const file = resolve(process.cwd(), pageData.relativePath)
+      pageData.frontmatter.rawMarkdown = readFileSync(file, 'utf-8')
+    } catch {
+      // Source not readable (e.g. virtual page) — button stays hidden.
+    }
+  },
   markdown: {
     theme: {
       light: 'github-light',
       dark: 'github-dark',
+    },
+    config(md) {
+      const defaultFence = md.renderer.rules.fence
+
+      md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const language = token.info.trim().split(/\s+/)[0]
+
+        if (language === 'mermaid') {
+          return `<pre class="mermaid">${md.utils.escapeHtml(token.content)}</pre>`
+        }
+
+        return defaultFence
+          ? defaultFence(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+      }
     },
   },
   themeConfig: {
@@ -212,6 +242,7 @@ export default defineConfig({
       ] },
       { text: 'Reference', collapsed: true, items: [
         { text: 'Content Index', link: '/CONTENT-INDEX' },
+        { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
         { text: 'Tags', link: '/TAGS' },
         { text: 'Contributing', link: '/CONTRIBUTING' },
         { text: 'Project Status', link: '/PROJECT-STATUS' },

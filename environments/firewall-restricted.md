@@ -14,6 +14,22 @@ regulated industries or security-conscious organizations. Success depends on dis
 all required traffic flows early, translating them into the customer's firewall request
 format, and validating them from the actual source networks.
 
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart LR
+    Pods[Pods and jobs] --> Gateway[Egress gateway or NAT]
+    Nodes[Cluster nodes] --> Gateway
+    Bastion[Bastion or CI runner] --> Gateway
+    Gateway --> Proxy[Proxy or TLS inspection]
+    Proxy --> Firewall[Firewall rules]
+    Firewall --> DNS[DNS resolver]
+    Firewall --> Registry[Container registry]
+    Firewall --> APIs[External APIs]
+    Firewall --> IdP[Identity provider]
+
+    Firewall -. logs .-> Evidence[Validation evidence]
+```
+
 ## 🎯 Discovery Questions
 
 - What egress restrictions exist? (Which domains/IPs are allowed?)
