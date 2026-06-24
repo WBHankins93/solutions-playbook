@@ -397,3 +397,40 @@
   max-width: 100%;
   height: auto;
 }
+
+/* ──────────────────────────────────────────────────────────────
+   Depth-pattern components (.sp-*) — talk-track, scenario bands, status pills.
+   Lifted from per-page <style> blocks per DEPTH-STANDARD.md §Format Rules.
+   Colors use VitePress CSS variables only → dark-mode safe.
+   ────────────────────────────────────────────────────────────── */
+.sp-say {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 14px 0;
+}
+.sp-say .sp-label {
+  font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.07em; color: var(--vp-c-brand-1); margin-bottom: 4px;
+}
+.sp-say p { margin: 0; font-style: italic; color: var(--vp-c-text-1); }
+.sp-band {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0;
+}
+.sp-band .sp-step {
+  flex: 1 1 150px; border: 1px solid var(--vp-c-divider);
+  border-radius: 8px; padding: 10px 12px; background: var(--vp-c-bg-soft);
+}
+.sp-band .sp-step .sp-h {
+  font-weight: 700; font-size: 0.82rem; color: var(--vp-c-text-1); margin-bottom: 2px;
+}
+.sp-band .sp-step .sp-d { font-size: 0.78rem; color: var(--vp-c-text-2); }
+.sp-pill {
+  display: inline-block; font-size: 0.72rem; font-weight: 600;
+  padding: 1px 8px; border-radius: 20px; margin: 1px 0;
+  background: var(--vp-c-default-soft); color: var(--vp-c-text-2);
+}
+.sp-pill.ok  { background: var(--vp-c-tip-soft);     color: var(--vp-c-tip-1); }
+.sp-pill.warn{ background: var(--vp-c-warning-soft); color: var(--vp-c-warning-1); }
+.sp-pill.bad { background: var(--vp-c-danger-soft);  color: var(--vp-c-danger-1); }
