@@ -31,7 +31,7 @@ Governed by [`DEPTH-STANDARD.md`](./DEPTH-STANDARD.md), [`VISUAL-PROMPT-STANDARD
 | `environments/air-gapped.md` | B | ⬜ | 1 | W2 | ⬜ | ⬜ | Artifact transfer across the boundary. |
 | `environments/hybrid.md` | B | ⬜ | 1 | W2 | ⬜ | ⬜ | Hybrid cloud + on-prem topology. |
 
-> ~12 images total (reference-architectures carries a few). Do **one** Wave 1 showcase end-to-end before batching the rest.
+> ~13 showcase frames total across 10 pages (`api-gateway` has 2 frames; `reference-architectures` has 3). Do **one** Wave 1 showcase end-to-end before batching the rest.
 
 ---
 
@@ -62,7 +62,7 @@ Governed by [`DEPTH-STANDARD.md`](./DEPTH-STANDARD.md), [`VISUAL-PROMPT-STANDARD
 
 ---
 
-## The 10 showcase images (created in ChatGPT, brought back)
+## The 10 showcase pages / ~13 showcase frames (created in ChatGPT, brought back)
 
 **Wave 1:** microservices · api-gateway · data-mesh · event-driven · reference-architectures (2–3).
 **Wave 2:** technical-deep-dive · migration/strategy · security-architecture · air-gapped · hybrid.
