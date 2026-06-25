@@ -14,34 +14,10 @@ operational complexity beyond single-environment deployments. Treat the cloud an
 on-prem sides as separate failure domains that must be validated independently and
 then together.
 
-```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
-flowchart LR
-    subgraph Cloud[Cloud environment]
-        CloudApp[Cloud services]
-        CloudObs[Cloud observability]
-    end
-
-    subgraph Boundary[Boundary]
-        DNS[Split DNS]
-        Link[VPN or dedicated link]
-        Trust[Identity and certificate trust]
-    end
-
-    subgraph OnPrem[On-prem environment]
-        OnPremApp[On-prem services]
-        OnPremData[System of record]
-    end
-
-    CloudApp <--> Link
-    Link <--> OnPremApp
-    CloudApp --> DNS
-    OnPremApp --> DNS
-    CloudApp <--> Trust
-    OnPremApp <--> Trust
-    OnPremApp --> OnPremData
-    CloudApp --> CloudObs
-```
+<figure class="sp-figure">
+  <img src="../assets/diagrams/hybrid-cloud-onprem-boundary.png" alt="Hybrid cloud and on-prem boundary: two failure domains — a cloud environment and an on-prem environment with the system of record — connected by boundary services including a VPN or dedicated link, split DNS, and identity and certificate trust, with observability on each side." loading="lazy">
+  <figcaption>Two failure domains connected by network, DNS, identity, and trust.</figcaption>
+</figure>
 
 ## 🎯 Discovery Questions
 

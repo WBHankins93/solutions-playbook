@@ -13,19 +13,10 @@ Customer has disclosed they're air-gapped or network-isolated. This fundamentall
 changes how you deliver, deploy, and troubleshoot. Plan extensively - you won't be
 able to Google errors or pull images on-demand.
 
-```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
-flowchart LR
-    Build[Connected build environment] --> Bundle[Artifact bundle]
-    Bundle --> Approve[Customer approval and transfer]
-    Approve --> Registry[Internal registry and package repo]
-    Registry --> Deploy[Offline deployment]
-    Deploy --> Validate[Offline validation]
-
-    Bundle --> Docs[Offline docs and runbooks]
-    Bundle --> Tools[kubectl, Helm, scripts]
-    Validate --> Evidence[Checksums and test evidence]
-```
+<figure class="sp-figure">
+  <img src="../assets/diagrams/air-gapped-artifact-transfer.png" alt="Air-gapped deployment artifact transfer flow: a connected build environment produces an approved artifact bundle that crosses the transfer boundary into the offline environment's internal registry and package repo, deploys offline, and is validated with checksums and test evidence." loading="lazy">
+  <figcaption>Build connected, approve the transfer, deploy and validate offline.</figcaption>
+</figure>
 
 ## 🎯 Discovery Questions
 

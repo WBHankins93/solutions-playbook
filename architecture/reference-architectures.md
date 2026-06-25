@@ -68,6 +68,11 @@ Component-level view showing:
 - Trust boundaries and security zones
 - Async vs. sync communication patterns
 
+<figure class="sp-figure">
+  <img src="../assets/diagrams/reference-architecture-logical-view.png" alt="Reference architecture logical view: components, responsibilities, data flow, and trust boundaries across users, an experience layer, an application layer of core/workflow/integration services, and a data layer." loading="lazy">
+  <figcaption>Logical view — components, responsibilities, data flow, and trust boundaries.</figcaption>
+</figure>
+
 **3. Physical Architecture**
 
 Deployment-level view showing:
@@ -77,6 +82,11 @@ Deployment-level view showing:
 - Data stores and their replication topology
 - Compute placement (containers, serverless, VMs)
 - CDN and edge placement if applicable
+
+<figure class="sp-figure">
+  <img src="../assets/diagrams/reference-architecture-physical-view.png" alt="Reference architecture physical view: regions, network, compute, and data stores — edge (DNS, CDN, WAF), a multi-zone cloud region with load balancers and app workers, shared regional services, and external service calls." loading="lazy">
+  <figcaption>Physical view — regions, network, compute, storage, and external dependencies.</figcaption>
+</figure>
 
 **4. Key Decisions**
 
@@ -96,6 +106,11 @@ How this architecture is run day-to-day:
 - Backup and disaster recovery
 - Scaling triggers and mechanisms
 - On-call and incident response expectations
+
+<figure class="sp-figure">
+  <img src="../assets/diagrams/reference-architecture-operational-view.png" alt="Reference architecture operational view: how the system is deployed, observed, recovered, and improved — plan, deploy, observe, recover, optimize — supported by CI/CD, monitoring, backup/restore, an incident runbook, and cost review." loading="lazy">
+  <figcaption>Operational view — how the system is deployed, observed, recovered, and improved.</figcaption>
+</figure>
 
 ### Common Reference Architecture Patterns
 

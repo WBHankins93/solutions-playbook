@@ -22,6 +22,11 @@ implementation - you're mapping their world to ours.
 
 ## 🎯 Architecture Review Framework
 
+<figure class="sp-figure">
+  <img src="../assets/diagrams/technical-deep-dive-canvas.png" alt="Technical deep-dive canvas: a five-stage workshop flow mapping the customer's world before proposing a target design — current state, integration points, constraints and risks, target state, and decision outputs." loading="lazy">
+  <figcaption>Map the customer's world before proposing the target design.</figcaption>
+</figure>
+
 **Current State**
 
 - What does their current architecture look like? (Ask for diagrams)
