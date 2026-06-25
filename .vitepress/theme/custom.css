@@ -3,6 +3,12 @@
   --vp-c-brand-2: #0d9488;
   --vp-c-brand-3: #14b8a6;
 
+  /* Re-tint the soft/mute family to teal — VitePress derives these from its
+     default purple and they don't follow --vp-c-brand-1 automatically. */
+  --vp-c-brand-soft: rgba(13, 148, 136, 0.14);
+  --vp-c-brand-softer: rgba(13, 148, 136, 0.08);
+  --vp-c-brand-mute: rgba(13, 148, 136, 0.16);
+
   --vp-home-hero-name-color: var(--vp-c-brand-1);
 }
 

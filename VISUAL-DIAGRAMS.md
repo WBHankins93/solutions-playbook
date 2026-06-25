@@ -7,7 +7,28 @@ tags:
 
 # Visual Diagrams
 
-Use this page when you want to explain a concept quickly with boxes, arrows, and tradeoffs. The diagrams are intentionally simple so they can be redrawn on a whiteboard during interviews or customer conversations.
+Use this page when you want to explain a concept quickly with boxes, arrows, and
+tradeoffs. This is the current architecture-diagram inventory for the playbook.
+
+The diagrams are intentionally simple so they can be redrawn on a whiteboard during
+interviews or customer conversations. For the roadmap that decides which Mermaid
+diagrams become polished images, use [Imagery Plan](IMAGERY-PLAN.md). For prompt
+and review rules, use [Visual Prompt Standard](VISUAL-PROMPT-STANDARD.md).
+
+## Replacement Strategy
+
+Mermaid is the working layer. Keep it for decision trees, process flows, and quick
+whiteboard shapes. Promote a diagram to a polished visual only when the image will
+make a high-value page easier to teach or reuse.
+
+Priority order:
+
+1. **Showcase visuals** — flagship architecture concepts and customer-facing boundary diagrams.
+2. **Reusable environment maps** — network, trust, tenant, and data-residency boundaries.
+3. **Process visuals** — only when the process is repeatedly used in interviews or customer calls.
+
+When replacing Mermaid, the visual should preserve the same architecture meaning:
+same components, same arrows, same decision points, and no invented systems.
 
 ## Architecture Reviews
 
