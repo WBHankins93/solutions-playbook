@@ -55,17 +55,10 @@ The canonical event-driven case. An e-commerce platform (say, Shopify) records a
 Three downstream systems must react — billing, inventory, and customer notifications —
 each with different ownership, availability, and scaling needs.
 
-```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
-flowchart LR
-    S[Order System] -->|order.created| T[Event Topic]
-    T --> B[Billing Service]
-    T --> I[Inventory Service]
-    T --> N[Notification Service]
-    B -.failure.-> DLQ[Dead Letter Queue]
-    I -.failure.-> DLQ
-    N -.failure.-> DLQ
-```
+<figure class="sp-figure">
+  <img src="../assets/diagrams/event-driven-order-fan-out.png" alt="Order fan-out: an order system emits one event consumed independently by billing, inventory, and notification services, each with an idempotency check, behind a reliability layer that retries with backoff, quarantines to a dead letter queue, and alerts for replay." loading="lazy">
+  <figcaption>One order event, three independent consumers, and a reliability layer that retries, quarantines to a DLQ, and alerts for replay.</figcaption>
+</figure>
 
 <div class="sp-band">
   <div class="sp-step">

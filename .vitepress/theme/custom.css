@@ -434,3 +434,15 @@
 .sp-pill.ok  { background: var(--vp-c-tip-soft);     color: var(--vp-c-tip-1); }
 .sp-pill.warn{ background: var(--vp-c-warning-soft); color: var(--vp-c-warning-1); }
 .sp-pill.bad { background: var(--vp-c-danger-soft);  color: var(--vp-c-danger-1); }
+
+/* Showcase figures — polished architecture PNGs from architecture-diagrams/.
+   White card + padding so white-background images read as intentional in dark mode. */
+.sp-figure { margin: 1.5rem 0; text-align: center; }
+.sp-figure img {
+  max-width: 100%; height: auto;
+  border: 1px solid var(--vp-c-divider); border-radius: 10px;
+  background: #fff; padding: 10px;
+}
+.sp-figure figcaption {
+  margin-top: 8px; font-size: 0.82rem; color: var(--vp-c-text-2); font-style: italic;
+}

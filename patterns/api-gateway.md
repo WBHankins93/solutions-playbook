@@ -51,22 +51,10 @@ status. Behind the gateway those are three internal services (**Order**, **Produ
 **Loyalty**). Instead of the app making three authenticated calls, it makes **one** call
 to a gateway endpoint shaped for this screen (a BFF route).
 
-```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
-flowchart LR
-    M[Mobile app] -->|one request| G[API Gateway]
-    G --> A{Valid token?}
-    A -->|No| E401[401 Unauthorized]
-    A -->|Yes| L{Under rate limit?}
-    L -->|No| E429[429 plus Retry-After]
-    L -->|Yes| AG[Aggregate in parallel]
-    AG --> O[Order Service]
-    AG --> P[Product Service]
-    AG --> U[Loyalty Service]
-    O --> C[Compose 200 response]
-    P --> C
-    U --> C
-```
+<figure class="sp-figure">
+  <img src="../assets/diagrams/api-gateway-request-lifecycle.png" alt="API gateway request lifecycle: one client request enters the gateway, which terminates TLS, authenticates, rate-limits, then routes and aggregates in parallel to the Order, Product, and Loyalty services before composing a single 200 response." loading="lazy">
+  <figcaption>One client request, fanned out behind a single secure front door, composed into one response.</figcaption>
+</figure>
 
 <div class="sp-band">
   <div class="sp-step">
@@ -228,6 +216,11 @@ The gateway should fail in ways the consumer can act on — reject early, and ne
 | Backend exceeded timeout | <span class="sp-pill warn">504</span> | AWS API Gateway's default integration timeout is **29s** (verified) |
 | Backend unhealthy / circuit open | <span class="sp-pill warn">503</span> | Health check pulled it from the pool; fail fast, don't pile on |
 | Backend returned `2xx` | <span class="sp-pill ok">200</span> | Pass through, log latency and upstream |
+
+<figure class="sp-figure">
+  <img src="../assets/diagrams/api-gateway-response-outcomes.png" alt="API gateway response outcomes: the gateway maps each condition to a status the consumer can act on — 200 success, 401 invalid token, 429 over limit, 503 circuit open, 504 backend timeout." loading="lazy">
+  <figcaption>Fail in ways the consumer can act on — reject early, never hang.</figcaption>
+</figure>
 
 - **Health checks:** the gateway only routes to instances passing health checks — a dead backend is removed from rotation instead of returning errors to consumers.
 - **Circuit breaker:** after N consecutive failures (illustrative, e.g. `5`), the breaker opens and the gateway fails fast with `503` instead of stacking requests on a struggling service. A half-open probe after a cooldown tests recovery.
