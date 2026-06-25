@@ -19,7 +19,7 @@ Hand this to the implementation agent. Apply it per file, not in bulk.
 
 | Tier | Folders | Moves |
 | --- | --- | --- |
-| **A — Full** | `patterns/`, `architecture/` | All five |
+| **A — Full** | `patterns/`, `architecture/`, `ci-cd/` | All five |
 | **B — Partial** | `pre-sales/`, `implementation/`, `migration/`, `environments/`, `compliance/`, `cost-modeling/` | 1, 2, 4 (add 3 + 5 where relevant) |
 | **C — Leave lean** | `battle-cards/`, `templates/`, `internal/`, `lessons/`, `examples/`, `business-value/`, `stakeholder-management/`, `engagements/`, `recovery/` | None — do not pad |
 
@@ -59,6 +59,9 @@ Reuse the same systems across files so the playbook reads authored, not assemble
 - Payments → **Stripe**
 - Warehouse → **Snowflake**
 - Destination → **internal SaaS product** / **internal CRM**
+- CI / build → **GitHub Actions**
+- Artifact registry → **Amazon ECR**
+- GitOps CD → **ArgoCD**
 
 > **Note:** names are illustrations of a *category*, not endorsements. The page stays vendor-neutral; the example is concrete.
 

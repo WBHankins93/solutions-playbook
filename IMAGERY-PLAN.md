@@ -68,8 +68,9 @@ For implementation handoff, use [`visual-specs/showcase-gpt-image-prompts.md`](v
 | **2** | `compliance/security-architecture.md` | Defense-in-depth plus trust-boundary view. | Identity, network, data, application, detection/response layers; users/services; sensitive data; trust boundaries; logs/alerts. | A full control matrix; keep maturity scoring in the template. |
 | **2** | `environments/air-gapped.md` | Connected-to-offline artifact transfer flow. | Connected build environment, artifact bundle, approval/transfer, internal registry/package repo, offline deploy, validation evidence, offline docs/tools. | Every discovery question and full dependency checklist. |
 | **2** | `environments/hybrid.md` | Cloud/on-prem boundary and failure-domain map. | Cloud environment, on-prem environment, boundary services, VPN/dedicated link, split DNS, identity/cert trust, observability, system of record. | Complete traffic matrix; use caption to mention latency/bandwidth validation. |
+| **3** | `ci-cd/pipeline-design.md` | Commit-to-production delivery pipeline. | Source commit, build (GitHub Actions), artifact to registry (ECR), promotion gates, staging, production, deploy via ArgoCD, rollback path. | Tool-specific YAML and every pipeline step; keep build/test numbers in the caption. |
 
-> **Bounded scope:** ~13 showcase images total because `patterns/api-gateway.md` is two frames and `architecture/reference-architectures.md` is three frames. Create one Wave 1 showcase end-to-end before batching the rest.
+> **Bounded scope:** ~14 showcase images total (`patterns/api-gateway.md` is two frames, `architecture/reference-architectures.md` is three, plus the Wave 3 CI/CD pipeline). Create one showcase end-to-end before batching the rest.
 
 ---
 

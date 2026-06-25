@@ -110,6 +110,13 @@ const patterns = [
   { text: 'API Gateway', link: '/patterns/api-gateway' },
 ]
 
+const cicd = [
+  { text: 'Pipeline Design', link: '/ci-cd/pipeline-design' },
+  { text: 'Deployment Strategies', link: '/ci-cd/deployment-strategies' },
+  { text: 'Tooling Selection', link: '/ci-cd/tooling-selection' },
+  { text: 'Pipeline Security', link: '/ci-cd/pipeline-security' },
+]
+
 const stakeholderMgmt = [
   { text: 'Executive Alignment', link: '/stakeholder-management/executive-alignment' },
   { text: 'Cross-Team Coordination', link: '/stakeholder-management/cross-team-coordination' },
@@ -181,6 +188,7 @@ const seSidebar = [
 const saSidebar = [
   { text: 'Architecture', collapsed: false, items: architecture },
   { text: 'Patterns', collapsed: false, items: patterns },
+  { text: 'CI/CD', collapsed: false, items: cicd },
   { text: 'Migration', collapsed: false, items: migration },
   { text: 'Compliance', collapsed: false, items: compliance },
   { text: 'Cost Modeling', collapsed: true, items: costModeling },
@@ -205,6 +213,7 @@ const homeSidebar = [
   { text: 'SA Track', collapsed: true, items: [
     { text: 'Architecture', link: '/architecture/design-review' },
     { text: 'Patterns', link: '/patterns/microservices' },
+    { text: 'CI/CD', link: '/ci-cd/pipeline-design' },
     { text: 'Migration', link: '/migration/assessment' },
     { text: 'Compliance', link: '/compliance/regulatory-mapping' },
     { text: 'Cost Modeling', link: '/cost-modeling/tco-framework' },
@@ -293,10 +302,11 @@ export default defineConfig({
       },
       {
         text: 'SA Track',
-        activeMatch: '^/(architecture|patterns|migration|compliance|cost-modeling|stakeholder-management)/',
+        activeMatch: '^/(architecture|patterns|ci-cd|migration|compliance|cost-modeling|stakeholder-management)/',
         items: [
           { text: 'Architecture', items: architecture },
           { text: 'Patterns', items: patterns },
+          { text: 'CI/CD', items: cicd },
           { text: 'Migration', items: migration },
           { text: 'Compliance', items: compliance },
           { text: 'Cost Modeling', items: costModeling },
@@ -325,6 +335,7 @@ export default defineConfig({
       '/engagements/': seSidebar,
       '/architecture/': saSidebar,
       '/patterns/': saSidebar,
+      '/ci-cd/': saSidebar,
       '/migration/': saSidebar,
       '/compliance/': saSidebar,
       '/cost-modeling/': saSidebar,

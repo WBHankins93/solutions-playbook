@@ -442,6 +442,10 @@ Rate yourself honestly (1-5) in each area:
 - [Event-Driven](patterns/event-driven.md) — Messaging patterns, delivery guarantees, technology selection
 - [Data Mesh](patterns/data-mesh.md) — Decentralized data ownership and self-serve infrastructure
 - [API Gateway](patterns/api-gateway.md) — Routing, aggregation, BFF, versioning, technology selection
+- [CI/CD Pipeline Design](ci-cd/pipeline-design.md) — Build-once-promote, gates, rollback, evaluating a customer's pipeline
+- [Deployment Strategies](ci-cd/deployment-strategies.md) — Rolling, blue-green, canary, feature flags
+- [CI/CD Tooling Selection](ci-cd/tooling-selection.md) — CI vs CD tools, GitOps push vs pull
+- [Pipeline Security](ci-cd/pipeline-security.md) — Shift-left controls, supply chain, secrets, compliance-in-pipeline
 
 **Practice:**
 
@@ -449,6 +453,7 @@ Rate yourself honestly (1-5) in each area:
 - Design a security architecture for a multi-tier application using defense-in-depth
 - Evaluate a microservices architecture for distributed monolith smells
 - Select and justify a messaging technology for a specific use case
+- Design a delivery pipeline for one service: build, gates, promotion, and an automated rollback trigger
 
 **Self-Check:**
 
