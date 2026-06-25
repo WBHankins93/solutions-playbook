@@ -183,5 +183,6 @@ rollback target until [date]."
 - [Migration Strategy](strategy.md)
 - [Migration Assessment](assessment.md)
 - [Migration Risk Framework](risk-framework.md)
+- [Deployment Strategies](../ci-cd/deployment-strategies.md) — blue-green, canary, and rolling as reusable rollout patterns
 - [Escalation](../recovery/escalation.md)
 - [Troubleshooting](../implementation/troubleshooting.md)

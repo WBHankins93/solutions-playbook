@@ -30,8 +30,9 @@ Governed by [`DEPTH-STANDARD.md`](./DEPTH-STANDARD.md), [`VISUAL-PROMPT-STANDARD
 | `compliance/security-architecture.md` | B | ⬜ | 1 | W2 | ⬜ | ⬜ | Defense-in-depth / trust boundaries. |
 | `environments/air-gapped.md` | B | ⬜ | 1 | W2 | ⬜ | ⬜ | Artifact transfer across the boundary. |
 | `environments/hybrid.md` | B | ⬜ | 1 | W2 | ⬜ | ⬜ | Hybrid cloud + on-prem topology. |
+| `ci-cd/pipeline-design.md` | A | ✅ | 2 | W3 | ✅ | ⬜ | Depth done this update. Spec at `visual-specs/ci-cd-pipeline-showcase.md` — **awaiting Second Review**. |
 
-> ~13 showcase frames total across 10 pages (`api-gateway` has 2 frames; `reference-architectures` has 3). Do **one** Wave 1 showcase end-to-end before batching the rest.
+> ~14 showcase frames total across 11 pages (`api-gateway` has 2 frames; `reference-architectures` has 3; CI/CD pipeline is Wave 3). Do **one** showcase end-to-end before batching the rest.
 
 ---
 

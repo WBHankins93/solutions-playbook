@@ -185,4 +185,5 @@ How this architecture is run day-to-day:
 - [ADR Template](adr-template.md)
 - [Microservices Patterns](../patterns/microservices.md)
 - [Event-Driven Patterns](../patterns/event-driven.md)
+- [CI/CD Pipeline Design](../ci-cd/pipeline-design.md) — the delivery pipeline behind the operational view
 - [Environment Guides](../CONTENT-INDEX.md#environment-guides)

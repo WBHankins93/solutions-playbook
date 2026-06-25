@@ -14,6 +14,7 @@ Use tags when you know the type of work you need, but not the exact guide name. 
   <span class="tag-pill">air-gapped</span>
   <span class="tag-pill">escalation</span>
   <span class="tag-pill">customer-facing</span>
+  <span class="tag-pill">ci-cd</span>
   <span class="tag-pill">internal</span>
 </div>
 
@@ -67,6 +68,13 @@ Use tags when you know the type of work you need, but not the exact guide name. 
 - [Environment Guides](environments/air-gapped.md)
 - [Recovery Guides](recovery/demo-recovery.md)
 - [Customer Templates](templates/customer/poc-status-update-email.md)
+
+## ci-cd
+
+- [CI/CD Pipeline Design](ci-cd/pipeline-design.md)
+- [Deployment Strategies](ci-cd/deployment-strategies.md)
+- [CI/CD Tooling Selection](ci-cd/tooling-selection.md)
+- [Pipeline Security](ci-cd/pipeline-security.md)
 
 ## internal
 
