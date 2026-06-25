@@ -34,20 +34,10 @@ creating so much friction that teams bypass controls.
 Security architecture operates across layers. A failure at any single layer should not
 result in a complete breach.
 
-```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
-flowchart TB
-    A[Identity and Access] --> B[Network Security]
-    B --> C[Data Protection]
-    C --> D[Application Security]
-    D --> E[Detection and Response]
-
-    A -. verifies .-> U[Users and services]
-    B -. limits .-> T[Trust boundaries]
-    C -. protects .-> X[Sensitive data]
-    D -. hardens .-> W[Workloads]
-    E -. reveals .-> I[Incidents]
-```
+<figure class="sp-figure">
+  <img src="../assets/diagrams/security-architecture-defense-in-depth.png" alt="Security architecture defense in depth: controls across identity and access, network security, data protection, application security, and detection and response, mapped across public, private, and restricted trust zones." loading="lazy">
+  <figcaption>Layered controls across trust zones — a failure at any single layer should not cause a complete breach.</figcaption>
+</figure>
 
 **Layer 1: Identity & Access**
 

@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 const startHere = [
   { text: 'Start Here', link: '/START-HERE' },
@@ -142,6 +144,80 @@ const templates = [
   ] },
 ]
 
+// Navigation-friendly flat templates list (the sidebar keeps the full nested version).
+const templatesNav = [
+  { text: 'Discovery Questions', link: '/templates/discovery-questions' },
+  { text: 'Kickoff Agenda', link: '/templates/kickoff-agenda' },
+  { text: 'Status Update Template', link: '/templates/status-update-template' },
+  { text: 'Handoff Document', link: '/templates/handoff-document' },
+  { text: 'Retrospective', link: '/templates/retrospective' },
+  { text: 'SOW Outline', link: '/templates/sow-outline' },
+]
+
+const reference = [
+  { text: 'Content Index', link: '/CONTENT-INDEX' },
+  { text: 'Learning Paths', link: '/LEARNING-PATHS' },
+  { text: 'Tags', link: '/TAGS' },
+  { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
+  { text: 'Contributing', link: '/CONTRIBUTING' },
+  { text: 'Project Status', link: '/PROJECT-STATUS' },
+]
+
+const referenceGroup = { text: 'Reference', collapsed: true, items: reference }
+
+// Path-scoped sidebars: the sidebar adapts to the section you're in instead of
+// showing all ~18 groups on every page. Cross-track jumps happen via the top nav.
+const seSidebar = [
+  { text: 'Start Here', collapsed: false, items: [{ text: 'Content Index', link: '/CONTENT-INDEX' }, ...startHere] },
+  { text: 'Pre-Sales', collapsed: false, items: preSales },
+  { text: 'Implementation', collapsed: false, items: implementation },
+  { text: 'Recovery', collapsed: false, items: recovery },
+  { text: 'Internal Coordination', collapsed: true, items: internalCoordination },
+  { text: 'Business Value', collapsed: true, items: businessValue },
+  { text: 'Battle Cards', collapsed: true, items: battleCards },
+  referenceGroup,
+]
+
+const saSidebar = [
+  { text: 'Architecture', collapsed: false, items: architecture },
+  { text: 'Patterns', collapsed: false, items: patterns },
+  { text: 'Migration', collapsed: false, items: migration },
+  { text: 'Compliance', collapsed: false, items: compliance },
+  { text: 'Cost Modeling', collapsed: true, items: costModeling },
+  { text: 'Stakeholder Management', collapsed: true, items: stakeholderMgmt },
+  referenceGroup,
+]
+
+const sharedSidebar = [
+  { text: 'Environments', collapsed: false, items: environments },
+  { text: 'Templates', collapsed: false, items: templates },
+  { text: 'Examples', collapsed: true, items: examples },
+  referenceGroup,
+]
+
+const homeSidebar = [
+  { text: 'Start Here', collapsed: false, items: [{ text: 'Content Index', link: '/CONTENT-INDEX' }, ...startHere] },
+  { text: 'SE Track', collapsed: true, items: [
+    { text: 'Pre-Sales', link: '/pre-sales/discovery' },
+    { text: 'Implementation', link: '/implementation/kickoff' },
+    { text: 'Recovery', link: '/recovery/demo-recovery' },
+  ] },
+  { text: 'SA Track', collapsed: true, items: [
+    { text: 'Architecture', link: '/architecture/design-review' },
+    { text: 'Patterns', link: '/patterns/microservices' },
+    { text: 'Migration', link: '/migration/assessment' },
+    { text: 'Compliance', link: '/compliance/regulatory-mapping' },
+    { text: 'Cost Modeling', link: '/cost-modeling/tco-framework' },
+    { text: 'Stakeholder Management', link: '/stakeholder-management/executive-alignment' },
+  ] },
+  { text: 'Shared', collapsed: true, items: [
+    { text: 'Environments', link: '/environments/air-gapped' },
+    { text: 'Templates', link: '/templates/discovery-questions' },
+    { text: 'Examples', link: '/examples/discovery-questions-healthcare-air-gapped-poc' },
+  ] },
+  referenceGroup,
+]
+
 export default defineConfig({
   title: 'Solutions Playbook',
   description: 'A searchable field guide for Solutions Engineers and Solutions Architects.',
@@ -149,12 +225,17 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: false,
   srcExclude: ['node_modules', 'dist'],
-  head: [
-    ['meta', { name: 'theme-color', content: '#14342f' }],
-    ['meta', { property: 'og:title', content: 'Solutions Playbook' }],
-    ['meta', { property: 'og:description', content: 'Field-tested systems for technical customer work.' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-  ],
+  // Embed each page's raw Markdown so the in-page "Download Markdown" button
+  // can hand back the original source. Runs in both dev and build.
+  transformPageData(pageData) {
+    if (pageData.frontmatter.layout === 'home') return
+    try {
+      const file = resolve(process.cwd(), pageData.relativePath)
+      pageData.frontmatter.rawMarkdown = readFileSync(file, 'utf-8')
+    } catch {
+      // Source not readable (e.g. virtual page) — button stays hidden.
+    }
+  },
   markdown: {
     theme: {
       light: 'github-light',
@@ -179,6 +260,7 @@ export default defineConfig({
   },
   themeConfig: {
     logo: { light: '/logo.svg', dark: '/logo.svg' },
+    outline: { level: [2, 3], label: 'On this page' },
     search: {
       provider: 'local',
       options: {
@@ -197,55 +279,61 @@ export default defineConfig({
         { text: 'Content Index', link: '/CONTENT-INDEX' },
         ...startHere,
       ] },
-      { text: 'SE Track', items: [
-        { text: 'Pre-Sales', items: preSales },
-        { text: 'Implementation', items: implementation },
-        { text: 'Recovery', items: recovery },
-      ] },
-      { text: 'SA Track', items: [
-        { text: 'Architecture', items: architecture },
-        { text: 'Migration', items: migration },
-        { text: 'Compliance', items: compliance },
-        { text: 'Patterns', items: patterns },
-      ] },
-      { text: 'Diagrams', link: '/VISUAL-DIAGRAMS' },
-      { text: 'Environments', items: environments },
-      { text: 'Templates', items: templates },
-      { text: 'Learning Paths', link: '/LEARNING-PATHS' },
+      {
+        text: 'SE Track',
+        activeMatch: '^/(pre-sales|implementation|recovery|internal|business-value|battle-cards|engagements)/',
+        items: [
+          { text: 'Pre-Sales', items: preSales },
+          { text: 'Implementation', items: implementation },
+          { text: 'Recovery', items: recovery },
+          { text: 'Internal Coordination', items: internalCoordination },
+          { text: 'Business Value', items: businessValue },
+          { text: 'Battle Cards', items: battleCards },
+        ],
+      },
+      {
+        text: 'SA Track',
+        activeMatch: '^/(architecture|patterns|migration|compliance|cost-modeling|stakeholder-management)/',
+        items: [
+          { text: 'Architecture', items: architecture },
+          { text: 'Patterns', items: patterns },
+          { text: 'Migration', items: migration },
+          { text: 'Compliance', items: compliance },
+          { text: 'Cost Modeling', items: costModeling },
+          { text: 'Stakeholder Management', items: stakeholderMgmt },
+        ],
+      },
+      {
+        text: 'Shared',
+        activeMatch: '^/(environments|templates|examples)/',
+        items: [
+          { text: 'Environments', items: environments },
+          { text: 'Templates', items: templatesNav },
+          { text: 'Examples', items: examples },
+        ],
+      },
+      { text: 'Reference', items: reference },
     ],
-    sidebar: [
-      { text: 'Start Here', collapsed: false, items: [
-        { text: 'Content Index', link: '/CONTENT-INDEX' },
-        ...startHere,
-      ] },
-      { text: 'Pre-Sales', collapsed: false, items: preSales },
-      { text: 'Implementation', collapsed: false, items: implementation },
-      { text: 'Recovery', collapsed: false, items: recovery },
-      { text: '— SA Track —', collapsed: false, items: [] },
-      { text: 'Architecture', collapsed: false, items: architecture },
-      { text: 'Migration', collapsed: false, items: migration },
-      { text: 'Cost Modeling', collapsed: false, items: costModeling },
-      { text: 'Compliance', collapsed: false, items: compliance },
-      { text: 'Patterns', collapsed: false, items: patterns },
-      { text: 'Stakeholder Management', collapsed: false, items: stakeholderMgmt },
-      { text: '— Shared —', collapsed: false, items: [] },
-      { text: 'Environments', collapsed: false, items: environments },
-      { text: 'Internal Coordination', collapsed: false, items: internalCoordination },
-      { text: 'Business Value', collapsed: false, items: businessValue },
-      { text: 'Battle Cards', collapsed: true, items: battleCards },
-      { text: 'Templates', collapsed: true, items: templates },
-      { text: 'Examples', collapsed: true, items: examples },
-      { text: 'Learning Paths', collapsed: false, items: [
-        { text: 'Learning Paths', link: '/LEARNING-PATHS' },
-      ] },
-      { text: 'Reference', collapsed: true, items: [
-        { text: 'Content Index', link: '/CONTENT-INDEX' },
-        { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
-        { text: 'Tags', link: '/TAGS' },
-        { text: 'Contributing', link: '/CONTRIBUTING' },
-        { text: 'Project Status', link: '/PROJECT-STATUS' },
-      ] },
-    ],
+    // Path-scoped: each section shows only its track's groups (see *Sidebar consts above).
+    sidebar: {
+      '/pre-sales/': seSidebar,
+      '/implementation/': seSidebar,
+      '/recovery/': seSidebar,
+      '/internal/': seSidebar,
+      '/business-value/': seSidebar,
+      '/battle-cards/': seSidebar,
+      '/engagements/': seSidebar,
+      '/architecture/': saSidebar,
+      '/patterns/': saSidebar,
+      '/migration/': saSidebar,
+      '/compliance/': saSidebar,
+      '/cost-modeling/': saSidebar,
+      '/stakeholder-management/': saSidebar,
+      '/environments/': sharedSidebar,
+      '/templates/': sharedSidebar,
+      '/examples/': sharedSidebar,
+      '/': homeSidebar,
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WBHankins93/solutions-playbook' },
     ],

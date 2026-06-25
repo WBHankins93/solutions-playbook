@@ -154,6 +154,11 @@ rather than through manual review processes.
 
 ## 🎯 Common Data Mesh Architectures
 
+<figure class="sp-figure">
+  <img src="../assets/diagrams/data-mesh-data-products.png" alt="Data mesh domain data products: business domains (Customer, Orders, Payments) publish governed data products to a self-serve data platform with a catalog, governance, and pipeline tooling, which data consumers — analytics, ML features, operations — discover and use." loading="lazy">
+  <figcaption>Domains own data products; the self-serve platform makes them discoverable and governed.</figcaption>
+</figure>
+
 **Lakehouse per domain:** Each domain has its own lakehouse (Delta Lake, Iceberg) with
 a shared catalog layer for cross-domain discovery.
 

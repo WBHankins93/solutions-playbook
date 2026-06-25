@@ -1,10 +1,20 @@
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, onMounted, watch } from 'vue'
+import { h, nextTick, onMounted, watch } from 'vue'
 import { useRoute } from 'vitepress'
+import PathRouter from './PathRouter.vue'
+import DownloadButton from './DownloadButton.vue'
 import './custom.css'
 
 export default {
   extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'doc-before': () => h(DownloadButton),
+    })
+  },
+  enhanceApp({ app }) {
+    app.component('PathRouter', PathRouter)
+  },
   setup() {
     const route = useRoute()
 

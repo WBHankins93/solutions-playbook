@@ -4,7 +4,7 @@ tags:
   - patterns
 ---
 
-## API Gateway Patterns
+# API Gateway Patterns
 
 ## 📝 Context
 
@@ -24,6 +24,11 @@ rate limiting, routing, and observability so individual services don't have to.
 **If this is a single service with one consumer type:** A gateway adds unnecessary
 infrastructure. Handle auth and rate limiting in the service directly.
 
+<div class="sp-say">
+  <div class="sp-label">Say it like this</div>
+  <p>"A gateway earns its place when you have several services behind one front door, or several kinds of consumers hitting them. If it's one service and one client, putting a gateway in front is just another hop to operate and pay for — I'd handle auth and limits in the service."</p>
+</div>
+
 ```mermaid
 %%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
 flowchart LR
@@ -37,6 +42,47 @@ flowchart LR
     Gateway --> Products[Product service]
     Gateway --> Logs[Access logs and metrics]
 ```
+
+## 🧩 Worked Scenario: One Screen, One Call
+
+A mobile app opens the order-confirmation screen. That screen needs three things —
+the order itself, the product details for each line item, and the customer's loyalty
+status. Behind the gateway those are three internal services (**Order**, **Product**,
+**Loyalty**). Instead of the app making three authenticated calls, it makes **one** call
+to a gateway endpoint shaped for this screen (a BFF route).
+
+<figure class="sp-figure">
+  <img src="../assets/diagrams/api-gateway-request-lifecycle.png" alt="API gateway request lifecycle: one client request enters the gateway, which terminates TLS, authenticates, rate-limits, then routes and aggregates in parallel to the Order, Product, and Loyalty services before composing a single 200 response." loading="lazy">
+  <figcaption>One client request, fanned out behind a single secure front door, composed into one response.</figcaption>
+</figure>
+
+<div class="sp-band">
+  <div class="sp-step">
+    <div class="sp-h">1 · Terminate &amp; authenticate</div>
+    <div class="sp-d">Gateway ends TLS, validates the JWT, and extracts identity. An unauthenticated request never reaches a service.</div>
+  </div>
+  <div class="sp-step">
+    <div class="sp-h">2 · Throttle</div>
+    <div class="sp-d">Checks the caller against its rate limit. Over the limit returns <code>429</code> with <code>Retry-After</code> — the backends are never touched.</div>
+  </div>
+  <div class="sp-step">
+    <div class="sp-h">3 · Route &amp; aggregate</div>
+    <div class="sp-d">Fans out to Order, Product, and Loyalty in parallel and composes one payload shaped for this screen.</div>
+  </div>
+  <div class="sp-step">
+    <div class="sp-h">4 · Cache &amp; log</div>
+    <div class="sp-d">Caches the idempotent product lookup, emits one access log with latency and the upstreams hit, then returns <code>200</code>.</div>
+  </div>
+</div>
+
+**Why this beats three direct calls:** the app makes one round trip instead of three,
+the three services never implement auth or rate limiting themselves, and when the screen
+later needs a fourth field, the BFF route changes — not the app.
+
+<div class="sp-say">
+  <div class="sp-label">Say it like this</div>
+  <p>"The app makes one call to a route shaped for that screen. The gateway proves who you are, checks you're under your limit, fans out to the three services in parallel, and hands back a single payload. My services never see an unauthenticated request and never write rate-limiting code."</p>
+</div>
 
 ## 🎯 Core Patterns
 
@@ -88,6 +134,11 @@ flows, and rate limits. A single gateway trying to serve all of them becomes blo
 
 **Tradeoff:** Multiple gateways to maintain. Justified when consumer needs genuinely diverge.
 
+<div class="sp-say">
+  <div class="sp-label">Say it like this</div>
+  <p>"I reach for a BFF when the web, mobile, and partner clients start pulling the same endpoint in three directions. Rather than bloat one gateway with conditional payloads, I give each consumer a thin tailored layer over the same backends."</p>
+</div>
+
 ### Gateway Offloading
 
 Move cross-cutting concerns from individual services to the gateway:
@@ -115,6 +166,87 @@ How to evolve APIs without breaking existing consumers:
 
 **Recommendation:** URI versioning for external/partner APIs (explicitness wins).
 Header versioning or additive-only for internal APIs (less ceremony).
+
+<div class="sp-say">
+  <div class="sp-label">Say it like this</div>
+  <p>"For anything a partner consumes, I version in the URI — <code>/v2/orders</code> — because it's explicit and trivial to route. Internally, where I control both ends, I stay additive: new fields are fine, removing one is a breaking change I version for."</p>
+</div>
+
+## 🛡️ Reliability & Failure Handling
+
+A gateway is the one place that sees every request, so it's where you protect consumers
+from backend failures *and* backends from abusive load. This is the layer that separates a
+demo from production.
+
+```mermaid
+%%{init: {'theme': 'neutral', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart LR
+    G[API Gateway] --> H{Backend healthy?}
+    H -->|No| E503[503 Service Unavailable]
+    H -->|Yes| F[Forward request]
+    F --> R{Response in time?}
+    R -->|2xx| OK[Return 200]
+    R -->|Timeout| E504[504 Gateway Timeout]
+    R -->|5xx| CB{Circuit breaker open?}
+    CB -->|Yes| E503
+    CB -->|No| RT[Retry once or fail fast]
+```
+
+### Rate limiting — with the numbers stated
+
+Vague advice ("add rate limiting") invites the follow-up you can't answer. State the policy.
+Use a token-bucket so short bursts are allowed but sustained abuse is throttled. Limits
+below are **illustrative** — set real ones from observed traffic, not a guess.
+
+| Caller | Limit (illustrative) | Over-limit response |
+| --- | --- | --- |
+| Unauthenticated (per IP) | `~60 req/min` | `429` + `Retry-After` |
+| Authenticated (per API key) | `~1,000 req/min` | `429` + `Retry-After` |
+| Burst | token bucket refills steadily | throttle when bucket is empty |
+
+### Status codes the gateway returns
+
+The gateway should fail in ways the consumer can act on — reject early, and never hang.
+
+| Condition | Gateway returns | Reasoning |
+| --- | --- | --- |
+| Missing / invalid token | <span class="sp-pill bad">401</span> | Reject before any backend is touched |
+| Authenticated but not permitted | <span class="sp-pill bad">403</span> | Coarse checks at gateway; fine-grained authz in the service |
+| Over rate limit | <span class="sp-pill warn">429</span> | Return `Retry-After` so the client backs off correctly |
+| Backend exceeded timeout | <span class="sp-pill warn">504</span> | AWS API Gateway's default integration timeout is **29s** (verified) |
+| Backend unhealthy / circuit open | <span class="sp-pill warn">503</span> | Health check pulled it from the pool; fail fast, don't pile on |
+| Backend returned `2xx` | <span class="sp-pill ok">200</span> | Pass through, log latency and upstream |
+
+<figure class="sp-figure">
+  <img src="../assets/diagrams/api-gateway-response-outcomes.png" alt="API gateway response outcomes: the gateway maps each condition to a status the consumer can act on — 200 success, 401 invalid token, 429 over limit, 503 circuit open, 504 backend timeout." loading="lazy">
+  <figcaption>Fail in ways the consumer can act on — reject early, never hang.</figcaption>
+</figure>
+
+- **Health checks:** the gateway only routes to instances passing health checks — a dead backend is removed from rotation instead of returning errors to consumers.
+- **Circuit breaker:** after N consecutive failures (illustrative, e.g. `5`), the breaker opens and the gateway fails fast with `503` instead of stacking requests on a struggling service. A half-open probe after a cooldown tests recovery.
+- **Timeouts:** every hop has a budget. A consumer should get a clean `504` quickly, not a 30-second hang while the gateway waits on a dead backend.
+
+<div class="sp-say">
+  <div class="sp-label">Say it like this</div>
+  <p>"The gateway protects the backends from each other. If the product service starts timing out, the circuit breaker opens and I return a fast 503 instead of stacking calls on a dying service — and a health check pulls the bad instance out of rotation. The consumer gets a clean status with a Retry-After, never a 30-second hang."</p>
+</div>
+
+## 👁️ Observability — Who Sees What
+
+The gateway is the natural choke point for telemetry — every request passes through it.
+Decide deliberately what each audience sees.
+
+| Audience | What they see | Why it matters |
+| --- | --- | --- |
+| **Engineering** | Per-route p99 latency, error rates, upstream health, full access logs + traces | Pinpoint the slow hop without touching production |
+| **Customer Success** | Per-consumer request volume, error summary, which key is being throttled | Answer "why are my calls failing" without pulling in engineers |
+| **Partner / consumer dev** | `X-RateLimit-Remaining` headers, `429` + `Retry-After`, status page, developer portal | Self-serve — they know their limits before they hit them |
+| **Alerting** | 5xx rate / p99 latency threshold → Datadog / PagerDuty / Slack | Catch degradation before consumers report it |
+
+<div class="sp-say">
+  <div class="sp-label">Say it like this</div>
+  <p>"Every request gets one access log with its latency and the upstream it hit, so when someone says 'the API is slow' I point at the exact route and backend. Partners see their remaining quota in the response headers, so a 429 is never a surprise."</p>
+</div>
 
 ## 🎯 Technology Selection
 

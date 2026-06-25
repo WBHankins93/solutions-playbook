@@ -41,6 +41,11 @@ flowchart TD
     G -->|Yes| H[Microservices may be justified]
 ```
 
+<figure class="sp-figure">
+  <img src="../assets/diagrams/microservices-ownership-topology.png" alt="Microservices service-ownership topology: web and mobile consumers enter through an API gateway to independently owned domain services (Orders, Payments, Inventory), each with its own database, alongside cross-cutting observability, CI/CD, and service-ownership concerns." loading="lazy">
+  <figcaption>Independent teams, independent services, independent data ownership — each domain owns its service and its database.</figcaption>
+</figure>
+
 ## 🎯 Core Patterns
 
 ### Service Decomposition

@@ -26,6 +26,11 @@ keep the migration from going sideways.
 
 ## 🎯 Strategy Framework
 
+<figure class="sp-figure">
+  <img src="../assets/diagrams/migration-strategy-path-options.png" alt="Migration strategy path options: from a source environment to a target environment via three routes — strangler (incrementally route and replace), parallel run (run old and new and compare), and offline cutover — with dependency sequencing, a validation gate, and a rollback plan." loading="lazy">
+  <figcaption>Choose the safest path per workload, not one strategy for everything.</figcaption>
+</figure>
+
 ### Wave Planning
 
 ```mermaid
