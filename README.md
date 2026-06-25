@@ -1,6 +1,10 @@
 # Solutions Playbook
 
-A searchable operating manual for **Solutions Engineers** and **Solutions Architects**: discovery, POCs, implementation, recovery, architecture reviews, migrations, compliance, and the handoffs that keep real work moving.
+[![CI](https://github.com/WBHankins93/solutions-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/WBHankins93/solutions-playbook/actions/workflows/ci.yml)
+
+A searchable operating manual for **Solutions Engineers** and **Solutions Architects**: discovery, POCs, implementation, recovery, architecture reviews, migrations, compliance, CI/CD and delivery, and the handoffs that keep real work moving.
+
+Guides are organized into two tracks — an **SE track** (pre-sales → implementation → recovery) and an **SA track** (architecture, patterns, CI/CD, migration, compliance) — plus shared environment, template, and example material. The navigation adapts to whichever track you're in.
 
 The content lives as plain Markdown and is published as an interactive documentation site built with [VitePress](https://vitepress.dev).
 
@@ -34,6 +38,7 @@ Every page on the site has a **Download Markdown** button so you can pull any gu
 architecture/      Design reviews, reference architectures, ADRs (SA track)
 battle-cards/      Customer-safe talk tracks for pressure moments
 business-value/    Translating technical work into executive outcomes
+ci-cd/             Pipeline design, deployment strategies, tooling, pipeline security (SA track)
 compliance/        Regulatory mapping, security architecture, data residency
 cost-modeling/     TCO, cloud cost comparison, optimization
 engagements/       New, joining, and inherited customer playbooks
@@ -48,9 +53,25 @@ pre-sales/         Discovery, demos, POC scoping and execution
 recovery/          Demo/POC recovery, escalation, scope creep
 stakeholder-management/  Executive alignment, CTO conversations
 templates/         Copy-ready general, customer-facing, and technical templates
+assets/diagrams/   Polished architecture diagrams embedded in the SA-track guides
 .vitepress/        Site config, theme, and interactive UI components
+.github/workflows/ CI build check
+```
+
+## Continuous integration
+
+Every pull request and push to `main` runs `npm run docs:build` via GitHub Actions. The
+build is the gate: it compiles every page and **fails on dead links** (`ignoreDeadLinks` is
+on), so a broken cross-link can't merge. Run the same check locally before opening a PR:
+
+```bash
+npm run docs:build
 ```
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add new patterns consistently, and [MAINTENANCE.md](MAINTENANCE.md) for keeping the playbook healthy.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add new guides consistently and
+[MAINTENANCE.md](MAINTENANCE.md) for keeping the playbook healthy. SA-track pattern and
+architecture pages follow the depth and visual conventions in
+[DEPTH-STANDARD.md](DEPTH-STANDARD.md), [IMAGERY-PLAN.md](IMAGERY-PLAN.md), and
+[VISUAL-PROMPT-STANDARD.md](VISUAL-PROMPT-STANDARD.md).
