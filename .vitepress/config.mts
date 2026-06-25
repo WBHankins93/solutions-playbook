@@ -220,7 +220,7 @@ const homeSidebar = [
 
 export default defineConfig({
   title: 'Solutions Playbook',
-  description: 'Operational frameworks, checklists, and templates for Solutions Engineers and Solutions Architects.',
+  description: 'A searchable field guide for Solutions Engineers and Solutions Architects.',
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
@@ -337,5 +337,9 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WBHankins93/solutions-playbook' },
     ],
+    footer: {
+      message: 'Built as a public field guide for practical Solutions Engineering and Architecture work.',
+      copyright: 'Solutions Playbook',
+    },
   },
 })

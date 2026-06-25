@@ -394,7 +394,11 @@
   padding: 1rem;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
-  background: var(--vp-c-bg-soft);
+  background:
+    linear-gradient(90deg, rgba(20, 52, 47, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(20, 52, 47, 0.04) 1px, transparent 1px),
+    var(--vp-c-bg-soft);
+  background-size: 28px 28px;
   color: var(--vp-c-text-1);
   text-align: center;
 }
