@@ -170,6 +170,16 @@ const reference = [
   { text: 'Project Status', link: '/PROJECT-STATUS' },
 ]
 
+const seriesNav = {
+  text: 'The Series',
+  items: [
+    { text: 'Solutions Playbook', link: 'https://wbhankins93.github.io/solutions-playbook/' },
+    { text: 'AI Engineering Studio', link: 'https://wbhankins93.github.io/ai-engineering-studio/' },
+    { text: 'DevOps Studio', link: 'https://wbhankins93.github.io/devops-studio/' },
+    { text: 'Implementation Studio', link: 'https://wbhankins93.github.io/implementation-studio/' },
+  ],
+}
+
 const referenceGroup = { text: 'Reference', collapsed: true, items: reference }
 
 // Path-scoped sidebars: the sidebar adapts to the section you're in instead of
@@ -325,6 +335,7 @@ export default defineConfig({
           { text: 'Examples', items: examples },
         ],
       },
+      seriesNav,
       { text: 'Reference', items: reference },
     ],
     // Path-scoped: each section shows only its track's groups (see *Sidebar consts above).
