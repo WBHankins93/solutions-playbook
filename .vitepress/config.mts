@@ -230,6 +230,9 @@ const homeSidebar = [
 export default defineConfig({
   title: 'Solutions Playbook',
   description: 'A searchable field guide for Solutions Engineers and Solutions Architects.',
+  // Served from https://wbhankins93.github.io/solutions-playbook/ — the repo
+  // name is the base path for a GitHub Pages project site.
+  base: '/solutions-playbook/',
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: false,
