@@ -164,6 +164,7 @@ const templatesNav = [
 const reference = [
   { text: 'Content Index', link: '/CONTENT-INDEX' },
   { text: 'Learning Paths', link: '/LEARNING-PATHS' },
+  { text: 'External Resources', link: '/resources' },
   { text: 'Tags', link: '/TAGS' },
   { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
   { text: 'Contributing', link: '/CONTRIBUTING' },
@@ -247,6 +248,23 @@ export default defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: false,
   srcExclude: ['node_modules', 'dist'],
+  // Generate sitemap.xml so the published guides are discoverable by search
+  // engines. Hostname includes the base path; VitePress resolves page URLs
+  // relative to it.
+  sitemap: {
+    hostname: 'https://wbhankins93.github.io/solutions-playbook/',
+  },
+  // Social/share metadata and theme color for when a page URL is pasted into
+  // Slack, LinkedIn, etc.
+  head: [
+    ['meta', { name: 'theme-color', content: '#0b7285' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Solutions Playbook' }],
+    ['meta', { property: 'og:title', content: 'Solutions Playbook' }],
+    ['meta', { property: 'og:description', content: 'A searchable field guide for Solutions Engineers and Solutions Architects.' }],
+    ['meta', { property: 'og:image', content: 'https://wbhankins93.github.io/solutions-playbook/logo.svg' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+  ],
   // Embed each page's raw Markdown so the in-page "Download Markdown" button
   // can hand back the original source. Runs in both dev and build.
   transformPageData(pageData) {
