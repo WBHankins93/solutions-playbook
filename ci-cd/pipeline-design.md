@@ -198,3 +198,12 @@ When reviewing an existing pipeline, look for these smells.
 - [Cutover Planning](../migration/cutover-planning.md)
 - [Reference Architectures](../architecture/reference-architectures.md)
 - [Air-Gapped Environments](../environments/air-gapped.md)
+
+## 📚 Further reading
+
+The research and practice behind good delivery pipelines:
+
+- [DORA (DevOps Research and Assessment)](https://dora.dev/) — the four key delivery metrics and what predicts them
+- [Google Cloud DevOps / DORA capabilities](https://cloud.google.com/devops) — the capability catalog behind the metrics
+- [Continuous Integration — Fowler](https://martinfowler.com/articles/continuousIntegration.html) — the canonical definition of CI
+- [continuousdelivery.com](https://continuousdelivery.com/) — Humble & Farley's reference site for CD principles

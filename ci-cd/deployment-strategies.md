@@ -120,3 +120,13 @@ before the rollout, not decided live.
 - [Cutover Planning](../migration/cutover-planning.md)
 - [Migration Strategy](../migration/strategy.md)
 - [Reference Architectures](../architecture/reference-architectures.md)
+
+## 📚 Further reading
+
+Canonical descriptions of the rollout patterns on this page:
+
+- [BlueGreenDeployment — Fowler](https://martinfowler.com/bliki/BlueGreenDeployment.html) — the reference definition
+- [CanaryRelease — Fowler](https://martinfowler.com/bliki/CanaryRelease.html) — progressive exposure explained
+- [Feature Toggles — Pete Hodgson](https://martinfowler.com/articles/feature-toggles.html) — decoupling deploy from release
+- [Argo Rollouts](https://argoproj.github.io/rollouts/) — Kubernetes-native progressive delivery
+- [DORA](https://dora.dev/) — how deploy frequency and change-fail rate connect to these choices

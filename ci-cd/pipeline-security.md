@@ -115,3 +115,14 @@ cheaper to audit than a binder of screenshots.
 - [Security Architecture](../compliance/security-architecture.md)
 - [Air-Gapped Environments](../environments/air-gapped.md)
 - [Regulatory Mapping](../compliance/regulatory-mapping.md)
+
+## 📚 Further reading
+
+The standards and tooling behind every control on this page:
+
+- [SLSA](https://slsa.dev/) — Supply-chain Levels for Software Artifacts (provenance and build integrity)
+- [OWASP Top 10 CI/CD Security Risks](https://owasp.org/www-project-top-10-ci-cd-security-risks/) — the pipeline-specific threat list
+- [NIST SSDF (SP 800-218)](https://csrc.nist.gov/pubs/sp/800/218/final) — the Secure Software Development Framework
+- [CISA — Software Bill of Materials (SBOM)](https://www.cisa.gov/sbom) — SBOM formats and guidance
+- [Sigstore](https://www.sigstore.dev/) — keyless signing and verification of artifacts
+- [OpenSSF Scorecard](https://securityscorecards.dev/) — automated checks for supply-chain health

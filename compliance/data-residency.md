@@ -143,3 +143,13 @@ When selecting regions for data residency:
 - [Well-Architected Review](../architecture/well-architected.md)
 - [Hybrid Environment Guide](../environments/hybrid.md)
 - [Air-Gapped Deployment Guide](../environments/air-gapped.md)
+
+## 📚 Further reading
+
+Authoritative sources on cross-border data and provider residency controls:
+
+- [GDPR — full text (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2016/679/oj) — Chapter V covers international transfers
+- [EU Standard Contractual Clauses](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_en) — the mechanism for lawful transfers
+- [AWS Data Privacy / Sovereignty](https://aws.amazon.com/compliance/data-privacy-faq/) — how a major provider handles residency
+- [Azure data residency](https://azure.microsoft.com/explore/global-infrastructure/data-residency/) — region and residency commitments
+- [Google Cloud data residency](https://cloud.google.com/architecture/data-residency) — architecture guidance for residency requirements
