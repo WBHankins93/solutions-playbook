@@ -243,3 +243,13 @@ expected impact, and who owns it.
 - [ADR Template](adr-template.md)
 - [Cost Optimization](../cost-modeling/optimization.md)
 - [Security Architecture](../compliance/security-architecture.md)
+
+## 📚 Further reading
+
+The frameworks this review is modeled on — go here for the full pillar detail and tooling:
+
+- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) — the source of the six pillars used above
+- [AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/) — free tool to run and track a structured review
+- [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/) — pillar guidance plus per-pillar assessment checklists
+- [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) — Google's cross-pillar recommendations
+- [Google SRE Books](https://sre.google/books/) — SLOs, error budgets, and reliability practice behind the Reliability pillar

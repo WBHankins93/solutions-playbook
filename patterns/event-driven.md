@@ -272,3 +272,13 @@ deliberately what each audience sees.
 - [Data Mesh Patterns](data-mesh.md)
 - [Design Review](../architecture/design-review.md)
 - [Reference Architectures](../architecture/reference-architectures.md)
+
+## 📚 Further reading
+
+Foundational writing on events, streaming, and consistency:
+
+- [What do you mean by "Event-Driven"? — Fowler](https://martinfowler.com/articles/201701-event-driven.html) — untangles the four common event patterns
+- [Event Sourcing — Fowler](https://martinfowler.com/eaaDev/EventSourcing.html) — the canonical description of the pattern
+- [Saga pattern — microservices.io](https://microservices.io/patterns/data/saga.html) — managing consistency across services without distributed transactions
+- [Apache Kafka documentation](https://kafka.apache.org/documentation/) — the reference for log-based event streaming
+- [AWS Event-Driven Architecture](https://aws.amazon.com/event-driven-architecture/) — managed building blocks (EventBridge, SNS/SQS, Kinesis)

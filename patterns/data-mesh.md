@@ -188,3 +188,12 @@ See also: [Event-Driven Patterns](event-driven.md)
 - [API Gateway Patterns](api-gateway.md)
 - [Design Review](../architecture/design-review.md)
 - [Reference Architectures](../architecture/reference-architectures.md)
+
+## 📚 Further reading
+
+The source material that defined data mesh:
+
+- [Data Mesh Principles and Logical Architecture — Dehghani](https://martinfowler.com/articles/data-mesh-principles.html) — the four principles in depth
+- [How to Move Beyond a Monolithic Data Lake — Dehghani](https://martinfowler.com/articles/data-monolith-to-mesh.html) — the original data mesh article
+- [Data Mesh Learning](https://www.datameshlearning.com/) — community patterns, talks, and case studies
+- [Data Contracts](https://datacontract.com/) — a concrete interoperability standard for data products

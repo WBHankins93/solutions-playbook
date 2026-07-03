@@ -163,3 +163,12 @@ When reviewing an existing microservices architecture, look for:
 - [Design Review](../architecture/design-review.md)
 - [Reference Architectures](../architecture/reference-architectures.md)
 - [Well-Architected Review](../architecture/well-architected.md)
+
+## 📚 Further reading
+
+The canonical microservices literature:
+
+- [microservices.io](https://microservices.io/) — Chris Richardson's pattern catalog (decomposition, data, deployment)
+- [Microservices — Fowler & Lewis](https://martinfowler.com/articles/microservices.html) — the essay that defined the term
+- [MonolithFirst](https://martinfowler.com/bliki/MonolithFirst.html) — Fowler's argument for not starting with microservices
+- [The Twelve-Factor App](https://12factor.net/) — baseline properties for services that scale and deploy cleanly

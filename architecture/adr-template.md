@@ -132,3 +132,12 @@ architecture evolved over time.
 - [Reference Architectures](reference-architectures.md)
 - [Well-Architected Review](well-architected.md)
 - [Technical Deep-Dive](../pre-sales/technical-deep-dive.md)
+
+## 📚 Further reading
+
+The origins and common templates for architecture decision records:
+
+- [adr.github.io](https://adr.github.io/) — hub of ADR templates, tooling, and Michael Nygard's original write-up
+- [MADR (Markdown Any Decision Records)](https://adr.github.io/madr/) — a popular, slightly richer ADR template
+- [Lightweight Architecture Decision Records](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records) — ThoughtWorks Technology Radar entry on why ADRs work
+- [adr-tools](https://github.com/npryce/adr-tools) — CLI for creating and numbering ADRs in a repo

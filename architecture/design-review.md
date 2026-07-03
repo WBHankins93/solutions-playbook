@@ -175,3 +175,13 @@ Structure your review output as:
 - [ADR Template](adr-template.md)
 - [Technical Deep-Dive](../pre-sales/technical-deep-dive.md)
 - [Discovery Call](../pre-sales/discovery.md)
+
+## 📚 Further reading
+
+Canonical frameworks that back the review approach on this page:
+
+- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) — the six-pillar model most design reviews borrow from
+- [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/) — Microsoft's equivalent, with concrete design checklists
+- [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework) — Google's cross-pillar guidance
+- [AWS Architecture Center](https://aws.amazon.com/architecture/) — reference designs to compare a customer's system against
+- [Documenting Architecture Decisions (ADR)](https://adr.github.io/) — capture the decisions a review produces
