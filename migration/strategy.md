@@ -185,3 +185,12 @@ Each wave needs a test plan:
 - [Migration Risk Framework](risk-framework.md)
 - [Implementation Kickoff](../implementation/kickoff.md)
 - [Status Updates](../internal/status-updates.md)
+
+## 📚 Further reading
+
+Strategy references, including the incremental-migration pattern:
+
+- [AWS — 6 Strategies for Migrating (the 6 R's)](https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/) — rehost, replatform, refactor, and the rest
+- [StranglerFigApplication — Fowler](https://martinfowler.com/bliki/StranglerFigApplication.html) — incrementally replacing a legacy system
+- [Azure Cloud Adoption Framework — Migrate](https://learn.microsoft.com/azure/cloud-adoption-framework/migrate/) — a staged migration methodology
+- [Google Cloud — Migration paths](https://cloud.google.com/architecture/migration-to-gcp-getting-started) — getting-started guidance and reference journeys

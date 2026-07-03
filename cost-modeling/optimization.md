@@ -161,3 +161,12 @@ Every resource should be tagged with at minimum:
 - [Cloud Cost Comparison](cloud-cost-comparison.md)
 - [Well-Architected Review](../architecture/well-architected.md)
 - [Executive Summary Template](../business-value/executive-summary-template.md)
+
+## 📚 Further reading
+
+Provider and community guidance for reducing spend without cutting reliability:
+
+- [FinOps Foundation — Framework](https://www.finops.org/framework/) — capabilities for ongoing cost optimization
+- [AWS Well-Architected — Cost Optimization Pillar](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html) — the reference practices
+- [Azure Well-Architected — Cost Optimization](https://learn.microsoft.com/azure/well-architected/cost-optimization/) — Azure's equivalent guidance
+- [Google Cloud — Cost optimization](https://cloud.google.com/architecture/framework/cost-optimization) — GCP's framework pillar
