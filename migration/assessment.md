@@ -182,6 +182,6 @@ Evaluate organizational readiness, not just technical readiness:
 Vendor migration frameworks for assessment and portfolio analysis:
 
 - [AWS — 6 Strategies for Migrating (the 6 R's)](https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/) — the standard disposition model
-- [AWS Migration Portfolio Assessment](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-portfolio-assessment/) — how to inventory and rank workloads
+- [AWS Migration Hub](https://aws.amazon.com/migration-hub/) — discover, assess, and track the workloads to migrate
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/) — assess/plan phases with tooling
 - [Google Cloud Migration Center](https://cloud.google.com/migration-center/docs) — discovery and assessment tooling

@@ -65,7 +65,7 @@ own **📚 Further reading** section — this page is the aggregated index.
 ## Migration
 
 - [AWS — 6 Strategies for Migrating (the 6 R's)](https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/)
-- [AWS Migration Portfolio Assessment](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-portfolio-assessment/) · [AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/)
+- [AWS Migration Hub](https://aws.amazon.com/migration-hub/) · [AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/)
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/) · [Google Cloud Migration Center](https://cloud.google.com/migration-center/docs)
 - [StranglerFigApplication — Fowler](https://martinfowler.com/bliki/StranglerFigApplication.html)
 
