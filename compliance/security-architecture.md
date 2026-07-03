@@ -177,3 +177,13 @@ Protect data at every stage of its lifecycle.
 - [Design Review](../architecture/design-review.md)
 - [Private Cluster Guide](../environments/private-cluster.md)
 - [Firewall-Restricted Guide](../environments/firewall-restricted.md)
+
+## 📚 Further reading
+
+The control frameworks a security architecture is usually measured against:
+
+- [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/www-project-application-security-verification-standard/) — a testable requirements checklist
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — the baseline application-risk list
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) — identify/protect/detect/respond/recover structure
+- [NIST Zero Trust Architecture (SP 800-207)](https://csrc.nist.gov/pubs/sp/800/207/final) — the reference for zero-trust designs
+- [CIS Controls](https://www.cisecurity.org/controls) — prioritized, prescriptive safeguards

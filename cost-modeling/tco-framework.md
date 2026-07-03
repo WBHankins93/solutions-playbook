@@ -150,3 +150,12 @@ which assumptions matter most.
 - [Migration Assessment](../migration/assessment.md)
 - [Executive Summary Template](../business-value/executive-summary-template.md)
 - [Well-Architected Review](../architecture/well-architected.md)
+
+## 📚 Further reading
+
+Costing frameworks and the official pricing calculators:
+
+- [FinOps Foundation — Framework](https://www.finops.org/framework/) — the vendor-neutral cloud financial-management standard
+- [AWS Pricing Calculator](https://calculator.aws/) — build a defensible AWS cost estimate
+- [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) — Azure equivalent
+- [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator) — GCP equivalent

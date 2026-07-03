@@ -138,3 +138,12 @@ For each identified risk, define one of these responses:
 - [Cutover Planning](cutover-planning.md)
 - [Escalation](../recovery/escalation.md)
 - [Risk Reduction Narratives](../business-value/risk-reduction-narratives.md)
+
+## 📚 Further reading
+
+Established risk-management standards to structure the framework against:
+
+- [NIST Risk Management Framework (RMF)](https://csrc.nist.gov/projects/risk-management/about-rmf) — the U.S. federal risk process
+- [NIST SP 800-30 — Guide for Conducting Risk Assessments](https://csrc.nist.gov/pubs/sp/800/30/r1/final) — likelihood/impact assessment method
+- [ISO 31000 — Risk Management](https://www.iso.org/iso-31000-risk-management.html) — the international principles and process
+- [AWS Well-Architected — Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) — failure management for the technical risks

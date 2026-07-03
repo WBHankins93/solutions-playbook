@@ -121,3 +121,14 @@ For each regulation, the key architectural decisions typically fall into these b
 - [Well-Architected Review](../architecture/well-architected.md)
 - [Design Review](../architecture/design-review.md)
 - [Risk Reduction Narratives](../business-value/risk-reduction-narratives.md)
+
+## 📚 Further reading
+
+Primary sources for the regulations referenced above — link to these instead of paraphrasing:
+
+- [HHS — HIPAA Security Rule](https://www.hhs.gov/hipaa/for-professionals/security/index.html) — the authoritative U.S. health-data source
+- [FedRAMP](https://www.fedramp.gov/) — authorization program for U.S. federal cloud services
+- [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) — the control catalog underlying FedRAMP and much of U.S. compliance
+- [PCI Security Standards Council](https://www.pcisecuritystandards.org/) — the source of PCI DSS
+- [GDPR — full text (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2016/679/oj) — the regulation itself, article by article
+- [AICPA — SOC 2](https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2) — the trust-services criteria and reporting framework

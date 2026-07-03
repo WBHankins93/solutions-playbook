@@ -77,3 +77,12 @@ The most consequential architectural fork in CD.
 - [Pipeline Security](pipeline-security.md)
 - [Discovery Questions](../templates/discovery-questions.md)
 - [Air-Gapped Environments](../environments/air-gapped.md)
+
+## 📚 Further reading
+
+References for evaluating CI/CD and delivery tooling:
+
+- [CNCF Cloud Native Landscape](https://landscape.cncf.io/) — the CI/CD and app-delivery tool categories, mapped
+- [OpenGitOps](https://opengitops.dev/) — vendor-neutral GitOps principles for deploy tooling
+- [Argo CD](https://argo-cd.readthedocs.io/) — reference GitOps continuous delivery for Kubernetes
+- [SLSA build levels](https://slsa.dev/spec/) — a security bar to hold candidate build systems against

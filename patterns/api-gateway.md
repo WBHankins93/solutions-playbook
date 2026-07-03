@@ -295,3 +295,12 @@ When reviewing or designing APIs at the gateway layer:
 - [Data Mesh Patterns](data-mesh.md)
 - [Security Architecture](../compliance/security-architecture.md)
 - [Design Review](../architecture/design-review.md)
+
+## 📚 Further reading
+
+Gateway patterns and the security standard that applies to them:
+
+- [API Gateway pattern — microservices.io](https://microservices.io/patterns/apigateway.html) — the reference description and tradeoffs
+- [Backends for Frontends — Sam Newman](https://samnewman.io/patterns/architectural/bff/) — when to split the gateway per client
+- [OWASP API Security Top 10](https://owasp.org/API-Security/) — the vulnerabilities a gateway must help mitigate
+- [Envoy Proxy documentation](https://www.envoyproxy.io/docs) — the data plane behind many modern gateways and meshes

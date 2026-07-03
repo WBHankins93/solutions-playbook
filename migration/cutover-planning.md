@@ -186,3 +186,12 @@ rollback target until [date]."
 - [Deployment Strategies](../ci-cd/deployment-strategies.md) — blue-green, canary, and rolling as reusable rollout patterns
 - [Escalation](../recovery/escalation.md)
 - [Troubleshooting](../implementation/troubleshooting.md)
+
+## 📚 Further reading
+
+References for a safe, reversible cutover:
+
+- [AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/) — cutover and migration runbook patterns
+- [Azure Cloud Adoption Framework — Migrate](https://learn.microsoft.com/azure/cloud-adoption-framework/migrate/) — deployment and cutover guidance
+- [Google SRE Book — Release Engineering](https://sre.google/sre-book/release-engineering/) — principles for controlled, repeatable releases
+- [BlueGreenDeployment — Fowler](https://martinfowler.com/bliki/BlueGreenDeployment.html) — keeping a rollback path warm during cutover

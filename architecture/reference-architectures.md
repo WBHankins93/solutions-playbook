@@ -187,3 +187,13 @@ How this architecture is run day-to-day:
 - [Event-Driven Patterns](../patterns/event-driven.md)
 - [CI/CD Pipeline Design](../ci-cd/pipeline-design.md) — the delivery pipeline behind the operational view
 - [Environment Guides](../CONTENT-INDEX.md#environment-guides)
+
+## 📚 Further reading
+
+Vendor and community reference-architecture libraries to draw from:
+
+- [AWS Architecture Center](https://aws.amazon.com/architecture/) — vetted reference architectures and diagrams
+- [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/) — reference architectures, patterns, and the icon set
+- [Google Cloud Architecture Center](https://cloud.google.com/architecture) — reference designs and best practices
+- [CNCF Cloud Native Landscape](https://landscape.cncf.io/) — the map of cloud-native building blocks
+- [Azure Architecture Icons](https://learn.microsoft.com/azure/architecture/icons/) — official icons for the diagrams you'll draw

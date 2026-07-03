@@ -149,3 +149,12 @@ These costs are easy to overlook but often material:
 - [Cost Optimization](optimization.md)
 - [Migration Assessment](../migration/assessment.md)
 - [Well-Architected Review](../architecture/well-architected.md)
+
+## 📚 Further reading
+
+The official calculators and the discipline behind honest comparisons:
+
+- [AWS Pricing Calculator](https://calculator.aws/) — model real usage, not list price
+- [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) — Azure equivalent
+- [Google Cloud Pricing Calculator](https://cloud.google.com/products/calculator) — GCP equivalent
+- [FinOps Foundation](https://www.finops.org/) — practices for rate and usage optimization across providers
