@@ -168,7 +168,6 @@ const reference = [
   { text: 'Tags', link: '/TAGS' },
   { text: 'Visual Diagrams', link: '/VISUAL-DIAGRAMS' },
   { text: 'Contributing', link: '/CONTRIBUTING' },
-  { text: 'Project Status', link: '/PROJECT-STATUS' },
 ]
 
 const seriesNav = {
@@ -262,8 +261,15 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: 'Solutions Playbook' }],
     ['meta', { property: 'og:title', content: 'Solutions Playbook' }],
     ['meta', { property: 'og:description', content: 'A searchable field guide for Solutions Engineers and Solutions Architects.' }],
-    ['meta', { property: 'og:image', content: 'https://wbhankins93.github.io/solutions-playbook/logo.svg' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { property: 'og:url', content: 'https://wbhankins93.github.io/solutions-playbook/' }],
+    ['meta', { property: 'og:image', content: 'https://wbhankins93.github.io/solutions-playbook/og-image.png' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:image:alt', content: 'Solutions Playbook — a field guide for Solutions Engineers and Architects' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'Solutions Playbook' }],
+    ['meta', { name: 'twitter:description', content: 'A searchable field guide for Solutions Engineers and Solutions Architects.' }],
+    ['meta', { name: 'twitter:image', content: 'https://wbhankins93.github.io/solutions-playbook/og-image.png' }],
   ],
   // Embed each page's raw Markdown so the in-page "Download Markdown" button
   // can hand back the original source. Runs in both dev and build.
